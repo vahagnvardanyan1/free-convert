@@ -1,0 +1,46 @@
+# Do Not Track (DNT) Policy for ImageConvertors
+
+ImageConvertors respects user privacy and honors Do Not Track (DNT) signals.
+
+## Our Commitment
+We are committed to protecting user privacy through:
+
+1. **Client-Side Processing**
+   All file conversions and processing happen in your browser.
+   No files are uploaded to our servers.
+
+2. **Minimal Data Collection**
+   We use anonymized analytics only to understand site usage patterns.
+   No personal information is collected or stored.
+
+3. **No Tracking Across Sites**
+   We do not track users across different websites.
+   We do not sell or share user data with third parties.
+
+4. **DNT Signal Honored**
+   When DNT is enabled, we disable all analytics and tracking.
+
+## What We Collect (When DNT is Off)
+- Anonymized page views (via analytics)
+- General location data (country level only)
+- Browser type and device information
+- No personally identifiable information
+
+## What We Never Collect
+- Files you process or convert
+- Personal information
+- Email addresses (unless you contact us)
+- Browsing history
+- Cross-site tracking data
+
+## Your Rights
+You have the right to:
+- Enable DNT in your browser settings
+- Use the site with JavaScript disabled (limited functionality)
+- Contact us about privacy concerns: cropimage@gmail.com
+
+For more details, see our Privacy Policy:
+https://freeconvert.tools/privacy-policy
+
+Last Updated: 2024
+

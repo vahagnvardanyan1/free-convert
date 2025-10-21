@@ -1,0 +1,6 @@
+{
+  "gpc": true,
+  "version": 1,
+  "description": "ImageConvertors respects Global Privacy Control. All processing is done client-side in the browser with no data collection or tracking."
+}
+

@@ -1,0 +1,44 @@
+/* TEAM */
+
+Project: ImageConvertors
+Site: https://freeconvert.tools
+Location: Worldwide
+
+/* SITE */
+
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React 19, Next.js 15, TypeScript
+Styling: Tailwind CSS
+Fonts: Geist Sans, Geist Mono
+Tools: Vercel, Canvas API, File API
+
+/* FEATURES */
+
+- 30+ free online tools
+- Image format conversion (PNG, JPG, WebP, HEIC)
+- PDF manipulation (merge, split, convert)
+- Color and design utilities
+- Typography tools
+- AI-powered features
+
+/* PRIVACY */
+
+Processing: Client-side only (no uploads)
+Data Collection: None (except anonymized analytics)
+Files: Never stored on servers
+Open Source: Transparent codebase
+
+/* LANGUAGES */
+
+English, German, Spanish, Hindi, Russian, Chinese
+
+/* THANKS */
+
+Thanks to:
+- Next.js team for the amazing framework
+- React team for the UI library
+- Open source community for various tools
+- Users who provide feedback
+
+Last update: 2024
+

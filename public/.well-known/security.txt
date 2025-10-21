@@ -1,0 +1,43 @@
+Contact: mailto:cropimage@gmail.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en, de, es, hi, ru, zh
+Canonical: https://freeconvert.tools/.well-known/security.txt
+
+# Security Policy for ImageConvertors
+
+# About
+ImageConvertors is a client-side web application. All file processing
+happens in the user's browser with no server-side file uploads or storage.
+
+# Scope
+This security policy covers:
+- The website: https://freeconvert.tools
+- API endpoints: /api/meta and /api/tools
+- Client-side JavaScript processing code
+
+# Privacy & Security Features
+- All file processing is client-side (no uploads)
+- No user data collection or storage
+- No authentication or user accounts
+- Open source architecture using standard web APIs
+
+# Reporting Security Issues
+If you discover a security vulnerability, please report it to:
+cropimage@gmail.com
+
+Please include:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
+
+We will respond within 48 hours and work to address valid issues promptly.
+
+# Out of Scope
+- Issues requiring physical access to user's device
+- Social engineering attacks
+- DDoS attacks
+- Issues in third-party dependencies (report to their maintainers)
+
+Thank you for helping keep ImageConvertors secure!
+

@@ -1,0 +1,132 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ImageConvertors API",
+    "version": "1.0.0",
+    "description": "Public API for accessing ImageConvertors metadata and tool information. Designed for AI engines and programmatic access.",
+    "contact": {
+      "email": "cropimage@gmail.com"
+    },
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://freeconvert.tools/api",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/meta": {
+      "get": {
+        "summary": "Get website metadata",
+        "description": "Returns structured metadata about ImageConvertors including site information, features, and capabilities. Optimized for AI consumption.",
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "description": "Specific path to get metadata for (e.g., /png-to-jpg)",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "/"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Response format: 'full' or 'compact'",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["full", "compact"],
+              "default": "full"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "@type": {
+                      "type": "string"
+                    },
+                    "site": {
+                      "type": "object"
+                    },
+                    "page": {
+                      "type": "object"
+                    },
+                    "categories": {
+                      "type": "object"
+                    },
+                    "features": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools": {
+      "get": {
+        "summary": "Get list of all tools",
+        "description": "Returns a complete list of available tools organized by category with Schema.org ItemList format.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "@type": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "numberOfItems": {
+                      "type": "integer"
+                    },
+                    "itemListElement": {
+                      "type": "array"
+                    },
+                    "categories": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Metadata",
+      "description": "Website metadata and information"
+    },
+    {
+      "name": "Tools",
+      "description": "Available tools and capabilities"
+    }
+  ]
+}
+
