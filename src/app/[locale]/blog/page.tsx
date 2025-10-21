@@ -25,7 +25,6 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/Card';
 import type { Metadata } from 'next';
 
-import { SITE_URL } from '@/config/constants';
 export const metadata: Metadata = {
   title: 'Blog - Image Conversion, Color & Font Tools Guides | FreeConvert',
   description: 'Learn everything about image conversion, color tools, typography, and best practices. Guides for PNG, JPG, WebP, HEIC, PDF conversions, Google Fonts, color pickers, and design tools.',

@@ -65,8 +65,8 @@ export default function TermsOfServicePage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Welcome to FreeConvert! These Terms of Service (&quot;Terms&quot;) govern your use of our website and image conversion services. By accessing or using our service, you agree to be
-            bound by Terms.
+            Welcome to FreeConvert! These Terms of Service (&quot;Terms&quot;) govern your use of our website and image conversion services. By accessing or using our service, you agree to be bound by
+            Terms.
           </p>
 
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
@@ -83,8 +83,8 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            By accessing, browsing, or using the FreeConvert website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If
-            you do not agree to these Terms, you must not use our service.
+            By accessing, browsing, or using the FreeConvert website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you
+            do not agree to these Terms, you must not use our service.
           </p>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
@@ -281,8 +281,8 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">8. Limitation of Liability</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            To the maximum extent permitted by law, FreeConvert and its affiliates, officers, directors, employees, and agents shall not be liable for any indirect, incidental, special,
-            consequential, or punitive damages, including but not limited to:
+            To the maximum extent permitted by law, FreeConvert and its affiliates, officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential,
+            or punitive damages, including but not limited to:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
