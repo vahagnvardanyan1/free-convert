@@ -8,13 +8,12 @@ interface ConversionResultModalProps {
   isOpen: boolean;
   onClose: () => void;
   result: ConversionResult | null;
-  originalFileName?: string;
   inputFormat?: string;
   outputFormat?: string;
   onConvertAnother: () => void;
 }
 
-export function ConversionResultModal({ isOpen, onClose, result, originalFileName, inputFormat, outputFormat, onConvertAnother }: ConversionResultModalProps) {
+export function ConversionResultModal({ isOpen, onClose, result, inputFormat, outputFormat, onConvertAnother }: ConversionResultModalProps) {
   if (!result) return null;
 
   const handleDownload = () => {

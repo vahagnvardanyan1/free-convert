@@ -208,7 +208,6 @@ export const ConversionTool = () => {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         result={conversionResult}
-        originalFileName={selectedFile?.name}
         inputFormat={inputFormat}
         outputFormat={outputFormat}
         onConvertAnother={handleConvertAnother}

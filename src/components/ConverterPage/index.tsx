@@ -370,15 +370,7 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
       </div>
 
       {/* Conversion Result Modal */}
-      <ConversionResultModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        result={conversionResult}
-        originalFileName={selectedFile?.name}
-        inputFormat={from}
-        outputFormat={outputFormat}
-        onConvertAnother={handleConvertAnother}
-      />
+      <ConversionResultModal isOpen={isModalOpen} onClose={handleCloseModal} result={conversionResult} inputFormat={from} outputFormat={outputFormat} onConvertAnother={handleConvertAnother} />
     </>
   );
 };

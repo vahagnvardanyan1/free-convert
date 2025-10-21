@@ -10,10 +10,6 @@ export default function ColorsLayout({ children }: { children: React.ReactNode }
   const pathname = usePathname();
   const t = useTranslations('colorTools.layout');
 
-  // Extract locale from pathname
-  const pathSegments = pathname.split('/');
-  const locale = pathSegments[1];
-
   const navigation = [
     { name: t('dashboard'), href: `/colors`, icon: Home },
     { name: t('picker'), href: `/colors/picker`, icon: Droplet },
