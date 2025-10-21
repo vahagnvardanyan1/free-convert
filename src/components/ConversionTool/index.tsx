@@ -204,14 +204,7 @@ export const ConversionTool = () => {
       </div>
 
       {/* Conversion Result Modal */}
-      <ConversionResultModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        result={conversionResult}
-        inputFormat={inputFormat}
-        outputFormat={outputFormat}
-        onConvertAnother={handleConvertAnother}
-      />
+      <ConversionResultModal isOpen={isModalOpen} onClose={handleCloseModal} result={conversionResult} inputFormat={inputFormat} outputFormat={outputFormat} onConvertAnother={handleConvertAnother} />
     </section>
   );
 };
