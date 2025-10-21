@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t('ogTitle'),
       description: t('ogDescription'),
       url: `${SITE_URL}/${locale}/heic-to-pdf`,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',
       images: [

@@ -47,7 +47,7 @@ export const generateToolMetadata = async ({ locale, path, namespace, ogImage = 
       title: getMeta('ogTitle'),
       description: getMeta('ogDescription'),
       url: canonicalUrl,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',
       alternateLocale: geoConfig.languages.filter(lang => lang !== locale),

@@ -927,7 +927,7 @@
       "twitterDescription": "Convert JPG to PNG, PNG to JPG, WebP to JPG online free. Fast image conversion with no signup."
     },
     "aiImageGenerator": {
-      "title": "Free AI Image Generator - Create Images from Text | ImageConvertors",
+      "title": "Free AI Image Generator - Create Images from Text | FreeConvert",
       "description": "Generate stunning AI images from text descriptions. Free AI image generator with advanced models. Create artwork, photos, and designs instantly. No signup required.",
       "keywords": "ai image generator, text to image, ai art generator, free ai image, image generation, ai artwork, create images from text, ai photo generator, flux ai, stable diffusion, ai art free",
       "ogTitle": "Free AI Image Generator - Create Images from Text Instantly",
@@ -937,7 +937,7 @@
       "twitterDescription": "Generate stunning AI images from text descriptions. Free, unlimited, no signup required."
     },
     "removeBackground": {
-      "title": "Remove Image Background - Free AI Background Remover | ImageConvertors",
+      "title": "Remove Image Background - Free AI Background Remover | FreeConvert",
       "description": "Remove image backgrounds automatically with AI. Free online background remover tool for product photos, portraits, and more. Fast, accurate, and privacy-focused.",
       "keywords": "background remover, remove background, AI background removal, transparent background, product photography, cut out image",
       "ogTitle": "Remove Image Background - Free AI Background Remover",
@@ -947,7 +947,7 @@
       "twitterDescription": "Remove image backgrounds automatically with AI. Free, fast, and privacy-focused."
     },
     "cropImage": {
-      "title": "Crop Image Online - Free Image Cropper & Rotator | ImageConvertors",
+      "title": "Crop Image Online - Free Image Cropper & Rotator | FreeConvert",
       "description": "Crop, rotate, and resize images online for free. Professional image cropping tool with aspect ratio presets. Flip, zoom, and edit images instantly in your browser.",
       "keywords": "crop image, image cropper, crop photo online, rotate image, flip image, resize image, aspect ratio, image editor, free image cropper",
       "ogTitle": "Crop Image Online - Free Image Cropper Tool",
@@ -973,7 +973,7 @@
       "twitterDescription": "Compress images instantly. Reduce file size with quality control. No signup required."
     },
     "analyze": {
-      "title": "Image Analyzer - Analyze Image Properties & Metadata | ImageConvertors",
+      "title": "Image Analyzer - Analyze Image Properties & Metadata | FreeConvert",
       "description": "Analyze your images instantly. Get detailed information about image format, dimensions, file size, color depth, and metadata. Free online image analysis tool.",
       "keywords": "image analyzer, image analysis, image properties, image metadata, EXIF data, image dimensions, file size analyzer",
       "ogTitle": "Image Analyzer - Analyze Image Properties & Metadata",
@@ -981,7 +981,7 @@
       "ogImageAlt": "Image Analyzer Tool"
     },
     "qrCodeGenerator": {
-      "title": "QR Code Generator - Create Custom QR Codes Free | ImageConvertors",
+      "title": "QR Code Generator - Create Custom QR Codes Free | FreeConvert",
       "description": "Create custom QR codes for URLs, WiFi, contacts, and more. Free QR code generator with customizable colors and sizes. Download as SVG or PNG.",
       "keywords": "qr code generator, create qr code, custom qr code, qr code maker, free qr code, wifi qr code, vcard qr code",
       "ogTitle": "QR Code Generator - Create Custom QR Codes Free",
@@ -989,7 +989,7 @@
       "ogImageAlt": "QR Code Generator Tool"
     },
     "chartGenerator": {
-      "title": "Chart Generator - Create Beautiful Charts & Graphs Online Free | ImageConvertors",
+      "title": "Chart Generator - Create Beautiful Charts & Graphs Online Free | FreeConvert",
       "description": "Create stunning charts and graphs online for free. Generate bar charts, line charts, pie charts, doughnut charts, area charts, and radar charts with custom data. Download as PNG.",
       "keywords": "chart generator, graph maker, create charts, bar chart, line chart, pie chart, doughnut chart, area chart, radar chart, data visualization",
       "ogTitle": "Chart Generator - Create Beautiful Charts & Graphs Free",
@@ -997,7 +997,7 @@
       "ogImageAlt": "Chart Generator Tool"
     },
     "pngToWebp": {
-      "title": "PNG to WebP Converter - Convert PNG to WebP Online Free | ImageConvertors",
+      "title": "PNG to WebP Converter - Convert PNG to WebP Online Free | FreeConvert",
       "description": "Convert PNG images to WebP format online for free. Reduce file size by up to 80% while maintaining quality. Fast, secure PNG to WebP conversion.",
       "keywords": "PNG to WebP, PNG converter, WebP converter, image compression, optimize images, reduce file size",
       "ogTitle": "PNG to WebP Converter - Free Online Tool",
@@ -1013,7 +1013,7 @@
       "ogImageAlt": "JPG to PNG Converter Tool"
     },
     "webpToPng": {
-      "title": "WebP to PNG Converter - Convert WebP to PNG Online Free | ImageConvertors",
+      "title": "WebP to PNG Converter - Convert WebP to PNG Online Free | FreeConvert",
       "description": "Convert WebP images to PNG format online for free. Maintain quality and transparency. Fast, secure WebP to PNG conversion tool.",
       "keywords": "WebP to PNG, WebP converter, PNG converter, image format converter, convert WebP",
       "ogTitle": "WebP to PNG Converter - Free Online Tool",
@@ -1021,7 +1021,7 @@
       "ogImageAlt": "WebP to PNG Converter"
     },
     "jpgToWebp": {
-      "title": "JPG to WebP Converter - Convert JPEG to WebP Online Free | ImageConvertors",
+      "title": "JPG to WebP Converter - Convert JPEG to WebP Online Free | FreeConvert",
       "description": "Convert JPG/JPEG images to WebP format online for free. Reduce file size significantly. Fast, secure JPG to WebP conversion tool.",
       "keywords": "JPG to WebP, JPEG to WebP, JPG converter, WebP converter, compress images, optimize images",
       "ogTitle": "JPG to WebP Converter - Free Online Tool",
@@ -1053,7 +1053,7 @@
       "ogImageAlt": "HEIC to JPG Converter Tool"
     },
     "heicToPng": {
-      "title": "HEIC to PNG Converter - Convert HEIC to PNG Online Free | ImageConvertors",
+      "title": "HEIC to PNG Converter - Convert HEIC to PNG Online Free | FreeConvert",
       "description": "Convert HEIC images to PNG format online for free. Preserve transparency. Fast, secure HEIC to PNG conversion tool.",
       "keywords": "HEIC to PNG, HEIC converter, PNG converter, Apple photos, convert HEIC, transparency support",
       "ogTitle": "HEIC to PNG Converter - Free Online Tool",
@@ -1061,7 +1061,7 @@
       "ogImageAlt": "HEIC to PNG Converter"
     },
     "heicToWebp": {
-      "title": "HEIC to WebP Converter - Convert HEIC to WebP Online Free | ImageConvertors",
+      "title": "HEIC to WebP Converter - Convert HEIC to WebP Online Free | FreeConvert",
       "description": "Convert HEIC images to modern WebP format online for free. Excellent compression. Fast, secure HEIC to WebP conversion.",
       "keywords": "HEIC to WebP, HEIC converter, WebP converter, Apple photos, convert HEIC, optimize images",
       "ogTitle": "HEIC to WebP Converter - Free Online Tool",
@@ -1069,7 +1069,7 @@
       "ogImageAlt": "HEIC to WebP Converter"
     },
     "pdfToJpg": {
-      "title": "PDF to JPG Converter - Convert PDF to JPEG Online Free | ImageConvertors",
+      "title": "PDF to JPG Converter - Convert PDF to JPEG Online Free | FreeConvert",
       "description": "Convert PDF documents to high-quality JPG images online. Extract all pages or select specific pages. Fast, secure PDF to JPG conversion.",
       "keywords": "PDF to JPG, PDF to JPEG, PDF converter, JPG converter, extract PDF pages, PDF to image",
       "ogTitle": "PDF to JPG Converter - Free Online Tool",
@@ -1077,7 +1077,7 @@
       "ogImageAlt": "PDF to JPG Converter"
     },
     "pdfToPng": {
-      "title": "PDF to PNG Converter - Convert PDF to PNG Online Free | ImageConvertors",
+      "title": "PDF to PNG Converter - Convert PDF to PNG Online Free | FreeConvert",
       "description": "Convert PDF documents to high-quality PNG images online. Transparency support. Fast, secure PDF to PNG conversion tool.",
       "keywords": "PDF to PNG, PDF converter, PNG converter, extract PDF pages, PDF to image, transparency support",
       "ogTitle": "PDF to PNG Converter - Free Online Tool",
@@ -1109,7 +1109,7 @@
       "ogImageAlt": "JPG to PDF Converter Tool"
     },
     "webpToPdf": {
-      "title": "WebP to PDF Converter - Convert WebP to PDF Online Free | ImageConvertors",
+      "title": "WebP to PDF Converter - Convert WebP to PDF Online Free | FreeConvert",
       "description": "Convert WebP images to PDF documents online. Excellent compression. Customize page size and layout. Fast, secure WebP to PDF conversion.",
       "keywords": "WebP to PDF, WebP converter, PDF converter, create PDF, WebP to PDF online, image compression",
       "ogTitle": "WebP to PDF Converter - Free Online Tool",
@@ -1117,7 +1117,7 @@
       "ogImageAlt": "WebP to PDF Converter"
     },
     "heicToPdf": {
-      "title": "HEIC to PDF Converter - Convert HEIC to PDF Online Free | ImageConvertors",
+      "title": "HEIC to PDF Converter - Convert HEIC to PDF Online Free | FreeConvert",
       "description": "Convert Apple HEIC photos to PDF documents online. Universal compatibility. Customize layout. Fast, secure HEIC to PDF conversion.",
       "keywords": "HEIC to PDF, HEIC converter, PDF converter, Apple photos to PDF, iPhone photos to PDF",
       "ogTitle": "HEIC to PDF Converter - Free Online Tool",
@@ -1125,7 +1125,7 @@
       "ogImageAlt": "HEIC to PDF Converter"
     },
     "mergePdf": {
-      "title": "Merge PDF - Combine PDF Files Online Free | ImageConvertors",
+      "title": "Merge PDF - Combine PDF Files Online Free | FreeConvert",
       "description": "Merge multiple PDF files into one document online. Arrange order and combine PDFs instantly. Fast, secure PDF merger tool.",
       "keywords": "merge PDF, combine PDF, PDF merger, join PDF files, merge PDF online, PDF combiner",
       "ogTitle": "Merge PDF - Combine PDF Files Online Free",
@@ -1133,7 +1133,7 @@
       "ogImageAlt": "Merge PDF Tool"
     },
     "splitPdf": {
-      "title": "Split PDF - Separate PDF Pages Online Free | ImageConvertors",
+      "title": "Split PDF - Separate PDF Pages Online Free | FreeConvert",
       "description": "Split PDF documents into separate files online. Extract specific pages or split by page ranges. Fast, secure PDF splitter tool.",
       "keywords": "split PDF, separate PDF, PDF splitter, extract PDF pages, divide PDF, split PDF online",
       "ogTitle": "Split PDF - Separate PDF Pages Online Free",
@@ -1141,7 +1141,7 @@
       "ogImageAlt": "Split PDF Tool"
     },
     "pdfInfo": {
-      "title": "PDF Info Analyzer - View PDF Properties & Metadata | ImageConvertors",
+      "title": "PDF Info Analyzer - View PDF Properties & Metadata | FreeConvert",
       "description": "Analyze PDF documents and view detailed metadata online. See file size, pages, author, creation date, and more. Free PDF information tool.",
       "keywords": "PDF info, PDF metadata, PDF properties, analyze PDF, PDF details, PDF information",
       "ogTitle": "PDF Info Analyzer - View PDF Properties Online",
@@ -1149,13 +1149,13 @@
       "ogImageAlt": "PDF Info Analyzer"
     },
     "colors": {
-      "title": "Free Color Tools: Palette Generator & Picker | ImageConvertors",
+      "title": "Free Color Tools: Palette Generator & Picker | FreeConvert",
       "description": "Create and explore color schemes online. Use our free color palette generator to design custom palettes or easily pick any color code for your projects.",
       "keywords": "color palette generator, color picker, color scheme tool, design color palettes, free online colors, hex color picker, trending color palettes, free color palette, design colors, online color tools, color tools, color scheme generator, palette maker, hex color tool, RGB color picker, HSL color tool",
-      "ogTitle": "Free Color Tools: Palette Generator & Picker | ImageConvertors",
+      "ogTitle": "Free Color Tools: Palette Generator & Picker | FreeConvert",
       "ogDescription": "Create and explore color schemes online. Use our free color palette generator to design custom palettes or easily pick any color code for your projects.",
       "ogImageAlt": "Color Tools - Color Picker, Palette Generator, Gradient Creator",
-      "twitterTitle": "Free Color Tools: Palette Generator & Picker | ImageConvertors",
+      "twitterTitle": "Free Color Tools: Palette Generator & Picker | FreeConvert",
       "twitterDescription": "Create and explore color schemes online. Use our free color palette generator to design custom palettes or easily pick any color code for your projects."
     },
     "colorPicker": {
@@ -1179,98 +1179,98 @@
       "keywords": "gradient generator, CSS gradient, Tailwind gradient, linear gradient, color gradient, gradient maker, web gradient, gradient tool, gradient CSS code, gradient creator, background gradient, gradient background, CSS gradient generator, Tailwind CSS gradient, gradient code, online gradient tool"
     },
     "texts": {
-      "title": "Text Tools Hub - Fonts, Emojis, Symbols & JSON Tools | ImageConvertors",
+      "title": "Text Tools Hub - Fonts, Emojis, Symbols & JSON Tools | FreeConvert",
       "description": "Comprehensive text tools including font previews, emoji browsers with device support, special symbols, JSON validator, JSON comparer, and JSON parser. Find the perfect typography, characters, and data tools for your projects.",
       "keywords": "text tools, fonts, emojis, symbols, unicode characters, typography, font preview, emoji picker, special characters, text generator, json validator, json comparer, json parser, json formatter, json diff, json explorer",
-      "ogTitle": "Text Tools Hub - Fonts, Emojis, Symbols & JSON Tools | ImageConvertors",
+      "ogTitle": "Text Tools Hub - Fonts, Emojis, Symbols & JSON Tools | FreeConvert",
       "ogDescription": "Comprehensive text tools including font previews, emoji browsers with device support, special symbols, JSON validator, JSON comparer, and JSON parser.",
       "ogImageAlt": "Text Tools Hub - Typography and Data Tools"
     },
     "emojis": {
-      "title": "Emoji Picker - Browse & Copy Emojis with Device Preview | ImageConvertors",
+      "title": "Emoji Picker - Browse & Copy Emojis with Device Preview | FreeConvert",
       "description": "Browse thousands of emojis with device-specific rendering. Filter by category and see how emojis appear on Apple, Google, Microsoft, and Samsung. Copy instantly.",
       "keywords": "emoji picker, emoji browser, copy emoji, device emoji, Apple emoji, Google emoji, Microsoft emoji, Samsung emoji, emoji categories",
       "ogTitle": "Emoji Picker - Browse & Copy Emojis",
       "ogDescription": "Browse thousands of emojis with device-specific rendering. Copy instantly."
     },
     "symbols": {
-      "title": "Symbol Library - Unicode Symbols & Special Characters | ImageConvertors",
+      "title": "Symbol Library - Unicode Symbols & Special Characters | FreeConvert",
       "description": "Explore and copy special Unicode symbols and characters. Browse mathematical symbols, arrows, currency signs, shapes, and more.",
       "keywords": "unicode symbols, special characters, mathematical symbols, arrows, currency symbols, shapes, copy symbols",
       "ogTitle": "Symbol Library - Unicode Symbols & Special Characters",
       "ogDescription": "Explore and copy special Unicode symbols and characters instantly."
     },
     "fonts": {
-      "title": "Font Tools - Typography Playground & Font Utilities | ImageConvertors",
+      "title": "Font Tools - Typography Playground & Font Utilities | FreeConvert",
       "description": "Professional font tools including preview, pairing suggestions, and typographic scale generators. Test Google Fonts with live customization.",
       "keywords": "font tools, typography, font preview, font pairing, typographic scale, Google Fonts, web fonts",
       "ogTitle": "Font Tools - Typography Playground & Utilities",
       "ogDescription": "Professional font tools including preview, pairing, and scale generators."
     },
     "fontPreview": {
-      "title": "Font Preview - Interactive Typography Playground | ImageConvertors",
+      "title": "Font Preview - Interactive Typography Playground | FreeConvert",
       "description": "Test Google Fonts with live preview. Customize font size, weight, spacing, and colors. Generate CSS code instantly.",
       "keywords": "font preview, Google Fonts, typography playground, font tester, CSS fonts, web fonts",
       "ogTitle": "Font Preview - Interactive Typography Playground",
       "ogDescription": "Test Google Fonts with live preview and customization options."
     },
     "fontPairings": {
-      "title": "Font Pairings - Discover Perfect Typography Combinations | ImageConvertors",
+      "title": "Font Pairings - Discover Perfect Typography Combinations | FreeConvert",
       "description": "Browse curated font pairings for web design. Find complementary Google Font combinations with use case recommendations.",
       "keywords": "font pairing, font combinations, typography pairing, Google Font pairs, complementary fonts",
       "ogTitle": "Font Pairings - Perfect Typography Combinations",
       "ogDescription": "Browse curated font pairings with use case recommendations."
     },
     "fontScales": {
-      "title": "Typographic Scale Generator - Create Font Size Systems | ImageConvertors",
+      "title": "Typographic Scale Generator - Create Font Size Systems | FreeConvert",
       "description": "Generate typographic scales using musical ratios. Create consistent font size hierarchies for your design system.",
       "keywords": "typographic scale, font scale, type scale, modular scale, font size system, design system",
       "ogTitle": "Typographic Scale Generator - Font Size Systems",
       "ogDescription": "Generate typographic scales using musical ratios and design principles."
     },
     "jsonValidator": {
-      "title": "JSON Validator - Validate & Format JSON Online Free | ImageConvertors",
+      "title": "JSON Validator - Validate & Format JSON Online Free | FreeConvert",
       "description": "Validate and format JSON data with detailed error reporting. Perfect for debugging APIs and configuration files. Free online JSON validator.",
       "keywords": "json validator, validate json, json formatter, json syntax checker, json beautifier, format json",
       "ogTitle": "JSON Validator - Validate & Format JSON Online",
       "ogDescription": "Validate and format JSON data with detailed error reporting."
     },
     "jsonComparer": {
-      "title": "JSON Comparer - Compare Two JSON Objects Online Free | ImageConvertors",
+      "title": "JSON Comparer - Compare Two JSON Objects Online Free | FreeConvert",
       "description": "Compare two JSON objects and visualize differences. Track added, removed, and modified fields with color-coded highlighting.",
       "keywords": "json comparer, compare json, json diff, json comparison, json differences, json change tracker",
       "ogTitle": "JSON Comparer - Compare JSON Objects Online",
       "ogDescription": "Compare two JSON objects and visualize differences instantly."
     },
     "jsonParser": {
-      "title": "JSON Parser - Explore JSON with Interactive Tree View | ImageConvertors",
+      "title": "JSON Parser - Explore JSON with Interactive Tree View | FreeConvert",
       "description": "Parse and explore JSON data with interactive tree view. Navigate nested structures, view data types, and copy values instantly.",
       "keywords": "json parser, parse json, json explorer, json tree view, json viewer, json navigator",
       "ogTitle": "JSON Parser - Explore JSON with Tree View",
       "ogDescription": "Parse and explore JSON data with interactive tree view."
     },
     "privacyPolicy": {
-      "title": "Privacy Policy - ImageConvertors",
-      "description": "Learn how ImageConvertors protects your privacy and handles your data. We prioritize user privacy and data security.",
+      "title": "Privacy Policy - FreeConvert",
+      "description": "Learn how FreeConvert protects your privacy and handles your data. We prioritize user privacy and data security.",
       "keywords": "privacy policy, data protection, user privacy, privacy statement"
     },
     "termsOfService": {
-      "title": "Terms of Service - ImageConvertors",
-      "description": "Read the terms of service for ImageConvertors. Understand your rights and responsibilities when using our services.",
+      "title": "Terms of Service - FreeConvert",
+      "description": "Read the terms of service for FreeConvert. Understand your rights and responsibilities when using our services.",
       "keywords": "terms of service, terms and conditions, service agreement, user terms"
     },
     "termsOfUse": {
-      "title": "Terms of Use - ImageConvertors",
-      "description": "Read the terms of use for ImageConvertors. Understand your rights and responsibilities when using our free online tools.",
+      "title": "Terms of Use - FreeConvert",
+      "description": "Read the terms of use for FreeConvert. Understand your rights and responsibilities when using our free online tools.",
       "keywords": "terms of use, user agreement, usage terms, terms and conditions"
     },
     "cookiePolicy": {
-      "title": "Cookie Policy - ImageConvertors",
-      "description": "Learn about how ImageConvertors uses cookies to improve your experience. Understand our cookie usage and privacy practices.",
+      "title": "Cookie Policy - FreeConvert",
+      "description": "Learn about how FreeConvert uses cookies to improve your experience. Understand our cookie usage and privacy practices.",
       "keywords": "cookie policy, cookies, website cookies, privacy, data collection"
     },
     "chartGeneratorGuide": {
-      "title": "Chart Generator Guide - How to Create Beautiful Charts Online | ImageConvertors",
+      "title": "Chart Generator Guide - How to Create Beautiful Charts Online | FreeConvert",
       "description": "Learn how to create professional charts and graphs with our free chart generator. Complete guide covering all chart types, customization options, and best practices.",
       "keywords": "chart generator guide, how to create charts, data visualization, bar chart, line chart, pie chart, chart tutorial, create graphs online",
       "ogTitle": "Complete Guide to Creating Charts with Chart Generator",

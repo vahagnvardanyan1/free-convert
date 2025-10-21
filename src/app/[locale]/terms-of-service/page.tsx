@@ -65,7 +65,7 @@ export default function TermsOfServicePage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Welcome to ImageConvertors! These Terms of Service (&quot;Terms&quot;) govern your use of our website and image conversion services. By accessing or using our service, you agree to be
+            Welcome to FreeConvert! These Terms of Service (&quot;Terms&quot;) govern your use of our website and image conversion services. By accessing or using our service, you agree to be
             bound by Terms.
           </p>
 
@@ -83,7 +83,7 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            By accessing, browsing, or using the ImageConvertors website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If
+            By accessing, browsing, or using the FreeConvert website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If
             you do not agree to these Terms, you must not use our service.
           </p>
 
@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">2. Description of Service</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            ImageConvertors provides a free, browser-based image format conversion service that allows users to convert images between various formats including PNG, JPG, WebP, and GIF.
+            FreeConvert provides a free, browser-based image format conversion service that allows users to convert images between various formats including PNG, JPG, WebP, and GIF.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -205,7 +205,7 @@ export default function TermsOfServicePage() {
               <h4 className="font-semibold text-gray-900 mb-2">5.1 Our Rights</h4>
               <p className="text-gray-700 text-sm leading-relaxed">
                 All content, features, and functionality of our website and service, including but not limited to text, graphics, logos, icons, images, audio clips, and software, are owned by
-                ImageConvertors or its licensors and are protected by copyright and other intellectual property laws.
+                FreeConvert or its licensors and are protected by copyright and other intellectual property laws.
               </p>
             </div>
 
@@ -281,7 +281,7 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">8. Limitation of Liability</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            To the maximum extent permitted by law, ImageConvertors and its affiliates, officers, directors, employees, and agents shall not be liable for any indirect, incidental, special,
+            To the maximum extent permitted by law, FreeConvert and its affiliates, officers, directors, employees, and agents shall not be liable for any indirect, incidental, special,
             consequential, or punitive damages, including but not limited to:
           </p>
 

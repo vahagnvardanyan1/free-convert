@@ -1,6 +1,6 @@
 /* TEAM */
 
-Project: ImageConvertors
+Project: FreeConvert
 Site: https://freeconvert.tools
 Location: Worldwide
 

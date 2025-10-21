@@ -9,13 +9,13 @@ import { SITE_URL } from '@/config/constants';
 
 export const geoConfig = {
   // Brand Information
-  name: 'ImageConvertors',
+  name: 'FreeConvert',
   tagline: 'Free Online Image, PDF & Design Tools',
   mission: 'Provide fast, secure, and privacy-focused online tools for image conversion, PDF manipulation, and design utilities without requiring software installation.',
 
   // Core Value Propositions
   summary:
-    'ImageConvertors is a free online platform offering instant image format conversion (PNG, JPG, WebP, HEIC), PDF tools (merge, split, convert), color design utilities, typography tools, and more. All processing happens in your browser for maximum privacy and security.',
+    'FreeConvert is a free online platform offering instant image format conversion (PNG, JPG, WebP, HEIC), PDF tools (merge, split, convert), color design utilities, typography tools, and more. All processing happens in your browser for maximum privacy and security.',
 
   // Factual Keywords (avoid buzzwords)
   keywords: [
@@ -150,7 +150,7 @@ export const geoConfig = {
   // Author/Organization Information
   author: {
     type: 'Organization',
-    name: 'ImageConvertors',
+    name: 'FreeConvert',
     url: SITE_URL,
     description: 'A team dedicated to creating free, privacy-focused web tools for everyone.',
   },

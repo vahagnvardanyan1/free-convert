@@ -8,12 +8,12 @@ import { Search, Copy, Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 const metadata = {
-  title: 'Symbol Library - 300+ Unicode Symbols & Special Characters | ImageConvertors',
+  title: 'Symbol Library - 300+ Unicode Symbols & Special Characters | FreeConvert',
   description:
     'Explore and copy over 300 special Unicode symbols and characters instantly. Browse mathematical symbols, arrows, currency signs, punctuation marks, geometric shapes, Greek letters, technical symbols, and more. One-click copy to clipboard for easy use in documents, websites, and projects.',
   keywords: ['unicode symbols', 'special characters', 'copy symbols', 'symbol library', 'unicode characters', 'symbol picker', 'mathematical symbols', 'arrows symbols', 'currency symbols'],
   openGraph: {
-    title: 'Symbol Library - 300+ Unicode Symbols & Special Characters | ImageConvertors',
+    title: 'Symbol Library - 300+ Unicode Symbols & Special Characters | FreeConvert',
     description: 'Explore and copy over 300 special Unicode symbols and characters instantly. Browse mathematical symbols, arrows, currency signs, and more.',
     images: ['/symbol.webp'],
   },

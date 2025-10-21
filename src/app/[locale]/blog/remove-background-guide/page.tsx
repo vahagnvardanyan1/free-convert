@@ -11,7 +11,7 @@ import { generateBlogMetadata } from '@/lib/metadata/blogMetadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: 'Free Background Remover — Remove Image Backgrounds Instantly | ImageConvertors',
+  title: 'Free Background Remover — Remove Image Backgrounds Instantly | FreeConvert',
   description: 'Remove background from images online for free with AI. Perfect for product photos, profile pictures, and designs. No signup required.',
   keywords: [
     'remove background',

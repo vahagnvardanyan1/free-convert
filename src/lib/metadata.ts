@@ -31,8 +31,8 @@ interface HowToStep {
 
 // Base configuration for the application
 export const siteConfig = {
-  name: 'ImageConvertors',
-  title: 'Free Online Tools: Image, Fonts & Colors | ImageConvertors',
+  name: 'FreeConvert',
+  title: 'Free Online Tools: Image, Fonts & Colors | FreeConvert',
   description: 'Free online image converter & font generator. Convert PNG/JPG/WebP images, create fancy text, and design color schemes—all without installing any software.',
   url: SITE_URL,
   ogImage: '/og-image.webp',
@@ -80,7 +80,7 @@ export const siteConfig = {
     'text tools',
   ],
   author: {
-    name: 'ImageConvertors',
+    name: 'FreeConvert',
     url: SITE_URL,
     twitter: '@imageconverter',
   },
@@ -94,7 +94,7 @@ export const siteConfig = {
 // Route-specific metadata configuration
 export const routeMetadata: Record<string, Partial<Metadata>> = {
   '/': {
-    title: 'Free Online Tools: Image, Fonts & Colors | ImageConvertors',
+    title: 'Free Online Tools: Image, Fonts & Colors | FreeConvert',
     description: 'Free online image converter & font generator. Convert PNG/JPG/WebP images, create fancy text, and design color schemes—all without installing any software.',
     keywords: siteConfig.keywords.join(', '),
   },
@@ -168,31 +168,31 @@ export const routeMetadata: Record<string, Partial<Metadata>> = {
     keywords: 'WebP to PDF, convert WebP to PDF, WebP PDF converter, WebP to PDF online, WebP to PDF free, WebP compression PDF',
   },
   '/colors': {
-    title: 'Free Color Tools: Palette Generator & Picker | ImageConvertors',
+    title: 'Free Color Tools: Palette Generator & Picker | FreeConvert',
     description: 'Create and explore color schemes online. Use our free color palette generator to design custom palettes or easily pick any color code for your projects.',
     keywords:
       'color palette generator, color picker, color scheme tool, design color palettes, free online colors, hex color picker, trending color palettes, free color palette, design colors, online color tools',
   },
   '/colors/picker': {
-    title: 'Color Picker - Interactive Color Selector & Format Converter | ImageConvertors',
+    title: 'Color Picker - Interactive Color Selector & Format Converter | FreeConvert',
     description:
       'Pick colors and get instant format conversions. Interactive color picker with HEX, RGB, RGBA, HSL, HSLA, and HSV outputs. Perfect for web designers and developers. Free online color picker tool.',
     keywords: 'color picker, pick color, color selector, HEX color picker, RGB color picker, color formats, web colors, design colors, color tool, hex color picker, free color picker',
   },
   '/colors/palettes': {
-    title: 'Color Palette Generator - Create & Save Custom Color Schemes | ImageConvertors',
+    title: 'Color Palette Generator - Create & Save Custom Color Schemes | FreeConvert',
     description:
       'Generate beautiful color palettes with complementary, analogous, and monochromatic schemes. Save your favorite palettes locally. Browse predefined palettes or create custom color combinations. Free palette generator.',
     keywords: 'color palette, palette generator, color schemes, complementary colors, analogous colors, monochromatic palette, color combinations, design palette, color harmony, trending palettes',
   },
   '/colors/gradients': {
-    title: 'Gradient Generator - Create CSS & Tailwind Gradients Online | ImageConvertors',
+    title: 'Gradient Generator - Create CSS & Tailwind Gradients Online | FreeConvert',
     description:
       'Generate stunning gradients between colors with instant CSS and Tailwind code. Customize direction, steps, and colors. Preview gradients in real-time. Copy code directly to your project. Free gradient generator.',
     keywords: 'gradient generator, CSS gradient, Tailwind gradient, linear gradient, color gradient, gradient maker, web gradient, gradient tool, gradient CSS code',
   },
   '/colors/converter': {
-    title: 'Color Converter - Convert Between HEX, RGB, HSL & Color Formats | ImageConvertors',
+    title: 'Color Converter - Convert Between HEX, RGB, HSL & Color Formats | FreeConvert',
     description:
       'Convert colors between HEX, RGB, RGBA, HSL, HSLA, and HSV formats instantly. Supports color names and all CSS color formats. Perfect for cross-platform development. Free online color format converter.',
     keywords: 'color converter, HEX to RGB, RGB to HSL, HSL to HEX, color format converter, convert colors, CSS colors, color transformation, color code converter',
@@ -219,38 +219,38 @@ export const routeMetadata: Record<string, Partial<Metadata>> = {
     keywords: 'remove background, background remover, remove image background, ai background remover, transparent background, background eraser, cut out image',
   },
   '/texts/fonts': {
-    title: 'Font Tools - Free Typography Playground, Font Pairing & Scale Generator | ImageConvertors',
+    title: 'Font Tools - Free Typography Playground, Font Pairing & Scale Generator | FreeConvert',
     description: 'Professional font tools for designers and developers. Preview Google Fonts, discover perfect font pairings, and generate typographic scales. Free online typography utilities.',
     keywords: 'font tools, typography, font preview, font pairing, typographic scale, Google Fonts, font generator, CSS fonts, web typography, design tools, fancy text, unicode fonts',
   },
   '/texts/fonts/preview': {
-    title: 'Font Preview - Interactive Typography Playground with Google Fonts | ImageConvertors',
+    title: 'Font Preview - Interactive Typography Playground with Google Fonts | FreeConvert',
     description: 'Test Google Fonts with live preview. Customize font size, weight, spacing, and colors. Generate CSS code instantly. Free online font preview tool.',
     keywords: 'font preview, Google Fonts, typography playground, font tester, CSS fonts, web fonts, font customizer, font size, font weight, free online fonts',
   },
   '/texts/fonts/pairings': {
-    title: 'Font Pairings - Discover Perfect Typography Combinations | ImageConvertors',
+    title: 'Font Pairings - Discover Perfect Typography Combinations | FreeConvert',
     description: 'Browse curated font pairings for web design. Find complementary Google Font combinations with use case recommendations. Copy CSS instantly. Free font pairing tool.',
     keywords: 'font pairing, font combinations, typography pairing, Google Font pairs, complementary fonts, font matching, web typography, design fonts',
   },
   '/texts/fonts/scales': {
-    title: 'Typographic Scale Generator - Create Harmonious Font Size Systems | ImageConvertors',
+    title: 'Typographic Scale Generator - Create Harmonious Font Size Systems | FreeConvert',
     description: 'Generate typographic scales using musical ratios. Create consistent font size hierarchies for your design system. Export CSS custom properties. Free type scale tool.',
     keywords: 'typographic scale, font scale, type scale, modular scale, font size system, design system, CSS variables, typography ratio, type hierarchy',
   },
   '/texts/emojis': {
-    title: 'Emoji Picker - Browse & Copy Emojis with Device Preview | ImageConvertors',
+    title: 'Emoji Picker - Browse & Copy Emojis with Device Preview | FreeConvert',
     description:
       'Browse thousands of emojis with device-specific rendering. Filter by category and see how emojis appear on Apple, Google, Microsoft, and Samsung devices. Copy to clipboard instantly.',
     keywords: 'emoji picker, emoji browser, copy emoji, device emoji, Apple emoji, Google emoji, Microsoft emoji, Samsung emoji, emoji categories, unicode emoji, emoji library, free emoji picker',
   },
   '/texts/symbols': {
-    title: 'Symbol Library - Unicode Symbols & Special Characters | ImageConvertors',
+    title: 'Symbol Library - Unicode Symbols & Special Characters | FreeConvert',
     description: 'Explore and copy special Unicode symbols and characters. Browse mathematical symbols, arrows, currency signs, shapes, and more for your projects.',
     keywords: 'unicode symbols, special characters, mathematical symbols, arrows, currency symbols, shapes, copy symbols, unicode library, special characters library, symbols picker',
   },
   '/texts': {
-    title: 'Text Tools - Emoji Picker, Symbols & Font Utilities | ImageConvertors',
+    title: 'Text Tools - Emoji Picker, Symbols & Font Utilities | FreeConvert',
     description: 'Free online text tools including emoji picker, Unicode symbols library, font preview, and typography utilities. Perfect for designers and developers.',
     keywords: 'text tools, emoji picker, symbols library, font tools, typography, unicode, special characters, design tools, web design',
   },
@@ -1035,8 +1035,8 @@ export const generateStructuredData = (pathname: string) => {
 export const getOrganizationSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'ImageConvertors',
-  alternateName: 'ImageConvertors',
+  name: 'FreeConvert',
+  alternateName: 'FreeConvert',
   url: siteConfig.url,
   logo: `${SITE_URL}/logo.png`,
   description: siteConfig.description,
@@ -1188,7 +1188,7 @@ export const generateFAQStructuredData = (pathname: string) => {
         name: 'What is the best image compressor online?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ImageConvertors offers a free image compressor with quality control, target file size compression (20KB, 50KB, 100KB), and instant browser-based processing. All compression happens locally in your browser, ensuring privacy and security.',
+          text: 'FreeConvert offers a free image compressor with quality control, target file size compression (20KB, 50KB, 100KB), and instant browser-based processing. All compression happens locally in your browser, ensuring privacy and security.',
         },
       },
       {

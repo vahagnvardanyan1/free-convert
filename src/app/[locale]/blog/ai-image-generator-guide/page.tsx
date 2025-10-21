@@ -11,7 +11,7 @@ import { generateBlogMetadata } from '@/lib/metadata/blogMetadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: 'Free AI Image Generator — Create Stunning Images from Text | ImageConvertors',
+  title: 'Free AI Image Generator — Create Stunning Images from Text | FreeConvert',
   description: 'Generate AI images from text descriptions for free. Create stunning visuals, art, and designs with AI. No signup required, unlimited use.',
   keywords: [
     'ai image generator',

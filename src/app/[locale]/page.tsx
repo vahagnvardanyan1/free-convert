@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: localeMap[locale] || 'en_US',
       alternateLocale: geoConfig.languages.filter(lang => lang !== locale),
       url: `${SITE_URL}/${locale}`,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       title: t('ogTitle'),
       description: t('ogDescription'),
       images: [

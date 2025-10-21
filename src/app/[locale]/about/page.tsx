@@ -12,15 +12,15 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'About ImageConvertors';
-  const description = 'Learn about ImageConvertors: a free, privacy-focused platform for image conversion, PDF manipulation, and design tools. All processing happens in your browser.';
+  const title = 'About FreeConvert';
+  const description = 'Learn about FreeConvert: a free, privacy-focused platform for image conversion, PDF manipulation, and design tools. All processing happens in your browser.';
   const pathname = `/${locale}/about`;
   const aiMeta = generateAIMeta('/about');
 
   return {
     title: generateGeoTitle(title),
     description: description,
-    keywords: 'about ImageConvertors, image converter, free tools, browser-based conversion, privacy-focused',
+    keywords: 'about FreeConvert, image converter, free tools, browser-based conversion, privacy-focused',
     authors: [{ name: geoConfig.author.name, url: geoConfig.author.url }],
     creator: geoConfig.author.name,
     publisher: geoConfig.author.name,
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: title,
       description: description,
       url: `${SITE_URL}${pathname}`,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',
       alternateLocale: geoConfig.languages.filter(lang => lang !== locale),
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: '/og-image.webp',
           width: 1200,
           height: 630,
-          alt: 'ImageConvertors - Free Online Tools',
+          alt: 'FreeConvert - Free Online Tools',
         },
       ],
     },
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     other: {
       ...aiMeta,
-      'ai-summary': 'ImageConvertors is a free online platform offering browser-based image conversion, PDF tools, and design utilities with complete privacy.',
+      'ai-summary': 'FreeConvert is a free online platform offering browser-based image conversion, PDF tools, and design utilities with complete privacy.',
       'ai-category': 'About Page',
     },
   };
@@ -194,7 +194,7 @@ export default async function AboutPage({ params }: Props) {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-4">History</h2>
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          ImageConvertors was founded in {geoConfig.foundingYear} with a simple goal: to provide free, privacy-respecting tools that anyone can use without signing up or downloading software.
+          FreeConvert was founded in {geoConfig.foundingYear} with a simple goal: to provide free, privacy-respecting tools that anyone can use without signing up or downloading software.
         </p>
       </section>
 

@@ -8,7 +8,7 @@ import { Search, Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 const metadata = {
-  title: 'Emoji Picker - Browse & Copy 500+ Emojis with Device Preview | ImageConvertors',
+  title: 'Emoji Picker - Browse & Copy 500+ Emojis with Device Preview | FreeConvert',
   description:
     'Browse and copy over 500 emojis instantly with device-specific rendering preview. Filter by category including smileys, animals, food, travel, activities, objects, symbols, and flags. See how emojis appear on Apple, Google, Microsoft, and Samsung devices. One-click copy to clipboard for easy use in your projects.',
   keywords: [
@@ -28,7 +28,7 @@ const metadata = {
     'emoji categories',
   ],
   openGraph: {
-    title: 'Emoji Picker - Browse & Copy 500+ Emojis with Device Preview | ImageConvertors',
+    title: 'Emoji Picker - Browse & Copy 500+ Emojis with Device Preview | FreeConvert',
     description: 'Browse and copy over 500 emojis instantly with device-specific rendering preview.',
     images: ['/emoji.webp'],
   },

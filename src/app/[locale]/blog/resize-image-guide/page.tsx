@@ -11,7 +11,7 @@ import { generateBlogMetadata } from '@/lib/metadata/blogMetadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: 'Free Online Image Resizer — Resize & Scale Photos Instantly | ImageConvertors',
+  title: 'Free Online Image Resizer — Resize & Scale Photos Instantly | FreeConvert',
   description:
     'Learn how to resize images online for free with our comprehensive guide. Discover professional resizing techniques, dimensions, and tips for perfect image scaling. No software needed.',
   keywords: [

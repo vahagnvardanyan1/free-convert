@@ -13,15 +13,15 @@ type Props = {
 // FAQ data structured for both UI and schema.org
 const faqData = [
   {
-    question: 'What is ImageConvertors?',
+    question: 'What is FreeConvert?',
     answer:
-      'ImageConvertors is a free online platform that provides tools for image format conversion, PDF manipulation, color design utilities, and typography tools. All processing happens directly in your browser for maximum privacy and security.',
+      'FreeConvert is a free online platform that provides tools for image format conversion, PDF manipulation, color design utilities, and typography tools. All processing happens directly in your browser for maximum privacy and security.',
     category: 'General',
   },
   {
-    question: 'Is ImageConvertors really free to use?',
+    question: 'Is FreeConvert really free to use?',
     answer:
-      'Yes, ImageConvertors is completely free to use. There are no hidden fees, premium features, subscriptions, or watermarks on your converted files. All tools are available to everyone at no cost.',
+      'Yes, FreeConvert is completely free to use. There are no hidden fees, premium features, subscriptions, or watermarks on your converted files. All tools are available to everyone at no cost.',
     category: 'General',
   },
   {
@@ -50,7 +50,7 @@ const faqData = [
   {
     question: 'What image formats are supported?',
     answer:
-      'ImageConvertors supports all major image formats including PNG, JPG/JPEG, WebP, HEIC, GIF, and more. You can convert between any of these formats. We also support PDF conversion to and from images.',
+      'FreeConvert supports all major image formats including PNG, JPG/JPEG, WebP, HEIC, GIF, and more. You can convert between any of these formats. We also support PDF conversion to and from images.',
     category: 'Features',
   },
   {
@@ -74,12 +74,12 @@ const faqData = [
   {
     question: 'What browsers are supported?',
     answer:
-      'ImageConvertors works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.',
+      'FreeConvert works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.',
     category: 'Technical',
   },
   {
-    question: 'Can I use ImageConvertors on mobile devices?',
-    answer: 'Yes, ImageConvertors is fully responsive and works on mobile devices including smartphones and tablets. The interface adapts to smaller screens while maintaining full functionality.',
+    question: 'Can I use FreeConvert on mobile devices?',
+    answer: 'Yes, FreeConvert is fully responsive and works on mobile devices including smartphones and tablets. The interface adapts to smaller screens while maintaining full functionality.',
     category: 'Technical',
   },
   {
@@ -120,13 +120,13 @@ const faqData = [
   },
   {
     question: 'What languages are supported?',
-    answer: `ImageConvertors is available in ${geoConfig.languages.length} languages: English, German, Spanish, Hindi, Russian, and Chinese. You can switch languages using the language selector in the header.`,
+    answer: `FreeConvert is available in ${geoConfig.languages.length} languages: English, German, Spanish, Hindi, Russian, and Chinese. You can switch languages using the language selector in the header.`,
     category: 'General',
   },
   {
-    question: 'Can I use ImageConvertors for commercial purposes?',
+    question: 'Can I use FreeConvert for commercial purposes?',
     answer:
-      'Yes, you can use ImageConvertors for both personal and commercial purposes. There are no restrictions on how you use the tools or the files you process. However, please respect copyright laws for any content you convert.',
+      'Yes, you can use FreeConvert for both personal and commercial purposes. There are no restrictions on how you use the tools or the files you process. However, please respect copyright laws for any content you convert.',
     category: 'Legal',
   },
   {
@@ -137,7 +137,7 @@ const faqData = [
   {
     question: 'Is the source code available?',
     answer:
-      'ImageConvertors is built with modern web technologies including Next.js, React, and TypeScript. While specific components may be proprietary, we believe in transparency and may open-source parts of the project in the future.',
+      'FreeConvert is built with modern web technologies including Next.js, React, and TypeScript. While specific components may be proprietary, we believe in transparency and may open-source parts of the project in the future.',
     category: 'Technical',
   },
 ];
@@ -146,7 +146,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const title = 'Frequently Asked Questions (FAQ)';
-  const description = 'Find answers to common questions about ImageConvertors: how it works, privacy and security, supported formats, features, and more.';
+  const description = 'Find answers to common questions about FreeConvert: how it works, privacy and security, supported formats, features, and more.';
   const pathname = `/${locale}/faq`;
   const aiMeta = generateAIMeta('/faq');
 
@@ -165,7 +165,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: title,
       description: description,
       url: `${SITE_URL}${pathname}`,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',
       alternateLocale: geoConfig.languages.filter(lang => lang !== locale),
@@ -174,7 +174,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: '/og-image.webp',
           width: 1200,
           height: 630,
-          alt: 'ImageConvertors FAQ',
+          alt: 'FreeConvert FAQ',
         },
       ],
     },
@@ -199,7 +199,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     other: {
       ...aiMeta,
-      'ai-summary': 'Comprehensive FAQ covering ImageConvertors features, privacy, supported formats, and how to use browser-based conversion tools.',
+      'ai-summary': 'Comprehensive FAQ covering FreeConvert features, privacy, supported formats, and how to use browser-based conversion tools.',
       'ai-category': 'FAQ Page',
     },
   };

@@ -65,7 +65,7 @@ export default function CookiePolicyPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            This Cookie Policy explains how ImageConvertors uses cookies and similar technologies when you visit our website. It explains what these technologies are, why we use them, and your rights
+            This Cookie Policy explains how FreeConvert uses cookies and similar technologies when you visit our website. It explains what these technologies are, why we use them, and your rights
             to control our use of them.
           </p>
 

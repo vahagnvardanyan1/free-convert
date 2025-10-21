@@ -19,7 +19,7 @@ export const IntroSection = () => {
 
       <div className="mb-12">
         <div className="relative overflow-hidden rounded-3xl border border-blue-100 shadow-xl">
-          <Image src="/crop.webp" alt="Screenshot of the ImageConvertors free online image cropper tool showing cropping interface" width={1200} height={630} className="w-full h-auto" priority />
+          <Image src="/crop.webp" alt="Screenshot of the FreeConvert free online image cropper tool showing cropping interface" width={1200} height={630} className="w-full h-auto" priority />
         </div>
         <p className="mt-4 text-sm text-center text-gray-500">Crop images online with precision using our free image cropper tool — no signup required, completely secure.</p>
       </div>

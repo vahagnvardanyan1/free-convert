@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "ImageConvertors API",
+    "title": "FreeConvert API",
     "version": "1.0.0",
-    "description": "Public API for accessing ImageConvertors metadata and tool information. Designed for AI engines and programmatic access.",
+    "description": "Public API for accessing FreeConvert metadata and tool information. Designed for AI engines and programmatic access.",
     "contact": {
       "email": "cropimage@gmail.com"
     },
@@ -21,7 +21,7 @@
     "/meta": {
       "get": {
         "summary": "Get website metadata",
-        "description": "Returns structured metadata about ImageConvertors including site information, features, and capabilities. Optimized for AI consumption.",
+        "description": "Returns structured metadata about FreeConvert including site information, features, and capabilities. Optimized for AI consumption.",
         "parameters": [
           {
             "name": "path",

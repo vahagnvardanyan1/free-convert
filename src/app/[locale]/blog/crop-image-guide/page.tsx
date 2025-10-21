@@ -11,7 +11,7 @@ import { generateBlogMetadata } from '@/lib/metadata/blogMetadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: 'Free Online Image Cropper — Crop & Resize Photos Perfectly | ImageConvertors',
+  title: 'Free Online Image Cropper — Crop & Resize Photos Perfectly | FreeConvert',
   description: 'Learn how to crop images online for free. Master aspect ratios, framing techniques, and achieve perfect crops for social media, websites, and print. Professional results in seconds.',
   keywords: [
     'crop image online',

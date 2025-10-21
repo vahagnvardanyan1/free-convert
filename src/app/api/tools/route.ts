@@ -12,8 +12,8 @@ export async function GET() {
     const response = {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: 'ImageConvertors Tools',
-      description: 'Complete list of available tools on ImageConvertors',
+      name: 'FreeConvert Tools',
+      description: 'Complete list of available tools on FreeConvert',
       numberOfItems: getAllToolNames().length,
       itemListElement: Object.entries(geoConfig.categories).flatMap(([_key, category], categoryIndex) =>
         category.tools.map((tool, toolIndex) => {

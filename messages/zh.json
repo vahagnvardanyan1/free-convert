@@ -1243,26 +1243,26 @@
     },
     "privacyPolicy": {
       "title": "隐私政策 - ImageConverters",
-      "description": "了解 ImageConvertors 如何保护您的隐私并处理您的数据。",
+      "description": "了解 FreeConvert 如何保护您的隐私并处理您的数据。",
       "keywords": "隐私政策、数据保护、用户隐私、隐私声明"
     },
     "termsOfService": {
       "title": "服务条款 - ImageConverters",
-      "description": "阅读 ImageConvertors 的服务条款。",
+      "description": "阅读 FreeConvert 的服务条款。",
       "keywords": "服务条款、条款和条件、服务协议、用户条款"
     },
     "termsOfUse": {
-      "title": "使用条款 - ImageConvertors",
-      "description": "阅读 ImageConvertors 的使用条款。",
+      "title": "使用条款 - FreeConvert",
+      "description": "阅读 FreeConvert 的使用条款。",
       "keywords": "使用条款、用户协议、使用条款、条款和条件"
     },
     "cookiePolicy": {
-      "title": "Cookie 政策 - ImageConvertors",
-      "description": "了解 ImageConvertors 如何使用 cookie 来改善您的体验。",
+      "title": "Cookie 政策 - FreeConvert",
+      "description": "了解 FreeConvert 如何使用 cookie 来改善您的体验。",
       "keywords": "Cookie 政策、Cookie、网站 Cookie、隐私、数据收集"
     },
     "chartGenerator": {
-      "title": "图表生成器 - 免费在线创建精美图表 | ImageConvertors",
+      "title": "图表生成器 - 免费在线创建精美图表 | FreeConvert",
       "description": "免费在线创建令人惊叹的图表。使用自定义数据生成条形图、折线图、饼图、圆环图、面积图和雷达图。下载为 PNG 或 SVG。",
       "keywords": "图表生成器，图形制作器，创建图表，条形图，折线图，饼图，圆环图，面积图，雷达图，数据可视化",
       "ogTitle": "图表生成器 - 免费创建精美图表",
@@ -1270,7 +1270,7 @@
       "ogImageAlt": "图表生成器工具"
     },
     "chartGeneratorGuide": {
-      "title": "图表生成器指南 - 如何在线创建精美图表 | ImageConvertors",
+      "title": "图表生成器指南 - 如何在线创建精美图表 | FreeConvert",
       "description": "了解如何使用我们的免费图表生成器创建专业图表。涵盖所有图表类型、自定义选项和最佳实践的完整指南。",
       "keywords": "图表生成器指南，如何创建图表，数据可视化，条形图，折线图，饼图",
       "ogTitle": "使用图表生成器创建图表的完整指南",

@@ -11,7 +11,7 @@ import JSONToolHowTo from '@/components/JSONToolHowTo';
 import { useTranslations } from 'next-intl';
 
 const metadata = {
-  title: 'JSON Comparer - Compare & Diff JSON Online | ImageConvertors',
+  title: 'JSON Comparer - Compare & Diff JSON Online | FreeConvert',
   description:
     'Free online JSON comparison tool. Compare two JSON objects or arrays, visualize differences with color-coded highlighting, and get detailed diff reports. Perfect for API testing, data validation, and debugging.',
   keywords: [
@@ -37,7 +37,7 @@ const metadata = {
     'free json compare',
   ],
   openGraph: {
-    title: 'JSON Comparer - Compare & Diff JSON Online | ImageConvertors',
+    title: 'JSON Comparer - Compare & Diff JSON Online | FreeConvert',
     description:
       'Free online JSON comparison tool. Compare two JSON objects or arrays, visualize differences with color-coded highlighting, and get detailed diff reports. Perfect for API testing, data validation, and debugging.',
     images: ['/json-compare.webp'],

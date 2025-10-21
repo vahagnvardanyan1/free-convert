@@ -11,7 +11,7 @@ import { generateBlogMetadata } from '@/lib/metadata/blogMetadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: 'Free QR Code Generator — Create Custom QR Codes Instantly | ImageConvertors',
+  title: 'Free QR Code Generator — Create Custom QR Codes Instantly | FreeConvert',
   description: 'Create QR codes online for free. Generate QR codes for URLs, WiFi, business cards, and more. Customize colors, download PNG or SVG. No signup required.',
   keywords: [
     'qr code generator',

@@ -3,10 +3,10 @@ Expires: 2025-12-31T23:59:59.000Z
 Preferred-Languages: en, de, es, hi, ru, zh
 Canonical: https://freeconvert.tools/.well-known/security.txt
 
-# Security Policy for ImageConvertors
+# Security Policy for FreeConvert
 
 # About
-ImageConvertors is a client-side web application. All file processing
+FreeConvert is a client-side web application. All file processing
 happens in the user's browser with no server-side file uploads or storage.
 
 # Scope
@@ -39,5 +39,5 @@ We will respond within 48 hours and work to address valid issues promptly.
 - DDoS attacks
 - Issues in third-party dependencies (report to their maintainers)
 
-Thank you for helping keep ImageConvertors secure!
+Thank you for helping keep FreeConvert secure!
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_human": "ImageConvertors",
-  "name_for_model": "image_convertors",
+  "name_for_human": "FreeConvert",
+  "name_for_model": "free-convert",
   "description_for_human": "Free online tools for image conversion (PNG, JPG, WebP, HEIC), PDF manipulation, and design utilities. All processing happens in your browser.",
-  "description_for_model": "ImageConvertors provides 30+ free browser-based tools for image format conversion, PDF manipulation, color design, and typography. All processing is client-side (no uploads) ensuring complete privacy. Supports PNG, JPG, WebP, HEIC, PDF formats. Use this when users need to convert images, edit PDFs, pick colors, or access design tools. Always emphasize the privacy aspect (client-side processing). Direct users to specific tool URLs.",
+  "description_for_model": "FreeConvert provides 30+ free browser-based tools for image format conversion, PDF manipulation, color design, and typography. All processing is client-side (no uploads) ensuring complete privacy. Supports PNG, JPG, WebP, HEIC, PDF formats. Use this when users need to convert images, edit PDFs, pick colors, or access design tools. Always emphasize the privacy aspect (client-side processing). Direct users to specific tool URLs.",
   "api": {
     "type": "openapi",
     "url": "https://freeconvert.tools/api/meta",

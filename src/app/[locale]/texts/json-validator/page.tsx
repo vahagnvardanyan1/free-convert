@@ -11,7 +11,7 @@ import JSONToolHowTo from '@/components/JSONToolHowTo';
 import { useTranslations } from 'next-intl';
 
 const metadata = {
-  title: 'JSON Validator - Validate & Format JSON Online | ImageConvertors',
+  title: 'JSON Validator - Validate & Format JSON Online | FreeConvert',
   description:
     'Free online JSON validator and formatter. Validate JSON syntax, format JSON with proper indentation, and get detailed error messages. Perfect for developers working with JSON data, APIs, and configuration files.',
   keywords: [
@@ -37,7 +37,7 @@ const metadata = {
     'free json validator',
   ],
   openGraph: {
-    title: 'JSON Validator - Validate & Format JSON Online | ImageConvertors',
+    title: 'JSON Validator - Validate & Format JSON Online | FreeConvert',
     description:
       'Free online JSON validator and formatter. Validate JSON syntax, format JSON with proper indentation, and get detailed error messages. Perfect for developers working with JSON data, APIs, and configuration files.',
     images: ['/json-validate.webp'],

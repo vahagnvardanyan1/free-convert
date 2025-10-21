@@ -25,7 +25,7 @@ export const generateBlogMetadata = ({ title, description, keywords, publishDate
       title,
       description,
       url,
-      siteName: 'ImageConvertors',
+      siteName: 'FreeConvert',
       type: 'article',
       publishedTime: publishDate,
       images: [
@@ -45,7 +45,7 @@ export const generateBlogMetadata = ({ title, description, keywords, publishDate
     },
     other: {
       'article:published_time': publishDate,
-      'article:author': 'ImageConvertors Team',
+      'article:author': 'FreeConvert Team',
     },
   };
 };

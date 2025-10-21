@@ -12,7 +12,7 @@ import JSONToolHowTo from '@/components/JSONToolHowTo';
 import { useTranslations } from 'next-intl';
 
 const metadata = {
-  title: 'JSON Parser - Parse & Explore JSON Online | ImageConvertors',
+  title: 'JSON Parser - Parse & Explore JSON Online | FreeConvert',
   description:
     'Free online JSON parser and explorer. Parse JSON data, explore nested structures, view data types, and navigate through complex JSON with an interactive tree view. Perfect for debugging and understanding JSON data.',
   keywords: [
@@ -38,7 +38,7 @@ const metadata = {
     'json key value viewer',
   ],
   openGraph: {
-    title: 'JSON Parser - Parse & Explore JSON Online | ImageConvertors',
+    title: 'JSON Parser - Parse & Explore JSON Online | FreeConvert',
     description: 'Free online JSON parser and explorer. Parse JSON data, explore nested structures, view data types, and navigate through complex JSON with an interactive tree view.',
     images: ['/json-parse.webp'],
   },

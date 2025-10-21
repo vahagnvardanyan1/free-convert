@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Image Converter - Free Online Image & PDF Converter Tool',
-    short_name: 'ImageConvertors',
+    short_name: 'FreeConvert',
     description:
       'Convert and analyze images between PNG, JPG, WebP, GIF and more formats instantly. Complete PDF tools for conversion, merging, splitting, and analysis. Fast, secure, and completely free online converter.',
     start_url: '/',

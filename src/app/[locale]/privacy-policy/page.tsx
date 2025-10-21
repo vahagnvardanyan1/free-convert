@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            At ImageConvertors, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your
+            At FreeConvert, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your
             data when you use our image conversion services.
           </p>
 
