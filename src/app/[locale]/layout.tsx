@@ -69,7 +69,7 @@ const LocaleLayout = async ({ children, params }: { children: React.ReactNode; p
         <CookieConsent />
         <Analytics />
         <SpeedInsights />
-        <GoogleAnalytics />
+        {/* <GoogleAnalytics /> */}
       </ToastProvider>
     </NextIntlClientProvider>
   );
