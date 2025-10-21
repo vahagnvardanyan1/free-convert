@@ -18,7 +18,7 @@ export const HowToCompress = () => {
     },
     {
       number: 3,
-      title: 'Download Compressed Image',
+      title: 'Download',
       description: 'Click compress and download your optimized image. Compare the before/after sizes and quality.',
       icon: Download,
     },
