@@ -12,7 +12,7 @@ import { Footer } from '@/components/Footer';
 import { CookieConsent } from '@/components/CookieConsent';
 import { StructuredData } from '@/components/StructuredData';
 import { ToastProvider } from '@/components/ui/toast';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+// import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const viewport = {
   themeColor: '#ffffff',
