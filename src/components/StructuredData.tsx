@@ -1,7 +1,8 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { generateStructuredData, generateBreadcrumbStructuredData, generateFAQStructuredData, generateHowToStructuredData } from '@/lib/metadata';
+
+import { generateStructuredData, generateBreadcrumbStructuredData, generateFAQStructuredData, generateHowToStructuredData, siteConfig, routeMetadata } from '@/lib/metadata';
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/geoHelpers';
 
 /**
@@ -17,14 +18,14 @@ import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/geoHelp
  * - Clear factual descriptions
  * - Rich interconnected data
  */
-export function StructuredData() {
+export const StructuredData = () => {
   const pathname = usePathname();
 
   // Get traditional structured data
-  const structuredData = generateStructuredData(pathname);
-  const breadcrumbData = generateBreadcrumbStructuredData(pathname);
-  const faqData = generateFAQStructuredData(pathname);
-  const howToData = generateHowToStructuredData(pathname);
+  const structuredData = generateStructuredData(pathname, siteConfig, routeMetadata);
+  const breadcrumbData = generateBreadcrumbStructuredData(pathname, siteConfig.url, routeMetadata);
+  const faqData = generateFAQStructuredData(pathname, siteConfig.url);
+  const howToData = generateHowToStructuredData(pathname, siteConfig.url);
 
   // Get GEO-enhanced schemas
   const organizationSchema = generateOrganizationSchema();
@@ -99,4 +100,4 @@ export function StructuredData() {
       )}
     </>
   );
-}
+};
