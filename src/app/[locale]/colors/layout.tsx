@@ -51,7 +51,7 @@ export default function ColorsLayout({ children }: { children: React.ReactNode }
         </div>
 
         {/* Main Content */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-0 sm:p-0">{children}</div>
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl">{children}</div>
       </div>
     </div>
   );

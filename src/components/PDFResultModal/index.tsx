@@ -1,6 +1,5 @@
 'use client';
-import { useState } from 'react';
-import { Download, X, FileText, Image as ImageIcon, Info, Eye, Calendar, User, FileImage } from 'lucide-react';
+import { Download, X, FileText, Image as ImageIcon, Info, Calendar, User, FileImage } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Modal } from '../Modal';
 import { downloadFile, downloadMultipleFiles, formatFileSize, type PDFConversionResult, type PDFCreationResult, type PDFMergeResult, type PDFSplitResult } from '../../lib/pdfConverter';
@@ -17,7 +16,6 @@ interface PDFResultModalProps {
 
 export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProcessAnother }: PDFResultModalProps) {
   const t = useTranslations('pdfResult');
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const handleReset = onProcessAnother || onReset || onClose;
 
   if (!result) return null;
@@ -40,14 +38,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
       }));
       downloadMultipleFiles(files);
     }
-  };
-
-  const handlePreview = (url: string) => {
-    setPreviewUrl(url);
-  };
-
-  const closePreview = () => {
-    setPreviewUrl(null);
   };
 
   const renderPDFToImagesResult = (result: PDFConversionResult) => (
@@ -83,9 +73,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
               </div>
             </div>
             <div className="flex space-x-2">
-              <Button onClick={() => handlePreview(image.url)} variant="outline" size="sm">
-                <Eye size={16} />
-              </Button>
               <Button onClick={() => handleDownload(image.blob, image.fileName)} variant="outline" size="sm">
                 <Download size={16} />
               </Button>
@@ -144,9 +131,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
             <p className="text-sm text-gray-500">{formatFileSize(result.convertedSize)}</p>
           </div>
         </div>
-        <Button onClick={() => handlePreview(result.url)} variant="outline" size="sm">
-          <Eye size={16} />
-        </Button>
       </div>
 
       <div className="flex justify-center space-x-4">
@@ -199,9 +183,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
             <p className="text-sm text-gray-500">{formatFileSize(result.convertedSize)}</p>
           </div>
         </div>
-        <Button onClick={() => handlePreview(result.url)} variant="outline" size="sm">
-          <Eye size={16} />
-        </Button>
       </div>
 
       <div className="flex justify-center space-x-4">
@@ -249,9 +230,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
               </div>
             </div>
             <div className="flex space-x-2">
-              <Button onClick={() => handlePreview(pdf.url)} variant="outline" size="sm">
-                <Eye size={16} />
-              </Button>
               <Button onClick={() => handleDownload(pdf.blob, pdf.fileName)} variant="outline" size="sm">
                 <Download size={16} />
               </Button>
@@ -438,70 +416,6 @@ export function PDFResultModal({ isOpen, onClose, result, mode, onReset, onProce
           {renderContent()}
         </div>
       </Modal>
-
-      {/* Preview Modal */}
-      {previewUrl && (
-        <Modal isOpen={!!previewUrl} onClose={closePreview} size="xl">
-          <div className="p-6">
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-semibold text-gray-900">{t('preview')}</h3>
-              <button onClick={closePreview} className="text-gray-400 hover:text-gray-600 transition-colors">
-                <X size={24} />
-              </button>
-            </div>
-
-            <div className="text-center">
-              {previewUrl.includes('image') ? (
-                <>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={previewUrl} alt="Preview" className="max-w-full max-h-96 mx-auto rounded-lg shadow-lg" />
-                </>
-              ) : (
-                <div className="space-y-4">
-                  <div className="bg-gray-100 rounded-lg p-8 text-center">
-                    <FileText className="mx-auto mb-4 text-gray-400" size={64} />
-                    <h4 className="text-lg font-medium text-gray-900 mb-2">{t('pdfPreview')}</h4>
-                    <p className="text-gray-600 mb-4">
-                      {t('pdfPreviewNotAvailable')}
-                      <br />
-                      {t('pleaseDownloadToView')}
-                    </p>
-                    <div className="flex justify-center space-x-4">
-                      <Button
-                        onClick={() => {
-                          const link = document.createElement('a');
-                          link.href = previewUrl;
-                          link.target = '_blank';
-                          link.rel = 'noopener noreferrer';
-                          document.body.appendChild(link);
-                          link.click();
-                          document.body.removeChild(link);
-                        }}
-                        variant="outline"
-                      >
-                        {t('openInNewTab')}
-                      </Button>
-                      <Button
-                        onClick={() => {
-                          const link = document.createElement('a');
-                          link.href = previewUrl;
-                          link.download = 'preview.pdf';
-                          document.body.appendChild(link);
-                          link.click();
-                          document.body.removeChild(link);
-                        }}
-                        className="bg-blue-600 hover:bg-blue-700 text-white"
-                      >
-                        {t('downloadPdfFile')}
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </Modal>
-      )}
     </>
   );
 }

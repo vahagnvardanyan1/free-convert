@@ -89,7 +89,7 @@ export default function PalettesPage() {
   };
 
   return (
-    <div>
+    <div className="p-4">
       <DynamicMetadata title={metadata.title} description={metadata.description} keywords={metadata.keywords} />
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Color Palettes</h2>

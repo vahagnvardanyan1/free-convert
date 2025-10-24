@@ -20,21 +20,6 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-8">
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1 pb-6 border-b border-gray-800 sm:border-b-0 sm:pb-0">
-            <div className="flex items-center mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IC</span>
-              </div>
-              <span className="ml-2 text-xl font-bold">{t('brandName')}</span>
-            </div>
-            <p className="text-gray-400 mb-6 max-w-md text-sm">{t('brandDescription')}</p>
-            <div className="flex items-center space-x-2">
-              <Mail className="text-gray-400" size={16} />
-              <a href="mailto:cropimage@gmail.com" className="text-gray-400 hover:text-white transition-colors text-sm">
-                {t('email')}
-              </a>
-            </div>
-          </div>
 
           {/* AI Tools */}
           <div className="border-b border-gray-800 pb-4 sm:border-b-0 sm:pb-0">

@@ -40,7 +40,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('fontGenerator.name'),
       description: t('fontGenerator.description'),
-      href: `/${locale}/texts/fonts`,
+      href: `/texts/fonts`,
       icon: Type,
       color: 'from-blue-500 to-cyan-500',
       count: t('fontGenerator.count'),
@@ -49,7 +49,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('emojis.name'),
       description: t('emojis.description'),
-      href: `/${locale}/texts/emojis`,
+      href: `/texts/emojis`,
       icon: Smile,
       color: 'from-yellow-500 to-orange-500',
       count: t('emojis.count'),
@@ -58,7 +58,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('symbols.name'),
       description: t('symbols.description'),
-      href: `/${locale}/texts/symbols`,
+      href: `/texts/symbols`,
       icon: Hash,
       color: 'from-purple-500 to-pink-500',
       count: t('symbols.count'),
@@ -67,7 +67,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('jsonValidatorCard.name'),
       description: t('jsonValidatorCard.description'),
-      href: `/${locale}/texts/json-validator`,
+      href: `/texts/json-validator`,
       icon: FileJson,
       color: 'from-green-500 to-emerald-500',
       count: t('jsonValidatorCard.count'),
@@ -76,7 +76,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('jsonComparerCard.name'),
       description: t('jsonComparerCard.description'),
-      href: `/${locale}/texts/json-comparer`,
+      href: `/texts/json-comparer`,
       icon: GitCompare,
       color: 'from-indigo-500 to-blue-500',
       count: t('jsonComparerCard.count'),
@@ -85,7 +85,7 @@ export default async function TextsPage({ params }: Props) {
     {
       name: t('jsonParserCard.name'),
       description: t('jsonParserCard.description'),
-      href: `/${locale}/texts/json-parser`,
+      href: `/texts/json-parser`,
       icon: FileSearch,
       color: 'from-teal-500 to-emerald-500',
       count: t('jsonParserCard.count'),

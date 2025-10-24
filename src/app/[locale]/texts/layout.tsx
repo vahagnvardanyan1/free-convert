@@ -15,14 +15,14 @@ export default function TextsLayout({ children }: { children: React.ReactNode })
   const locale = pathSegments[1];
 
   const navigation = [
-    { name: t('dashboard'), href: `/${locale}/texts`, icon: Home },
-    { name: t('fonts'), href: `/${locale}/texts/fonts`, icon: Type },
-    { name: t('emojis'), href: `/${locale}/texts/emojis`, icon: Smile },
-    { name: t('symbols'), href: `/${locale}/texts/symbols`, icon: Hash },
-    { name: t('jsonTools'), href: `/${locale}/texts/json-validator`, icon: FileJson, isGroup: true },
-    { name: 'JSON Validator', href: `/${locale}/texts/json-validator`, icon: FileJson, isSubItem: true },
-    { name: 'JSON Comparer', href: `/${locale}/texts/json-comparer`, icon: GitCompare, isSubItem: true },
-    { name: 'JSON Parser', href: `/${locale}/texts/json-parser`, icon: FileSearch, isSubItem: true },
+    { name: t('dashboard'), href: `/texts`, icon: Home },
+    { name: t('fonts'), href: `/texts/fonts`, icon: Type },
+    { name: t('emojis'), href: `/texts/emojis`, icon: Smile },
+    { name: t('symbols'), href: `/texts/symbols`, icon: Hash },
+    { name: t('jsonTools'), href: `/texts/json-validator`, icon: FileJson, isGroup: true },
+    { name: 'JSON Validator', href: `/texts/json-validator`, icon: FileJson, isSubItem: true },
+    { name: 'JSON Comparer', href: `/texts/json-comparer`, icon: GitCompare, isSubItem: true },
+    { name: 'JSON Parser', href: `/texts/json-parser`, icon: FileSearch, isSubItem: true },
   ];
 
   return (

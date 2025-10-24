@@ -55,35 +55,35 @@ export default async function ColorsPage({ params }: Props) {
     {
       name: t('colorPicker.name'),
       description: t('colorPicker.description'),
-      href: `/${locale}/colors/picker`,
+      href: `/colors/picker`,
       icon: Droplet,
       color: 'from-blue-500 to-cyan-500',
     },
     {
       name: t('colorPalettes.name'),
       description: t('colorPalettes.description'),
-      href: `/${locale}/colors/palettes`,
+      href: `/colors/palettes`,
       icon: Palette,
       color: 'from-purple-500 to-pink-500',
     },
     {
       name: t('gradientGenerator.name'),
       description: t('gradientGenerator.description'),
-      href: `/${locale}/colors/gradients`,
+      href: `/colors/gradients`,
       icon: Blend,
       color: 'from-orange-500 to-red-500',
     },
     {
       name: t('colorConverter.name'),
       description: t('colorConverter.description'),
-      href: `/${locale}/colors/converter`,
+      href: ` /colors/converter`,
       icon: ArrowLeftRight,
       color: 'from-green-500 to-teal-500',
     },
   ];
 
   return (
-    <div>
+    <div className="p-4">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('welcome')}</h2>
         <p className="text-gray-600 dark:text-gray-400">{t('selectTool')}</p>
