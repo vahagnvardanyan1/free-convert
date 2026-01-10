@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { SITE_URL } from '@/config/constants';
-import { localeMap, type Locale } from '@/i18n/config';
+import { locales, localeMap, type Locale } from '@/i18n/config';
 import { generateAIMeta } from '@/lib/geoHelpers';
 import { geoConfig } from '@/lib/geo.config';
+import { getAlternateLanguages, getLocalizedUrl } from './localizedUrl';
 
 // Common metadata keys that exist in all metadata namespaces
 type MetadataKey = 'title' | 'description' | 'keywords' | 'ogTitle' | 'ogDescription' | 'ogImageAlt';
@@ -22,9 +23,9 @@ interface ToolMetadataOptions {
 export const generateToolMetadata = async ({ locale, path, namespace, ogImage = '/convert.webp' }: ToolMetadataOptions): Promise<Metadata> => {
   const t = await getTranslations(namespace);
 
-  const pathname = `/${locale}/${path}`;
-  const aiMeta = generateAIMeta(pathname);
-  const canonicalUrl = `${SITE_URL}/${locale}/${path}`;
+  const canonicalUrl = getLocalizedUrl({ locale, path });
+  const canonicalPathname = new URL(canonicalUrl).pathname;
+  const aiMeta = generateAIMeta(canonicalPathname);
 
   // Helper to safely get metadata value
   // All metadata.* namespaces have these standard keys
@@ -41,7 +42,7 @@ export const generateToolMetadata = async ({ locale, path, namespace, ogImage = 
     publisher: geoConfig.author.name,
     alternates: {
       canonical: canonicalUrl,
-      languages: Object.fromEntries(geoConfig.languages.map(lang => [lang, `${SITE_URL}/${lang}/${path}`])),
+      languages: getAlternateLanguages({ locales, path }),
     },
     openGraph: {
       title: getMeta('ogTitle'),

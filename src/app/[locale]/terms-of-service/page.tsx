@@ -5,8 +5,8 @@ import { Card } from '@/components/Card';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-import { SITE_URL } from '@/config/constants';
-import { type Locale } from '@/i18n/config';
+import { locales, type Locale } from '@/i18n/config';
+import { getAlternateLanguages, getLocalizedUrl } from '@/lib/metadata/localizedUrl';
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -15,6 +15,8 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata.termsOfService' });
+
+  const canonicalUrl = getLocalizedUrl({ locale, path: '/terms-of-service' });
 
   return {
     title: t('title'),
@@ -25,7 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       follow: true,
     },
     alternates: {
-      canonical: `${SITE_URL}/${locale}/terms-of-service`,
+      canonical: canonicalUrl,
+      languages: getAlternateLanguages({ locales, path: '/terms-of-service' }),
     },
   };
 }

@@ -94,11 +94,7 @@ export const CookieConsent = () => {
                 </p>
               </div>
             </div>
-            <button
-              onClick={() => setIsVisible(false)}
-              className="text-gray-600 hover:text-gray-800 transition-colors"
-              aria-label="Close cookie consent"
-            >
+            <button onClick={() => setIsVisible(false)} className="text-gray-600 hover:text-gray-800 transition-colors" aria-label="Close cookie consent">
               <X size={18} />
             </button>
           </div>
@@ -163,11 +159,7 @@ export const CookieConsent = () => {
             </div>
           )}
 
-          <button
-            onClick={() => setShowDetails(!showDetails)}
-            type="button"
-            className="mt-4 text-blue-600 hover:text-blue-800 text-xs font-medium transition-colors"
-          >
+          <button onClick={() => setShowDetails(!showDetails)} type="button" className="mt-4 text-blue-600 hover:text-blue-800 text-xs font-medium transition-colors">
             {showDetails ? 'Hide details' : 'Customize settings'}
           </button>
 

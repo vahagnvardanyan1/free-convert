@@ -3,8 +3,8 @@ import { PDFTool } from '@/components/PDFTool';
 import { PDFErrorBoundary } from '@/components/PDFErrorBoundary';
 import { getTranslations } from 'next-intl/server';
 
-import { SITE_URL } from '@/config/constants';
-import { localeMap, type Locale } from '@/i18n/config';
+import { locales, localeMap, type Locale } from '@/i18n/config';
+import { getAlternateLanguages, getLocalizedUrl } from '@/lib/metadata/localizedUrl';
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -14,17 +14,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata.pdfToPng' });
 
+  const canonicalUrl = getLocalizedUrl({ locale, path: '/pdf-to-png' });
+
   return {
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
     alternates: {
-      canonical: `${SITE_URL}/${locale}/pdf-to-png`,
+      canonical: canonicalUrl,
+      languages: getAlternateLanguages({ locales, path: '/pdf-to-png' }),
     },
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: `${SITE_URL}/${locale}/pdf-to-png`,
+      url: canonicalUrl,
       siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',

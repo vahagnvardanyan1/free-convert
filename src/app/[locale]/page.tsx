@@ -9,9 +9,10 @@ import { Features } from '@/components/Features';
 import { BannerBlocks } from '@/components/BannerBlock';
 import { FAQ } from '@/components/FAQ';
 import ToolsPreview from '@/components/ToolsPreview';
-import { localeMap, type Locale } from '@/i18n/config';
+import { locales, localeMap, type Locale } from '@/i18n/config';
 import { generateAIMeta } from '@/lib/geoHelpers';
 import { geoConfig } from '@/lib/geo.config';
+import { getAlternateLanguages, getLocalizedUrl } from '@/lib/metadata/localizedUrl';
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -23,14 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // Generate GEO-enhanced metadata
   const aiMeta = generateAIMeta('/');
+  const canonicalUrl = getLocalizedUrl({ locale, path: '' });
 
   return {
     title: t('title'),
     description: t('description'),
     metadataBase: new URL(SITE_URL),
     alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages: Object.fromEntries(geoConfig.languages.map(lang => [lang, `${SITE_URL}/${lang}`])),
+      canonical: canonicalUrl,
+      // Use localePrefix: 'as-needed' semantics: default locale has no URL prefix.
+      languages: getAlternateLanguages({ locales, path: '' }),
     },
     keywords: t('keywords'),
     authors: [{ name: geoConfig.author.name, url: geoConfig.author.url }],
@@ -43,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       locale: localeMap[locale] || 'en_US',
       alternateLocale: geoConfig.languages.filter(lang => lang !== locale),
-      url: `${SITE_URL}/${locale}`,
+      url: canonicalUrl,
       siteName: 'FreeConvert',
       title: t('ogTitle'),
       description: t('ogDescription'),
