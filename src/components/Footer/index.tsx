@@ -1,12 +1,14 @@
 'use client';
 
-import { Mail, ChevronDown } from 'lucide-react';
-import Link from 'next/link';
 import { useState } from 'react';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+
+import { ChevronDown, Mail } from 'lucide-react';
+
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
-export function Footer() {
+export const Footer = () => {
   const t = useTranslations('footer');
   const tHeader = useTranslations('header');
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -432,7 +434,7 @@ export function Footer() {
             <p className="text-gray-400 text-sm text-center sm:text-left">{t('copyright')}</p>
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
               <span className="text-gray-400 text-sm">{t('madeWithLove')}</span>
-              <span className="text-gray-500 text-xs">{t('clientSideProcessing')}</span>
+              <span className="text-gray-300 text-xs">{t('clientSideProcessing')}</span>
             </div>
             <div className="flex justify-center sm:justify-end">
               <LanguageSwitcher triggerClassName="bg-gray-800 text-gray-100 border-gray-700 hover:border-gray-500 focus-visible:border-gray-400" />
@@ -442,4 +444,4 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};

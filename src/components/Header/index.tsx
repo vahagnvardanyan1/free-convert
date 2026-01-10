@@ -1,9 +1,10 @@
 'use client';
 
-import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
+import { ChevronDown, Menu, X } from 'lucide-react';
 
 import { Button } from '../ui/button';
 import { ImageWithFallback } from '../ImageWithFallback';
@@ -102,7 +103,8 @@ export const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button variant="outline" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Button variant="outline" className="lg:hidden" aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <span className="sr-only">{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
         </div>

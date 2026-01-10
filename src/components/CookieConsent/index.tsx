@@ -1,8 +1,10 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { Cookie, X, Settings, Shield, Eye } from 'lucide-react';
-import { Button } from '../ui/button';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+import { Cookie, Eye, Settings, Shield, X } from 'lucide-react';
+
+import { Button } from '../ui/button';
 
 interface CookiePreferences {
   essential: boolean;
@@ -10,7 +12,7 @@ interface CookiePreferences {
   preferences: boolean;
 }
 
-export function CookieConsent() {
+export const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
@@ -92,7 +94,11 @@ export function CookieConsent() {
                 </p>
               </div>
             </div>
-            <button onClick={() => setIsVisible(false)} className="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close cookie consent">
+            <button
+              onClick={() => setIsVisible(false)}
+              className="text-gray-600 hover:text-gray-800 transition-colors"
+              aria-label="Close cookie consent"
+            >
               <X size={18} />
             </button>
           </div>
@@ -122,6 +128,10 @@ export function CookieConsent() {
                   </div>
                   <button
                     onClick={() => togglePreference('analytics')}
+                    type="button"
+                    role="switch"
+                    aria-checked={preferences.analytics}
+                    aria-label="Toggle analytics cookies"
                     className={`w-9 h-5 rounded-full flex items-center transition-colors ${preferences.analytics ? 'bg-blue-500 justify-end pr-0.5' : 'bg-gray-300 justify-start pl-0.5'}`}
                   >
                     <div className="w-3.5 h-3.5 bg-white rounded-full" />
@@ -139,6 +149,10 @@ export function CookieConsent() {
                   </div>
                   <button
                     onClick={() => togglePreference('preferences')}
+                    type="button"
+                    role="switch"
+                    aria-checked={preferences.preferences}
+                    aria-label="Toggle preference cookies"
                     className={`w-9 h-5 rounded-full flex items-center transition-colors ${preferences.preferences ? 'bg-purple-500 justify-end pr-0.5' : 'bg-gray-300 justify-start pl-0.5'}`}
                   >
                     <div className="w-3.5 h-3.5 bg-white rounded-full" />
@@ -149,7 +163,11 @@ export function CookieConsent() {
             </div>
           )}
 
-          <button onClick={() => setShowDetails(!showDetails)} className="mt-4 text-blue-600 hover:text-blue-800 text-xs font-medium transition-colors">
+          <button
+            onClick={() => setShowDetails(!showDetails)}
+            type="button"
+            className="mt-4 text-blue-600 hover:text-blue-800 text-xs font-medium transition-colors"
+          >
             {showDetails ? 'Hide details' : 'Customize settings'}
           </button>
 
@@ -188,4 +206,4 @@ export function CookieConsent() {
       </div>
     </div>
   );
-}
+};

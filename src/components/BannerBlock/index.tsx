@@ -2,7 +2,7 @@
 import { ArrowRight, Zap, Shield, Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-export function BannerBlocks() {
+export const BannerBlocks = () => {
   const t = useTranslations('banner');
   const tCommon = useTranslations('common');
 
@@ -17,7 +17,7 @@ export function BannerBlocks() {
               <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">{t('proTools')}</span>
             </div>
             <h3 className="text-3xl font-bold mb-4">{t('batchProcessing')}</h3>
-            <p className="text-blue-100 mb-6 leading-relaxed max-w-2xl mx-auto">{t('batchProcessingDesc')}</p>
+            <p className="text-white/90 mb-6 leading-relaxed max-w-2xl mx-auto">{t('batchProcessingDesc')}</p>
             <button className="inline-flex items-center px-6 py-3 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200">
               {tCommon('comingSoon')}
               <ArrowRight className="ml-2" size={16} />
@@ -72,4 +72,4 @@ export function BannerBlocks() {
       </div>
     </section>
   );
-}
+};
