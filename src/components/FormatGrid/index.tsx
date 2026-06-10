@@ -334,6 +334,15 @@ export function FormatGrid() {
       category: 'fonts',
     },
     {
+      from: 'Font',
+      to: 'Generator',
+      route: '/font-generator',
+      icon: Type,
+      description: tTools('fontGeneratorDesc'),
+      popular: true,
+      category: 'texts',
+    },
+    {
       from: 'Emoji',
       to: 'Browser',
       route: '/texts/emojis',

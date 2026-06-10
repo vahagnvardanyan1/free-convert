@@ -230,7 +230,8 @@
     "symbolBrowser": "Explorador de símbolos",
     "symbolBrowserDesc": "Busque y copie símbolos, caracteres y glifos Unicode especiales",
     "chartGenerator": "Generador de Gráficos",
-    "chartGeneratorDesc": "Crea hermosos gráficos con datos personalizables"
+    "chartGeneratorDesc": "Crea hermosos gráficos con datos personalizables",
+    "fontGeneratorDesc": "Convierte texto en más de 60 estilos de fuente elegantes: negrita, cursiva, glitch y más"
   },
   "howTo": {
     "title": "Cómo funciona",

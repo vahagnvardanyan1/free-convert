@@ -230,7 +230,8 @@
     "emojiBrowser": "Emoji Browser",
     "emojiBrowserDesc": "Browse, search, and copy emojis from our comprehensive collection",
     "symbolBrowser": "Symbol Browser",
-    "symbolBrowserDesc": "Find and copy special symbols, characters, and Unicode glyphs"
+    "symbolBrowserDesc": "Find and copy special symbols, characters, and Unicode glyphs",
+    "fontGeneratorDesc": "Convert text into 60+ fancy font styles - bold, cursive, glitch and more"
   },
   "howTo": {
     "title": "How It Works",

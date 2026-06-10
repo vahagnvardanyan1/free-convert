@@ -230,7 +230,8 @@
     "symbolBrowser": "Symbolbrowser",
     "symbolBrowserDesc": "Suchen und kopieren Sie spezielle Symbole, Zeichen und Unicode-Glyphen",
     "chartGenerator": "Diagramm-Generator",
-    "chartGeneratorDesc": "Erstellen Sie schöne Diagramme mit anpassbaren Daten"
+    "chartGeneratorDesc": "Erstellen Sie schöne Diagramme mit anpassbaren Daten",
+    "fontGeneratorDesc": "Wandle Text in über 60 schicke Schriftstile um - fett, geschwungen, Glitch und mehr"
   },
   "howTo": {
     "title": "Wie es funktioniert",

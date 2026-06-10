@@ -230,7 +230,8 @@
     "symbolBrowser": "符号浏览器",
     "symbolBrowserDesc": "查找并复制特殊符号、字符和 Unicode 字形",
     "chartGenerator": "图表生成器",
-    "chartGeneratorDesc": "使用可自定义的数据创建精美图表"
+    "chartGeneratorDesc": "使用可自定义的数据创建精美图表",
+    "fontGeneratorDesc": "将文本转换为 60 多种花式字体样式 - 粗体、手写、故障风等"
   },
   "howTo": {
     "title": "它是如何运作的",
