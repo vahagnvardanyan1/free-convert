@@ -95,6 +95,7 @@ const routes = [
   '/fonts/scales',
 
   // Text tools
+  '/font-generator',
   '/texts',
   '/texts/fonts',
   '/texts/fonts/preview',

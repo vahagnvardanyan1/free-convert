@@ -73,6 +73,7 @@ export const COLOR_TOOLS: Tool[] = [
 
 // Text Tools
 export const TEXT_TOOLS: Tool[] = [
+  { translationKey: 'fontGenerator', path: '/font-generator', icon: 'Type', popular: true, category: 'text' },
   { translationKey: 'emojis', path: '/texts/emojis', icon: 'Smile', popular: true, category: 'text' },
   { translationKey: 'symbols', path: '/texts/symbols', icon: 'Hash', popular: true, category: 'text' },
 ];

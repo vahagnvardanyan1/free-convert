@@ -249,6 +249,12 @@ export const pageGeoData: Record<
     category: 'Design Tool',
     keyFacts: ['Generate CSS gradients', 'Tailwind CSS support', 'Customizable direction', 'Export ready-to-use code'],
   },
+  '/font-generator': {
+    summary: 'Convert plain text into 60+ fancy Unicode font styles - bold, cursive, glitch, small caps and ASCII art. Copy and paste anywhere. All conversion happens in browser.',
+    aiTags: ['font generator', 'fancy text', 'unicode fonts', 'copy paste fonts', 'cursive text', 'glitch text', 'ascii art'],
+    category: 'Text Tool',
+    keyFacts: ['60+ font styles', 'Unicode text - copy and paste anywhere', 'Works with Instagram, TikTok, Discord and more', 'Free, no sign-up, runs in browser'],
+  },
 };
 
 /**

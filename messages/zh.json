@@ -128,7 +128,8 @@
     "jsonComparerGuide": "JSON 比较器指南",
     "jsonParserGuide": "JSON 解析器指南",
     "chartGenerator": "图表生成器",
-    "chartGeneratorGuide": "图表生成器指南"
+    "chartGeneratorGuide": "图表生成器指南",
+    "fontGenerator": "字体生成器"
   },
   "hero": {
     "title": "免费在线图像、字体和颜色",
@@ -1276,6 +1277,14 @@
       "ogTitle": "使用图表生成器创建图表的完整指南",
       "ogDescription": "学习为演示文稿、报告和社交媒体创建令人惊叹的图表。",
       "ogImageAlt": "图表生成器指南"
+    },
+    "fontGenerator": {
+      "title": "字体生成器 - 花式文本生成器（复制粘贴）| FreeConvert",
+      "description": "免费在线字体生成器，提供 60 多种花式文本样式。将您的文本转换为粗体、斜体、手写体、故障风、小型大写字母和 ASCII 艺术字体。即时复制并粘贴到任何地方。",
+      "keywords": "字体生成器, 花式文本, 酷炫文本, 字体复制粘贴, unicode 字体, 斜体文本, 粗体文本, 故障文本, ascii 艺术, instagram 字体, 时尚文本",
+      "ogTitle": "字体生成器 - 花式文本生成器（复制粘贴）",
+      "ogDescription": "将普通文本转换为 60 多种花式字体样式 - 粗体、手写体、故障风、小型大写字母和 ASCII 艺术。免费、即时、复制粘贴。",
+      "ogImageAlt": "FreeConvert 字体生成器预览"
     }
   },
   "colorTools": {
@@ -1913,5 +1922,59 @@
     "ctaTitle": "Ready to Create Your First Chart?",
     "ctaSubtitle": "Try our free chart generator now. No signup required, unlimited charts!",
     "ctaButton": "Create Charts Now"
+  },
+  "fontGenerator": {
+    "heading": "字体生成器",
+    "subheading": "输入您的文本，即时预览 60 多种花式字体样式。点击任意样式即可复制，然后粘贴到任何地方。",
+    "inputPlaceholder": "在此输入或粘贴您的文本…",
+    "inputLabel": "要转换的文本",
+    "clear": "清除文本",
+    "copy": "复制",
+    "copied": "已复制",
+    "copiedToast": "已复制到剪贴板！",
+    "copyError": "无法复制，请重试。",
+    "rendering": "生成中…",
+    "emptyRow": "开始输入以查看此样式",
+    "stylesCount": "种样式",
+    "showMore": "显示更多样式",
+    "noResults": "此类别中没有样式。",
+    "categories": {
+      "all": "全部",
+      "fancy": "花式",
+      "cursive": "手写",
+      "bold": "粗体",
+      "cool": "酷炫",
+      "small": "小型",
+      "glitch": "故障",
+      "wrappers": "边框",
+      "lettercase": "大小写",
+      "textart": "文本艺术"
+    },
+    "howto": {
+      "title": "如何使用字体生成器",
+      "step1Title": "输入文本",
+      "step1Description": "在页面顶部的输入框中输入或粘贴任意文本。",
+      "step2Title": "浏览样式",
+      "step2Description": "滚动浏览 60 多种生成的样式，或按类别筛选，例如手写、粗体或故障风。",
+      "step3Title": "点击复制",
+      "step3Description": "点击任意样式或其复制按钮，将样式化文本复制到剪贴板。",
+      "step4Title": "随处粘贴",
+      "step4Description": "将您的花式文本粘贴到 Instagram、TikTok、个人简介、消息、文档等。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "什么是字体生成器？",
+      "a1": "字体生成器使用特殊的 Unicode 字符将您的普通文本转换为样式化文本。结果不是字体文件，而是看起来很花哨的纯文本，因此您几乎可以将其复制并粘贴到任何地方。",
+      "q2": "字体生成器免费吗？",
+      "a2": "是的。所有样式都完全免费，无需注册，没有限制。所有转换都在您的浏览器中进行。",
+      "q3": "我可以在哪里使用这些字体？",
+      "a3": "您可以将样式化文本粘贴到 Instagram、TikTok、Twitter/X、Facebook、Discord、WhatsApp、个人简介、用户名、文档以及大多数接受 Unicode 文本的应用中。",
+      "q4": "为什么有些字符没有变化？",
+      "a4": "每种样式仅对某些字符（通常是 A-Z、a-z 和 0-9）有字形。标点符号、表情符号和其他符号将原样保留。",
+      "q5": "花式文本会在任何地方都正确显示吗？",
+      "a5": "大多数现代设备和应用都能正确显示 Unicode 文本。在极少数较旧的系统上，如果设备缺少匹配的字形，某些字符可能会显示为方框。",
+      "q6": "什么是 ASCII 文本艺术？",
+      "a6": "ASCII 艺术将您的文本呈现为由标准键盘字符构成的大字母。非常适合代码注释、终端和复古风格的横幅。"
+    }
   }
 }

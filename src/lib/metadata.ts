@@ -238,4 +238,9 @@ export const routeMetadata: Record<string, Partial<Metadata>> = {
     description: 'Free online text tools including emoji picker, Unicode symbols library, font preview, and typography utilities. Perfect for designers and developers.',
     keywords: 'text tools, emoji picker, symbols library, font tools, typography, unicode, special characters, design tools, web design',
   },
+  '/font-generator': {
+    title: 'Font Generator - Fancy Text Generator (Copy & Paste) | FreeConvert',
+    description: 'Free online font generator with 60+ fancy text styles. Convert your text into bold, italic, cursive, glitch, small caps and ASCII art fonts. Copy and paste anywhere instantly.',
+    keywords: 'font generator, fancy text generator, cool text, copy paste fonts, unicode fonts, cursive text, bold text, glitch text, ascii art, instagram fonts, stylish text',
+  },
 };

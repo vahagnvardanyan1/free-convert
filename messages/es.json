@@ -128,7 +128,8 @@
     "jsonComparerGuide": "Guía de comparación JSON",
     "jsonParserGuide": "Guía del analizador JSON",
     "chartGenerator": "Generador de Gráficos",
-    "chartGeneratorGuide": "Guía del Generador de Gráficos"
+    "chartGeneratorGuide": "Guía del Generador de Gráficos",
+    "fontGenerator": "Generador de fuentes"
   },
   "hero": {
     "title": "Imagen, fuente y color gratuitos en línea",
@@ -1276,6 +1277,14 @@
       "ogTitle": "Guía Completa para Crear Gráficos con Generador de Gráficos",
       "ogDescription": "Aprenda a crear gráficos impresionantes para presentaciones, informes y redes sociales.",
       "ogImageAlt": "Guía del Generador de Gráficos"
+    },
+    "fontGenerator": {
+      "title": "Generador de fuentes - Texto elegante (copiar y pegar) | FreeConvert",
+      "description": "Generador de fuentes en línea gratuito con más de 60 estilos de texto elegantes. Convierte tu texto en negrita, cursiva, manuscrita, glitch, versalitas y arte ASCII. Copia y pega al instante en cualquier lugar.",
+      "keywords": "generador de fuentes, texto elegante, texto bonito, fuentes copiar pegar, fuentes unicode, texto cursiva, texto negrita, texto glitch, arte ascii, fuentes instagram, texto con estilo",
+      "ogTitle": "Generador de fuentes - Texto elegante (copiar y pegar)",
+      "ogDescription": "Convierte texto normal en más de 60 estilos de fuente elegantes: negrita, cursiva, glitch, versalitas y arte ASCII. Gratis, instantáneo, copiar y pegar.",
+      "ogImageAlt": "Vista previa del generador de fuentes de FreeConvert"
     }
   },
   "colorTools": {
@@ -1913,5 +1922,59 @@
     "ctaTitle": "Ready to Create Your First Chart?",
     "ctaSubtitle": "Try our free chart generator now. No signup required, unlimited charts!",
     "ctaButton": "Create Charts Now"
+  },
+  "fontGenerator": {
+    "heading": "Generador de fuentes",
+    "subheading": "Escribe tu texto y previsualiza al instante más de 60 estilos de fuente elegantes. Haz clic en cualquier estilo para copiarlo y pégalo donde quieras.",
+    "inputPlaceholder": "Escribe o pega tu texto aquí…",
+    "inputLabel": "Texto para convertir",
+    "clear": "Borrar texto",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copiedToast": "¡Copiado al portapapeles!",
+    "copyError": "No se pudo copiar. Inténtalo de nuevo.",
+    "rendering": "Generando…",
+    "emptyRow": "Empieza a escribir para ver este estilo",
+    "stylesCount": "estilos",
+    "showMore": "Mostrar más estilos",
+    "noResults": "No hay estilos en esta categoría.",
+    "categories": {
+      "all": "Todos",
+      "fancy": "Elegante",
+      "cursive": "Cursiva",
+      "bold": "Negrita",
+      "cool": "Cool",
+      "small": "Pequeña",
+      "glitch": "Glitch",
+      "wrappers": "Marcos",
+      "lettercase": "Mayús./minús.",
+      "textart": "Arte de texto"
+    },
+    "howto": {
+      "title": "Cómo usar el generador de fuentes",
+      "step1Title": "Escribe tu texto",
+      "step1Description": "Introduce o pega cualquier texto en el cuadro de entrada en la parte superior de la página.",
+      "step2Title": "Explora los estilos",
+      "step2Description": "Desplázate por más de 60 estilos generados o fíltralos por categoría, como cursiva, negrita o glitch.",
+      "step3Title": "Haz clic para copiar",
+      "step3Description": "Haz clic en cualquier estilo o en su botón de copiar para copiar el texto con estilo al portapapeles.",
+      "step4Title": "Pégalo donde quieras",
+      "step4Description": "Pega tu texto elegante en Instagram, TikTok, biografías, mensajes, documentos y más."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué es un generador de fuentes?",
+      "a1": "Un generador de fuentes convierte tu texto normal en texto estilizado usando caracteres Unicode especiales. El resultado no es un archivo de fuente, sino texto sin formato que se ve elegante, por lo que puedes copiarlo y pegarlo casi en cualquier lugar.",
+      "q2": "¿El generador de fuentes es gratis?",
+      "a2": "Sí. Todos los estilos son completamente gratuitos, sin registro y sin límites. Toda la conversión ocurre en tu navegador.",
+      "q3": "¿Dónde puedo usar estas fuentes?",
+      "a3": "Puedes pegar el texto con estilo en Instagram, TikTok, Twitter/X, Facebook, Discord, WhatsApp, biografías, nombres de usuario, documentos y la mayoría de las apps que aceptan texto Unicode.",
+      "q4": "¿Por qué algunos caracteres no cambian?",
+      "a4": "Cada estilo solo tiene glifos para ciertos caracteres (normalmente A-Z, a-z y 0-9). La puntuación, los emojis y otros símbolos se mantienen sin cambios.",
+      "q5": "¿El texto elegante se verá correctamente en todas partes?",
+      "a5": "La mayoría de los dispositivos y apps modernos muestran el texto Unicode correctamente. En sistemas antiguos poco frecuentes, algunos caracteres pueden aparecer como cuadros si el dispositivo carece de los glifos correspondientes.",
+      "q6": "¿Qué es el arte de texto ASCII?",
+      "a6": "El arte ASCII muestra tu texto como letras grandes formadas con caracteres normales del teclado. Es ideal para comentarios de código, terminales y banners de estilo retro."
+    }
   }
 }

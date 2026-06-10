@@ -128,7 +128,8 @@
     "jsonValidatorGuide": "JSON Validator Guide",
     "jsonComparerGuide": "JSON Comparer Guide",
     "jsonParserGuide": "JSON Parser Guide",
-    "chartGeneratorGuide": "Chart Generator Guide"
+    "chartGeneratorGuide": "Chart Generator Guide",
+    "fontGenerator": "Font Generator"
   },
   "hero": {
     "title": "Free Online Image, Font & Color",
@@ -1276,6 +1277,14 @@
       "ogTitle": "Complete Guide to Creating Charts with Chart Generator",
       "ogDescription": "Learn how to create stunning charts and graphs for presentations, reports, and social media. Free chart generator tutorial.",
       "ogImageAlt": "Chart Generator Guide"
+    },
+    "fontGenerator": {
+      "title": "Font Generator - Fancy Text Generator (Copy & Paste) | FreeConvert",
+      "description": "Free online font generator with 60+ fancy text styles. Convert your text into bold, italic, cursive, glitch, small caps and ASCII art fonts. Copy and paste anywhere instantly.",
+      "keywords": "font generator, fancy text generator, cool text, copy paste fonts, unicode fonts, cursive text, bold text, glitch text, ascii art, instagram fonts, stylish text",
+      "ogTitle": "Font Generator - Fancy Text Generator (Copy & Paste)",
+      "ogDescription": "Turn plain text into 60+ fancy font styles - bold, cursive, glitch, small caps and ASCII art. Free, instant, copy and paste.",
+      "ogImageAlt": "FreeConvert Font Generator preview"
     }
   },
   "colorTools": {
@@ -1913,5 +1922,59 @@
     "ctaTitle": "Ready to Create Your First Chart?",
     "ctaSubtitle": "Try our free chart generator now. No signup required, unlimited charts!",
     "ctaButton": "Create Charts Now"
+  },
+  "fontGenerator": {
+    "heading": "Font Generator",
+    "subheading": "Type your text and instantly preview 60+ fancy font styles. Click any style to copy it, then paste it anywhere.",
+    "inputPlaceholder": "Type or paste your text here…",
+    "inputLabel": "Text to convert",
+    "clear": "Clear text",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copiedToast": "Copied to clipboard!",
+    "copyError": "Couldn't copy. Please try again.",
+    "rendering": "Rendering…",
+    "emptyRow": "Start typing to see this style",
+    "stylesCount": "styles",
+    "showMore": "Show more styles",
+    "noResults": "No styles in this category.",
+    "categories": {
+      "all": "All",
+      "fancy": "Fancy",
+      "cursive": "Cursive",
+      "bold": "Bold",
+      "cool": "Cool",
+      "small": "Small",
+      "glitch": "Glitch",
+      "wrappers": "Wrappers",
+      "lettercase": "Letter case",
+      "textart": "Text art"
+    },
+    "howto": {
+      "title": "How to use the font generator",
+      "step1Title": "Type your text",
+      "step1Description": "Enter or paste any text into the input box at the top of the page.",
+      "step2Title": "Browse the styles",
+      "step2Description": "Scroll through 60+ generated styles or filter them by category such as cursive, bold or glitch.",
+      "step3Title": "Click to copy",
+      "step3Description": "Click any style or its copy button to copy the styled text to your clipboard.",
+      "step4Title": "Paste anywhere",
+      "step4Description": "Paste your fancy text into Instagram, TikTok, bios, messages, documents and more."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "What is a font generator?",
+      "a1": "A font generator converts your normal text into stylized text using special Unicode characters. The result is not a font file - it is plain text that looks fancy, so you can copy and paste it almost anywhere.",
+      "q2": "Is the font generator free?",
+      "a2": "Yes. Every style is completely free to use, with no sign-up and no limits. All conversion happens in your browser.",
+      "q3": "Where can I use these fonts?",
+      "a3": "You can paste the styled text into Instagram, TikTok, Twitter/X, Facebook, Discord, WhatsApp, bios, usernames, documents and most apps that accept Unicode text.",
+      "q4": "Why do some characters not change?",
+      "a4": "Each style only has glyphs for certain characters (usually A-Z, a-z and 0-9). Punctuation, emoji and other symbols are passed through unchanged.",
+      "q5": "Will the fancy text show correctly everywhere?",
+      "a5": "Most modern devices and apps display Unicode text correctly. On rare older systems some characters may appear as boxes if the device lacks the matching glyphs.",
+      "q6": "What is ASCII text art?",
+      "a6": "ASCII art renders your text as large letters built from standard keyboard characters. It is great for code comments, terminals and retro-style banners."
+    }
   }
 }

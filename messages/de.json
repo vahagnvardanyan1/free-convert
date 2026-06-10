@@ -128,7 +128,8 @@
     "jsonComparerGuide": "JSON-Vergleichshandbuch",
     "jsonParserGuide": "JSON-Parser-Handbuch",
     "chartGenerator": "Diagramm-Generator",
-    "chartGeneratorGuide": "Diagramm-Generator-Anleitung"
+    "chartGeneratorGuide": "Diagramm-Generator-Anleitung",
+    "fontGenerator": "Schriftgenerator"
   },
   "hero": {
     "title": "Kostenloses Online-Bild, Schriftart und Farbe",
@@ -1276,6 +1277,14 @@
       "ogTitle": "Vollständige Anleitung zum Erstellen von Diagrammen",
       "ogDescription": "Lernen Sie, beeindruckende Diagramme für Präsentationen und Berichte zu erstellen.",
       "ogImageAlt": "Diagramm-Generator-Anleitung"
+    },
+    "fontGenerator": {
+      "title": "Schriftgenerator - Schicke Textschriften (Kopieren & Einfügen) | FreeConvert",
+      "description": "Kostenloser Online-Schriftgenerator mit über 60 schicken Textstilen. Wandle deinen Text in fette, kursive, geschwungene, Glitch-, Kapitälchen- und ASCII-Art-Schriften um. Sofort kopieren und überall einfügen.",
+      "keywords": "schriftgenerator, schicke schrift, coole schrift, schrift kopieren einfügen, unicode schriften, kursiver text, fetter text, glitch text, ascii art, instagram schriften, stylischer text",
+      "ogTitle": "Schriftgenerator - Schicke Textschriften (Kopieren & Einfügen)",
+      "ogDescription": "Verwandle einfachen Text in über 60 schicke Schriftstile - fett, geschwungen, Glitch, Kapitälchen und ASCII-Art. Kostenlos, sofort, kopieren und einfügen.",
+      "ogImageAlt": "Vorschau des FreeConvert Schriftgenerators"
     }
   },
   "colorTools": {
@@ -1913,5 +1922,59 @@
     "ctaTitle": "Ready to Create Your First Chart?",
     "ctaSubtitle": "Try our free chart generator now. No signup required, unlimited charts!",
     "ctaButton": "Create Charts Now"
+  },
+  "fontGenerator": {
+    "heading": "Schriftgenerator",
+    "subheading": "Gib deinen Text ein und sieh sofort über 60 schicke Schriftstile in der Vorschau. Klicke auf einen Stil, um ihn zu kopieren, und füge ihn überall ein.",
+    "inputPlaceholder": "Text hier eingeben oder einfügen…",
+    "inputLabel": "Zu konvertierender Text",
+    "clear": "Text löschen",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "copiedToast": "In die Zwischenablage kopiert!",
+    "copyError": "Kopieren fehlgeschlagen. Bitte erneut versuchen.",
+    "rendering": "Wird erstellt…",
+    "emptyRow": "Tippe etwas, um diesen Stil zu sehen",
+    "stylesCount": "Stile",
+    "showMore": "Mehr Stile anzeigen",
+    "noResults": "Keine Stile in dieser Kategorie.",
+    "categories": {
+      "all": "Alle",
+      "fancy": "Schick",
+      "cursive": "Geschwungen",
+      "bold": "Fett",
+      "cool": "Cool",
+      "small": "Klein",
+      "glitch": "Glitch",
+      "wrappers": "Rahmen",
+      "lettercase": "Groß-/Kleinschreibung",
+      "textart": "Text-Art"
+    },
+    "howto": {
+      "title": "So verwendest du den Schriftgenerator",
+      "step1Title": "Text eingeben",
+      "step1Description": "Gib einen beliebigen Text in das Eingabefeld oben auf der Seite ein oder füge ihn ein.",
+      "step2Title": "Stile durchsuchen",
+      "step2Description": "Scrolle durch über 60 generierte Stile oder filtere sie nach Kategorien wie geschwungen, fett oder Glitch.",
+      "step3Title": "Zum Kopieren klicken",
+      "step3Description": "Klicke auf einen Stil oder dessen Kopier-Schaltfläche, um den gestylten Text in die Zwischenablage zu kopieren.",
+      "step4Title": "Überall einfügen",
+      "step4Description": "Füge deinen schicken Text in Instagram, TikTok, Bios, Nachrichten, Dokumente und mehr ein."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Was ist ein Schriftgenerator?",
+      "a1": "Ein Schriftgenerator wandelt deinen normalen Text mithilfe spezieller Unicode-Zeichen in stilisierten Text um. Das Ergebnis ist keine Schriftdatei, sondern einfacher Text, der schick aussieht und den du fast überall kopieren und einfügen kannst.",
+      "q2": "Ist der Schriftgenerator kostenlos?",
+      "a2": "Ja. Alle Stile sind völlig kostenlos, ohne Anmeldung und ohne Limit. Die gesamte Umwandlung erfolgt in deinem Browser.",
+      "q3": "Wo kann ich diese Schriften verwenden?",
+      "a3": "Du kannst den gestylten Text in Instagram, TikTok, Twitter/X, Facebook, Discord, WhatsApp, Bios, Benutzernamen, Dokumente und die meisten Apps einfügen, die Unicode-Text akzeptieren.",
+      "q4": "Warum ändern sich manche Zeichen nicht?",
+      "a4": "Jeder Stil hat nur Glyphen für bestimmte Zeichen (meist A-Z, a-z und 0-9). Satzzeichen, Emojis und andere Symbole werden unverändert übernommen.",
+      "q5": "Wird der schicke Text überall korrekt angezeigt?",
+      "a5": "Die meisten modernen Geräte und Apps zeigen Unicode-Text korrekt an. Auf seltenen älteren Systemen können einige Zeichen als Kästchen erscheinen, wenn die passenden Glyphen fehlen.",
+      "q6": "Was ist ASCII-Text-Art?",
+      "a6": "ASCII-Art stellt deinen Text als große Buchstaben dar, die aus normalen Tastaturzeichen bestehen. Ideal für Code-Kommentare, Terminals und Banner im Retro-Stil."
+    }
   }
 }
