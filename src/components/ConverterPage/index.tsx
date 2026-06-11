@@ -180,14 +180,14 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="space-y-6">
           {/* Conversion Tool - Compact Single Card */}
-          <div className="lg:col-span-2">
+          <div>
             <Card className="p-4 sm:p-6">
               {/* Compact Upload or File Display */}
               {!selectedFile ? (
                 <div
-                  className={`border-2 border-dashed rounded-xl p-6 sm:p-8 text-center transition-all duration-200 cursor-pointer ${
+                  className={`min-h-[320px] sm:min-h-[400px] border-2 border-dashed rounded-xl p-6 sm:p-8 flex flex-col items-center justify-center text-center transition-all duration-200 cursor-pointer ${
                     isDragOver ? 'border-blue-500 bg-blue-50 scale-[1.02]' : 'border-gray-300 hover:border-gray-400 hover:bg-gray-50'
                   }`}
                   onDragOver={handleDragOver}
@@ -195,8 +195,8 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
                   onDrop={handleDrop}
                   onClick={triggerFileInput}
                 >
-                  <Upload className={`mx-auto mb-3 transition-all duration-200 ${isDragOver ? 'text-blue-500 scale-110' : 'text-gray-400'}`} size={40} />
-                  <p className={`text-base sm:text-lg font-medium mb-1 transition-colors duration-200 ${isDragOver ? 'text-blue-600' : 'text-gray-900'}`}>
+                  <Upload className={`mx-auto mb-4 transition-all duration-200 ${isDragOver ? 'text-blue-500 scale-110' : 'text-gray-400'}`} size={56} />
+                  <p className={`text-lg sm:text-xl font-medium mb-1 transition-colors duration-200 ${isDragOver ? 'text-blue-600' : 'text-gray-900'}`}>
                     {isDragOver ? tConverter('dropFileHere') : tConverter('dragDropHere')}
                   </p>
                   <p className={`text-sm text-gray-500 mb-3 ${isDragOver ? 'text-blue-500' : ''}`}>{isDragOver ? tConverter('releaseToUpload') : tConverter('orClickBrowse')}</p>
@@ -303,8 +303,8 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
             </div>
           </div>
 
-          {/* Sidebar - Collapsible on Mobile */}
-          <div className="space-y-4 sm:space-y-6">
+          {/* How-To and FAQ - below the tool */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 items-start">
             {/* How-To for this conversion */}
             <Card className="p-4 sm:p-6">
               <h3 className="font-bold text-gray-900 mb-3 text-sm sm:text-base">

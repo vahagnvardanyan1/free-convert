@@ -39,7 +39,9 @@ export const Header = () => {
       <div className="relative group dropdown-container pb-2" onMouseEnter={() => toggle(dropdownKey)} onMouseLeave={() => toggle(dropdownKey)}>
         <button className="flex min-w-0 items-center space-x-1 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2" onClick={() => toggle(dropdownKey)}>
           <Icon size={16} />
-          <span className="truncate max-w-[9rem]">{label}</span>
+          <span className="truncate max-w-[9rem]" title={label}>
+            {label}
+          </span>
           <ChevronDown size={16} className={`transition-transform ${isOpen(dropdownKey) ? 'rotate-180' : ''}`} />
         </button>
 
@@ -90,13 +92,13 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 gap-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center cursor-pointer min-w-0">
+          <Link href="/" className="flex shrink-0 items-center cursor-pointer">
             <ImageWithFallback src="/logo.png" alt="FreeConvert Logo" className="rounded-lg" height={50} width={50} />
-            <span className="ml-2 text-xl font-bold text-gray-900 truncate max-w-[10rem] sm:max-w-none">FreeConvert</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">FreeConvert</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {categories.map(cat => (
               <div key={cat.name}>{renderDropdown(cat.name, cat.label, cat.icon, cat.tools)}</div>
             ))}

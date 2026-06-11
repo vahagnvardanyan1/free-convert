@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 
 import { Button } from '../ui/button';
 import { Card } from '@/components/Card';
-import { ToolShell, ToolGrid } from '@/components/tooling/ToolShell';
+import { ToolShell, ToolGrid, ToolTitleBanner } from '@/components/tooling/ToolShell';
 import { FileUploadZone } from '@/components/FileUploadZone';
 import { CropperControls } from './CropperControls';
 import { CropperFeatures } from './CropperFeatures';
@@ -62,7 +62,7 @@ export const ImageCropper = () => {
   const handleCropClick = () => cropImage({ filename: selectedFiles[0] ? `cropped-${selectedFiles[0].name}` : 'cropped-image.png' });
 
   return (
-    <ToolShell header={{ title: tCrop('title'), description: tCrop('description'), backText: tCommon('backToHome') }}>
+    <ToolShell header={{ backText: tCommon('backToHome') }}>
       {!imageUrl ? (
         <>
           <Card className="mb-8">
@@ -81,9 +81,14 @@ export const ImageCropper = () => {
               browseText={tCommon('orClickBrowse')}
               releaseText={tCommon('releaseToUpload')}
               chooseFileText={tCommon('chooseFile')}
-              className="p-12"
+              className="min-h-[320px] sm:min-h-[400px] flex flex-col items-center justify-center"
             />
           </Card>
+
+          <div className="mb-8">
+            <ToolTitleBanner title={tCrop('title')} description={tCrop('description')} />
+          </div>
+
           <CropperFeatures />
         </>
       ) : (

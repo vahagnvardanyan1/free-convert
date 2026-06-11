@@ -41,11 +41,11 @@
     "loadImageFailed": "Error al cargar la imagen"
   },
   "header": {
-    "aiTools": "Herramientas de IA",
-    "imageTools": "Herramientas de imagen",
-    "pdfTools": "Herramientas PDF",
-    "colorTools": "Herramientas de color",
-    "textTools": "Herramientas de texto",
+    "aiTools": "IA",
+    "imageTools": "Imágenes",
+    "pdfTools": "PDF",
+    "colorTools": "Colores",
+    "textTools": "Texto",
     "fontTools": "Herramientas de fuentes",
     "jsonTools": "Herramientas JSON",
     "blog": "Blog",

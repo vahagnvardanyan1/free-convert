@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import { useState, useRef } from 'react';
-import { ArrowLeft, FileImage, Download, Zap, Trash2, AlertCircle, Sparkles, Brain, Lock, Upload, Image as ImageIcon, ShoppingBag, User, Palette, ChevronDown } from 'lucide-react';
+import { ArrowLeft, FileImage, Download, Trash2, AlertCircle, Sparkles, Brain, Upload, Image as ImageIcon, ShoppingBag, User, Palette, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '../ui/button';
@@ -9,6 +9,7 @@ import { Card } from '@/components/Card';
 import { removeBackground } from '@imgly/background-removal';
 import { sendGAEvent } from '@next/third-parties/google';
 import { useTranslations } from 'next-intl';
+import { useDragAndDrop } from '@/hooks/useDragAndDrop';
 
 export function BackgroundRemover() {
   const t = useTranslations('bgRemover');
@@ -89,44 +90,13 @@ export function BackgroundRemover() {
     }
   };
 
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    const files = Array.from(e.dataTransfer.files);
-    if (files.length > 0) {
-      handleFileSelect(files[0]);
-    }
-  };
-
-  const handleDragOver = (e: React.DragEvent) => {
-    e.preventDefault();
-  };
-
-  const features = [
-    {
-      title: t('aiPoweredTitle'),
-      description: t('aiPoweredDesc'),
-      icon: Brain,
-      gradient: 'from-purple-500 to-pink-500',
+  const { isDragOver, handleDragOver, handleDragLeave, handleDrop } = useDragAndDrop({
+    onFilesDrop: files => {
+      if (files.length > 0) {
+        handleFileSelect(files[0]);
+      }
     },
-    {
-      title: t('lightningFastTitle'),
-      description: t('lightningFastDesc'),
-      icon: Zap,
-      gradient: 'from-yellow-500 to-orange-500',
-    },
-    {
-      title: t('privateTitle'),
-      description: t('privateDesc'),
-      icon: Lock,
-      gradient: 'from-green-500 to-teal-500',
-    },
-    {
-      title: t('professionalQualityTitle'),
-      description: t('professionalQualityDesc'),
-      icon: Sparkles,
-      gradient: 'from-blue-500 to-cyan-500',
-    },
-  ];
+  });
 
   const howItWorksSteps = [
     {
@@ -205,44 +175,15 @@ export function BackgroundRemover() {
 
   return (
     <>
-      {/* Header with gradient - hidden after image upload */}
+      {/* Top bar with back button - hidden after image upload */}
       {!selectedFile && (
-        <div className="relative bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 border-b border-purple-100 overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"></div>
-
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex items-center space-x-4 mb-6">
-              <Link href="/">
-                <Button variant="outline" className="flex items-center bg-white/80 backdrop-blur-sm hover:bg-white border-purple-200">
-                  <ArrowLeft className="mr-2" size={16} />
-                  {t('backToHome')}
-                </Button>
-              </Link>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-4 shadow-lg">
-                <Sparkles className="text-white" size={32} />
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-3">{t('title')}</h1>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">{t('description')}</p>
-              <div className="flex items-center justify-center gap-6 mt-4 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span>{t('aiPowered')}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                  <span>{t('private')}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
-                  <span>{t('lightningFast')}</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <Link href="/">
+            <Button variant="outline" className="flex items-center bg-white/80 backdrop-blur-sm hover:bg-white border-purple-200">
+              <ArrowLeft className="mr-2" size={16} />
+              {t('backToHome')}
+            </Button>
+          </Link>
         </div>
       )}
 
@@ -270,146 +211,160 @@ export function BackgroundRemover() {
       )}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Tool */}
-          <div className="lg:col-span-2 space-y-6">
-            <Card className="p-8 bg-gradient-to-br from-white to-purple-50/30 border-2 border-purple-100 shadow-xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg">
-                  <FileImage className="text-white" size={24} />
-                </div>
-                <h2 className="text-2xl font-bold text-gray-900">{t('uploadImageToRemove')}</h2>
+        {/* Main Tool */}
+        <div className="space-y-6">
+          <Card className="p-8 bg-gradient-to-br from-white to-purple-50/30 border-2 border-purple-100 shadow-xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg">
+                <FileImage className="text-white" size={24} />
               </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{t('uploadImageToRemove')}</h2>
+            </div>
 
-              {/* Upload Area / Image Display */}
-              <div className="relative border-2 border-dashed border-purple-300 rounded-2xl overflow-hidden" onDrop={handleDrop} onDragOver={handleDragOver}>
-                {!selectedFile ? (
-                  <div className="p-12 text-center hover:border-purple-500 hover:bg-purple-50/50 transition-all duration-300 cursor-pointer group" onClick={() => fileInputRef.current?.click()}>
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="relative">
-                      <div className="mx-auto w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <FileImage className="text-white" size={40} />
-                      </div>
-                      <p className="text-xl font-bold text-gray-900 mb-2">{t('dropImageHere')}</p>
-                      <p className="text-gray-600 mb-4">{t('supportsFormats')}</p>
-                      <div className="flex items-center justify-center gap-2 text-sm text-purple-600 font-medium">
-                        <Sparkles size={16} />
-                        <span>{t('aiWillRemove')}</span>
-                      </div>
-                    </div>
-                  </div>
-                ) : (
+            {/* Upload Area / Image Display */}
+            <div
+              className={`relative border-2 border-dashed rounded-2xl overflow-hidden transition-all duration-200 ${
+                isDragOver && !selectedFile ? 'border-purple-500 bg-purple-50 scale-[1.01]' : 'border-purple-300 hover:border-purple-500'
+              }`}
+              onDrop={handleDrop}
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+            >
+              {!selectedFile ? (
+                <div
+                  className="min-h-[360px] sm:min-h-[420px] p-6 sm:p-12 flex flex-col items-center justify-center text-center hover:bg-purple-50/50 transition-all duration-300 cursor-pointer group"
+                  onClick={() => fileInputRef.current?.click()}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <div className="relative">
-                    {/* Image Display */}
-                    <div
-                      className="relative min-h-[300px] flex items-center justify-center p-4"
-                      style={
-                        processedImage
-                          ? {
-                              backgroundImage:
-                                'linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%)',
-                              backgroundSize: '20px 20px',
-                              backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
-                            }
-                          : {}
-                      }
-                    >
-                      {(processedImage || imagePreview) && <img src={processedImage || imagePreview || ''} alt="Preview" className="max-w-full max-h-[500px] w-auto h-auto rounded-lg" />}
+                    <div className="mx-auto w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <FileImage className="text-white size-10 sm:size-12" />
+                    </div>
+                    <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{t('dropImageHere')}</p>
+                    <p className="text-sm sm:text-base text-gray-600 mb-4">{t('supportsFormats')}</p>
+                    <p className="text-sm text-purple-600 font-medium">
+                      <Sparkles className="inline-block align-text-bottom mr-1.5" size={16} />
+                      {t('aiWillRemove')}
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="relative">
+                  {/* Image Display */}
+                  <div
+                    className="relative min-h-[300px] flex items-center justify-center p-4"
+                    style={
+                      processedImage
+                        ? {
+                            backgroundImage:
+                              'linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%)',
+                            backgroundSize: '20px 20px',
+                            backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
+                          }
+                        : {}
+                    }
+                  >
+                    {(processedImage || imagePreview) && <img src={processedImage || imagePreview || ''} alt="Preview" className="max-w-full max-h-[500px] w-auto h-auto rounded-lg" />}
 
-                      {/* Minimalistic Loader Overlay */}
-                      {isProcessing && (
-                        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center">
-                          <div className="flex flex-col items-center gap-3">
-                            <div className="w-12 h-12 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin"></div>
-                            <p className="text-sm font-medium text-gray-700">{t('processing')}</p>
-                          </div>
+                    {/* Minimalistic Loader Overlay */}
+                    {isProcessing && (
+                      <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center">
+                        <div className="flex flex-col items-center gap-3">
+                          <div className="w-12 h-12 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin"></div>
+                          <p className="text-sm font-medium text-gray-700">{t('processing')}</p>
                         </div>
-                      )}
+                      </div>
+                    )}
 
-                      {/* Status Badge */}
-                      {processedImage && (
-                        <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1.5">
-                          <Sparkles size={14} />
-                          <span>{t('backgroundRemoved')}</span>
-                        </div>
-                      )}
+                    {/* Status Badge */}
+                    {processedImage && (
+                      <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1.5">
+                        <Sparkles size={14} />
+                        <span>{t('backgroundRemoved')}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+              <input ref={fileInputRef} type="file" accept="image/*" onChange={e => e.target.files?.[0] && handleFileSelect(e.target.files[0])} className="hidden" />
+            </div>
+
+            {/* File Info and Actions */}
+            {selectedFile && (
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center justify-between p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200">
+                  <div className="flex items-center space-x-3 min-w-0 flex-1 mr-3">
+                    <div className="p-2 bg-white rounded-lg shadow-sm flex-shrink-0">
+                      <FileImage className="h-5 w-5 text-purple-600" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-gray-900 truncate">{selectedFile.name}</p>
+                      <p className="text-sm text-gray-600">{formatFileSize(selectedFile.size)}</p>
                     </div>
                   </div>
-                )}
-                <input ref={fileInputRef} type="file" accept="image/*" onChange={e => e.target.files?.[0] && handleFileSelect(e.target.files[0])} className="hidden" />
-              </div>
+                  <Button variant="outline" onClick={handleReset} className="flex items-center gap-2 border-purple-200 hover:bg-white flex-shrink-0" size="sm">
+                    <Trash2 size={14} />
+                    <span className="hidden sm:inline">{t('remove')}</span>
+                  </Button>
+                </div>
 
-              {/* File Info and Actions */}
-              {selectedFile && (
-                <div className="mt-4 space-y-3">
-                  <div className="flex items-center justify-between p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200">
-                    <div className="flex items-center space-x-3 min-w-0 flex-1 mr-3">
-                      <div className="p-2 bg-white rounded-lg shadow-sm flex-shrink-0">
-                        <FileImage className="h-5 w-5 text-purple-600" />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <p className="font-semibold text-gray-900 truncate">{selectedFile.name}</p>
-                        <p className="text-sm text-gray-600">{formatFileSize(selectedFile.size)}</p>
-                      </div>
-                    </div>
-                    <Button variant="outline" onClick={handleReset} className="flex items-center gap-2 border-purple-200 hover:bg-white flex-shrink-0" size="sm">
-                      <Trash2 size={14} />
-                      <span className="hidden sm:inline">{t('remove')}</span>
+                {processedImage && (
+                  <div className="flex gap-3">
+                    <Button
+                      onClick={handleDownload}
+                      className="flex-1 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-4 text-base shadow-lg hover:shadow-xl transition-all"
+                    >
+                      <Download className="mr-2" size={18} />
+                      {t('downloadPng')}
+                    </Button>
+                    <Button variant="outline" onClick={handleReset} className="flex items-center gap-2 border-2 border-gray-300 hover:bg-gray-50 px-6">
+                      <Trash2 size={16} />
+                      <span className="hidden sm:inline">{t('startOver')}</span>
                     </Button>
                   </div>
-
-                  {processedImage && (
-                    <div className="flex gap-3">
-                      <Button
-                        onClick={handleDownload}
-                        className="flex-1 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-4 text-base shadow-lg hover:shadow-xl transition-all"
-                      >
-                        <Download className="mr-2" size={18} />
-                        {t('downloadPng')}
-                      </Button>
-                      <Button variant="outline" onClick={handleReset} className="flex items-center gap-2 border-2 border-gray-300 hover:bg-gray-50 px-6">
-                        <Trash2 size={16} />
-                        <span className="hidden sm:inline">{t('startOver')}</span>
-                      </Button>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {error && (
-                <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center">
-                  <AlertCircle className="h-5 w-5 text-red-500 mr-2 flex-shrink-0" />
-                  <span className="text-red-700">{error}</span>
-                </div>
-              )}
-            </Card>
-          </div>
-
-          {/* Features Sidebar */}
-          <div className="space-y-6">
-            <Card className="p-6 bg-gradient-to-br from-white to-purple-50/30 border-2 border-purple-100 shadow-lg">
-              <div className="flex items-center gap-2 mb-6">
-                <Sparkles className="text-purple-600" size={24} />
-                <h3 className="text-xl font-bold text-gray-900">{t('aiFeatures')}</h3>
+                )}
               </div>
-              <div className="space-y-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="group p-4 bg-white rounded-xl border border-gray-100 hover:border-purple-200 hover:shadow-md transition-all">
-                    <div className="flex items-start space-x-3">
-                      <div className={`p-2 bg-gradient-to-br ${feature.gradient} rounded-lg shadow-md group-hover:scale-110 transition-transform`}>
-                        <feature.icon className="h-5 w-5 text-white flex-shrink-0" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
-                        <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+            )}
+
+            {error && (
+              <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center">
+                <AlertCircle className="h-5 w-5 text-red-500 mr-2 flex-shrink-0" />
+                <span className="text-red-700">{error}</span>
               </div>
-            </Card>
-          </div>
+            )}
+          </Card>
         </div>
+
+        {/* Hero banner - hidden after image upload */}
+        {!selectedFile && (
+          <div className="relative mt-12 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 border border-purple-100 rounded-3xl overflow-hidden">
+            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"></div>
+
+            <div className="relative px-4 sm:px-6 lg:px-8 py-12 text-center">
+              <div className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-4 shadow-lg">
+                <Sparkles className="text-white" size={32} />
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-3">{t('title')}</h1>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">{t('description')}</p>
+              <div className="flex items-center justify-center gap-6 mt-4 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span>{t('aiPowered')}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span>{t('private')}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                  <span>{t('lightningFast')}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Demo Example Section */}
         <div className="mt-20">

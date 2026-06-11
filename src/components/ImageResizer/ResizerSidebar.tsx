@@ -1,13 +1,13 @@
 import { CheckCircle, Settings } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-import { ToolSection, ToolSidebar } from '@/components/tooling/ToolSection';
+import { ToolSection } from '@/components/tooling/ToolSection';
 
 export const ResizerSidebar = () => {
   const t = useTranslations('resizer');
 
   return (
-    <ToolSidebar>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 items-start">
       <ToolSection title={t('commonUses')}>
         <ul className="space-y-3 text-sm text-gray-600">
           <li className="flex items-start">
@@ -45,6 +45,6 @@ export const ResizerSidebar = () => {
           </li>
         </ul>
       </ToolSection>
-    </ToolSidebar>
+    </div>
   );
 };

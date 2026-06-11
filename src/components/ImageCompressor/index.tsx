@@ -4,7 +4,7 @@ import { Zap } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '../ui/button';
-import { ToolShell, ToolGrid } from '@/components/tooling/ToolShell';
+import { ToolShell, ToolTitleBanner } from '@/components/tooling/ToolShell';
 import { ToolSection } from '@/components/tooling/ToolSection';
 import { FileUploadZone } from '@/components/FileUploadZone';
 import { CompressionSettings } from './CompressionSettings';
@@ -73,9 +73,9 @@ export const ImageCompressor = () => {
   const compressionRatio = compressedSize ? getCompressionRatio({ originalSize, convertedSize: compressedSize }) : 0;
 
   return (
-    <ToolShell header={{ title: t('title'), description: t('description'), backText: tCommon('backToHome') }}>
-      <ToolGrid columns={2}>
-        <div className="lg:col-span-1 space-y-6">
+    <ToolShell header={{ backText: tCommon('backToHome') }}>
+      <div className="space-y-6">
+        <div className="space-y-6">
           <ToolSection title={`1. ${t('uploadImage')}`}>
             <FileUploadZone
               isDragOver={isDragOver}
@@ -95,6 +95,7 @@ export const ImageCompressor = () => {
               releaseText={tCommon('releaseToUpload')}
               chooseFileText={tCommon('chooseFile')}
               removeText={tCommon('remove')}
+              className={selectedFiles.length === 0 ? 'min-h-[320px] sm:min-h-[400px] flex flex-col items-center justify-center' : ''}
             />
           </ToolSection>
 
@@ -143,8 +144,10 @@ export const ImageCompressor = () => {
           )}
         </div>
 
+        <ToolTitleBanner title={t('title')} description={t('description')} />
+
         <CompressorSidebar />
-      </ToolGrid>
+      </div>
     </ToolShell>
   );
 };
