@@ -129,7 +129,11 @@
     "jsonParserGuide": "Guía del analizador JSON",
     "chartGenerator": "Generador de Gráficos",
     "chartGeneratorGuide": "Guía del Generador de Gráficos",
-    "fontGenerator": "Generador de fuentes"
+    "fontGenerator": "Generador de fuentes",
+    "rotateImage": "Rotar imagen",
+    "flipImage": "Voltear imagen",
+    "svgToPng": "SVG a PNG",
+    "wordCounter": "Contador de palabras"
   },
   "hero": {
     "title": "Imagen, fuente y color gratuitos en línea",
@@ -360,7 +364,11 @@
     "copyright": "© 2025 ImageConverter. ",
     "madeWithLove": "Hecho con ❤️ para la web",
     "clientSideProcessing": "Procesamiento 100% del lado del cliente",
-    "chartGenerator": "Generador de Gráficos"
+    "chartGenerator": "Generador de Gráficos",
+    "rotateImage": "Rotar imagen",
+    "flipImage": "Voltear imagen",
+    "svgToPng": "SVG a PNG",
+    "wordCounter": "Contador de palabras"
   },
   "converter": {
     "backToHome": "Volver a Inicio",
@@ -1286,6 +1294,38 @@
       "ogTitle": "Generador de fuentes - Texto elegante (copiar y pegar)",
       "ogDescription": "Convierte texto normal en más de 60 estilos de fuente elegantes: negrita, cursiva, glitch, versalitas y arte ASCII. Gratis, instantáneo, copiar y pegar.",
       "ogImageAlt": "Vista previa del generador de fuentes de FreeConvert"
+    },
+    "rotateImage": {
+      "title": "Rotar imagen online gratis - girar fotos 90 grados",
+      "description": "Rota imágenes online gratis. Gira fotos 90, 180 o 270 grados directamente en tu navegador. Sin subir archivos ni registrarte: rápido y privado.",
+      "keywords": "rotar imagen, girar imagen online, rotar foto, girar foto 90 grados, rotar png, rotar jpg",
+      "ogTitle": "Rotar imagen online - herramienta gratuita",
+      "ogDescription": "Gira fotos 90, 180 o 270 grados al instante en tu navegador. Gratis y privado.",
+      "ogImageAlt": "Herramienta gratuita para rotar imágenes"
+    },
+    "flipImage": {
+      "title": "Voltear imagen online gratis - espejo horizontal y vertical",
+      "description": "Voltea y refleja imágenes online gratis. Crea el efecto espejo horizontal o vertical en tu navegador. Sin subir archivos ni registrarte.",
+      "keywords": "voltear imagen, espejo imagen, reflejar foto, voltear horizontal, voltear vertical, invertir imagen",
+      "ogTitle": "Voltear imagen online - herramienta gratuita",
+      "ogDescription": "Refleja fotos horizontal o verticalmente al instante en tu navegador. Gratis y privado.",
+      "ogImageAlt": "Herramienta gratuita para voltear imágenes"
+    },
+    "svgToPng": {
+      "title": "Convertir SVG a PNG online gratis - alta resolución",
+      "description": "Convierte SVG a PNG online gratis. Exporta archivos vectoriales como imágenes PNG de alta resolución con escala 1x-4x. Funciona en tu navegador sin subidas.",
+      "keywords": "svg a png, convertir svg a png, convertidor svg, vector a png, exportar svg como png",
+      "ogTitle": "Convertidor SVG a PNG - herramienta online gratuita",
+      "ogDescription": "Convierte vectores SVG a PNG de alta resolución al instante en tu navegador. Gratis y privado.",
+      "ogImageAlt": "Convertidor gratuito de SVG a PNG"
+    },
+    "wordCounter": {
+      "title": "Contador de palabras - cuenta palabras, caracteres y frases",
+      "description": "Contador de palabras online gratuito. Cuenta palabras, caracteres, frases y párrafos al instante con tiempo de lectura estimado. Tu texto nunca sale del navegador.",
+      "keywords": "contador de palabras, contador de caracteres, contar palabras, número de palabras, contador de frases, tiempo de lectura",
+      "ogTitle": "Contador de palabras - herramienta online gratuita",
+      "ogDescription": "Cuenta palabras, caracteres, frases y párrafos al instante. Gratis y privado.",
+      "ogImageAlt": "Contador de palabras gratuito"
     }
   },
   "colorTools": {
@@ -1977,5 +2017,51 @@
       "q6": "¿Qué es el arte de texto ASCII?",
       "a6": "El arte ASCII muestra tu texto como letras grandes formadas con caracteres normales del teclado. Es ideal para comentarios de código, terminales y banners de estilo retro."
     }
+  },
+  "rotator": {
+    "title": "Rotar imagen online",
+    "description": "Gira fotos 90, 180 o 270 grados y descárgalas al instante. Todo ocurre en tu navegador: tus imágenes nunca salen de tu dispositivo.",
+    "uploadImage": "Sube la imagen a rotar",
+    "rotateAndDownload": "Rota y descarga",
+    "rotateLeft": "Girar a la izquierda",
+    "rotateRight": "Girar a la derecha",
+    "preview": "Vista previa",
+    "download": "Descargar imagen rotada"
+  },
+  "flipper": {
+    "title": "Voltear imagen online",
+    "description": "Refleja imágenes horizontal o verticalmente y descárgalas al instante. Todo ocurre en tu navegador: tus imágenes nunca salen de tu dispositivo.",
+    "uploadImage": "Sube la imagen a voltear",
+    "flipAndDownload": "Voltea y descarga",
+    "flipHorizontal": "Voltear horizontal",
+    "flipVertical": "Voltear vertical",
+    "preview": "Vista previa",
+    "download": "Descargar imagen volteada"
+  },
+  "svgToPng": {
+    "title": "Convertidor SVG a PNG",
+    "description": "Convierte archivos vectoriales SVG a imágenes PNG de alta resolución directamente en tu navegador. Elige la escala: sin subidas ni registro.",
+    "uploadSvg": "Sube el archivo SVG",
+    "dragDropSvg": "Arrastra y suelta tu SVG aquí",
+    "convertAndDownload": "Convierte y descarga",
+    "scale": "Escala",
+    "outputSize": "Tamaño de salida",
+    "preview": "Vista previa",
+    "download": "Descargar PNG",
+    "invalidSvg": "Selecciona un archivo SVG válido"
+  },
+  "wordCounter": {
+    "title": "Contador de palabras",
+    "description": "Cuenta palabras, caracteres, frases y párrafos al instante, con tiempo de lectura estimado. Gratis y privado: tu texto nunca sale del navegador.",
+    "yourText": "Tu texto",
+    "placeholder": "Escribe o pega tu texto aquí...",
+    "words": "Palabras",
+    "characters": "Caracteres",
+    "charactersNoSpaces": "Caracteres (sin espacios)",
+    "sentences": "Frases",
+    "paragraphs": "Párrafos",
+    "readingTime": "Tiempo de lectura",
+    "minutes": "{count} min",
+    "clear": "Borrar"
   }
 }

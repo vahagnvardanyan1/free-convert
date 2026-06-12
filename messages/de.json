@@ -129,7 +129,11 @@
     "jsonParserGuide": "JSON-Parser-Handbuch",
     "chartGenerator": "Diagramm-Generator",
     "chartGeneratorGuide": "Diagramm-Generator-Anleitung",
-    "fontGenerator": "Schriftgenerator"
+    "fontGenerator": "Schriftgenerator",
+    "rotateImage": "Bild drehen",
+    "flipImage": "Bild spiegeln",
+    "svgToPng": "SVG in PNG",
+    "wordCounter": "Wortzähler"
   },
   "hero": {
     "title": "Kostenloses Online-Bild, Schriftart und Farbe",
@@ -360,7 +364,11 @@
     "copyright": "© 2025 ImageConverter. ",
     "madeWithLove": "Mit ❤️ für das Web erstellt",
     "clientSideProcessing": "100 % kundenseitige Verarbeitung",
-    "chartGenerator": "Diagramm-Generator"
+    "chartGenerator": "Diagramm-Generator",
+    "rotateImage": "Bild drehen",
+    "flipImage": "Bild spiegeln",
+    "svgToPng": "SVG in PNG",
+    "wordCounter": "Wortzähler"
   },
   "converter": {
     "backToHome": "Zurück nach Hause",
@@ -1286,6 +1294,38 @@
       "ogTitle": "Schriftgenerator - Schicke Textschriften (Kopieren & Einfügen)",
       "ogDescription": "Verwandle einfachen Text in über 60 schicke Schriftstile - fett, geschwungen, Glitch, Kapitälchen und ASCII-Art. Kostenlos, sofort, kopieren und einfügen.",
       "ogImageAlt": "Vorschau des FreeConvert Schriftgenerators"
+    },
+    "rotateImage": {
+      "title": "Bild online drehen kostenlos - Fotos um 90 Grad drehen",
+      "description": "Drehen Sie Bilder kostenlos online. Fotos um 90, 180 oder 270 Grad direkt im Browser drehen. Kein Upload, keine Anmeldung - schnell und privat.",
+      "keywords": "bild drehen, bild online drehen, foto drehen, bild um 90 grad drehen, png drehen, jpg drehen",
+      "ogTitle": "Bild online drehen - kostenloses Tool",
+      "ogDescription": "Fotos sofort um 90, 180 oder 270 Grad im Browser drehen. Kostenlos und privat.",
+      "ogImageAlt": "Kostenloses Bild-Dreh-Tool"
+    },
+    "flipImage": {
+      "title": "Bild online spiegeln kostenlos - horizontal & vertikal",
+      "description": "Spiegeln Sie Bilder kostenlos online. Fotos horizontal oder vertikal im Browser spiegeln. Kein Upload, keine Anmeldung - schnell und privat.",
+      "keywords": "bild spiegeln, foto spiegeln, bild horizontal spiegeln, bild vertikal spiegeln, bild umdrehen",
+      "ogTitle": "Bild online spiegeln - kostenloses Tool",
+      "ogDescription": "Fotos sofort horizontal oder vertikal im Browser spiegeln. Kostenlos und privat.",
+      "ogImageAlt": "Kostenloses Bild-Spiegel-Tool"
+    },
+    "svgToPng": {
+      "title": "SVG in PNG umwandeln kostenlos - hohe Auflösung",
+      "description": "SVG kostenlos online in PNG umwandeln. Vektordateien als hochauflösende PNG-Bilder mit 1x-4x Skalierung exportieren. Läuft im Browser ohne Upload.",
+      "keywords": "svg in png, svg zu png konverter, svg umwandeln, vektor in png, svg als png exportieren",
+      "ogTitle": "SVG in PNG Konverter - kostenloses Online-Tool",
+      "ogDescription": "SVG-Vektoren sofort in hochauflösende PNG-Bilder im Browser umwandeln. Kostenlos und privat.",
+      "ogImageAlt": "Kostenloser SVG-zu-PNG-Konverter"
+    },
+    "wordCounter": {
+      "title": "Wortzähler - Wörter, Zeichen & Sätze online zählen",
+      "description": "Kostenloser Online-Wortzähler. Wörter, Zeichen, Sätze und Absätze sofort zählen, mit geschätzter Lesezeit. Privat - Text verlässt nie Ihren Browser.",
+      "keywords": "wortzähler, zeichenzähler, wörter zählen, wortanzahl, satzzähler, lesezeit berechnen",
+      "ogTitle": "Wortzähler - kostenloses Online-Tool",
+      "ogDescription": "Wörter, Zeichen, Sätze und Absätze sofort zählen. Kostenlos und privat.",
+      "ogImageAlt": "Kostenloser Wortzähler"
     }
   },
   "colorTools": {
@@ -1977,5 +2017,51 @@
       "q6": "Was ist ASCII-Text-Art?",
       "a6": "ASCII-Art stellt deinen Text als große Buchstaben dar, die aus normalen Tastaturzeichen bestehen. Ideal für Code-Kommentare, Terminals und Banner im Retro-Stil."
     }
+  },
+  "rotator": {
+    "title": "Bild online drehen",
+    "description": "Fotos um 90, 180 oder 270 Grad drehen und sofort herunterladen. Alles passiert im Browser - Ihre Bilder verlassen nie Ihr Gerät.",
+    "uploadImage": "Bild zum Drehen hochladen",
+    "rotateAndDownload": "Drehen & Herunterladen",
+    "rotateLeft": "Nach links drehen",
+    "rotateRight": "Nach rechts drehen",
+    "preview": "Vorschau",
+    "download": "Gedrehtes Bild herunterladen"
+  },
+  "flipper": {
+    "title": "Bild online spiegeln",
+    "description": "Bilder horizontal oder vertikal spiegeln und sofort herunterladen. Alles passiert im Browser - Ihre Bilder verlassen nie Ihr Gerät.",
+    "uploadImage": "Bild zum Spiegeln hochladen",
+    "flipAndDownload": "Spiegeln & Herunterladen",
+    "flipHorizontal": "Horizontal spiegeln",
+    "flipVertical": "Vertikal spiegeln",
+    "preview": "Vorschau",
+    "download": "Gespiegeltes Bild herunterladen"
+  },
+  "svgToPng": {
+    "title": "SVG-in-PNG-Konverter",
+    "description": "SVG-Vektordateien direkt im Browser in hochauflösende PNG-Bilder umwandeln. Skalierung wählbar - kein Upload, keine Anmeldung.",
+    "uploadSvg": "SVG-Datei hochladen",
+    "dragDropSvg": "SVG hierher ziehen",
+    "convertAndDownload": "Umwandeln & Herunterladen",
+    "scale": "Skalierung",
+    "outputSize": "Ausgabegröße",
+    "preview": "Vorschau",
+    "download": "PNG herunterladen",
+    "invalidSvg": "Bitte wählen Sie eine gültige SVG-Datei"
+  },
+  "wordCounter": {
+    "title": "Wortzähler",
+    "description": "Wörter, Zeichen, Sätze und Absätze sofort zählen, mit geschätzter Lesezeit. Kostenlos und privat - Ihr Text verlässt nie Ihren Browser.",
+    "yourText": "Ihr Text",
+    "placeholder": "Text hier eingeben oder einfügen...",
+    "words": "Wörter",
+    "characters": "Zeichen",
+    "charactersNoSpaces": "Zeichen (ohne Leerzeichen)",
+    "sentences": "Sätze",
+    "paragraphs": "Absätze",
+    "readingTime": "Lesezeit",
+    "minutes": "{count} Min.",
+    "clear": "Löschen"
   }
 }

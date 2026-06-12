@@ -29,6 +29,9 @@ import {
   Ruler,
   BookOpen,
   Sparkles,
+  RotateCw,
+  FlipHorizontal2,
+  AlignLeft,
 } from 'lucide-react';
 
 import type { LucideIcon } from 'lucide-react';
@@ -64,6 +67,9 @@ export const ICON_MAP: Record<string, LucideIcon> = {
   Ruler,
   BookOpen,
   Sparkles,
+  RotateCw,
+  FlipHorizontal2,
+  AlignLeft,
 };
 
 export const getIcon = (iconName: string): LucideIcon => {

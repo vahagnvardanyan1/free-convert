@@ -34,6 +34,9 @@ const routes = [
   '/webp-to-pdf',
   '/crop-image',
   '/resize-image',
+  '/rotate-image',
+  '/flip-image',
+  '/svg-to-png',
   '/qr-code-generator',
   '/compress-image',
 
@@ -103,6 +106,7 @@ const routes = [
   '/texts/fonts/scales',
   '/texts/emojis',
   '/texts/symbols',
+  '/texts/word-counter',
   '/texts/json-validator',
   '/texts/json-comparer',
   '/texts/json-parser',

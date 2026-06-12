@@ -31,6 +31,8 @@ export const IMAGE_TOOLS: Tool[] = [
   { translationKey: 'compressImage', path: '/compress-image', icon: 'Maximize2', popular: true, category: 'image' },
   { translationKey: 'cropImage', path: '/crop-image', icon: 'Crop', popular: true, category: 'image' },
   { translationKey: 'resizeImage', path: '/resize-image', icon: 'Maximize', popular: true, category: 'image' },
+  { translationKey: 'rotateImage', path: '/rotate-image', icon: 'RotateCw', popular: false, category: 'image' },
+  { translationKey: 'flipImage', path: '/flip-image', icon: 'FlipHorizontal2', popular: false, category: 'image' },
   { translationKey: 'imageAnalyzer', path: '/analyze', icon: 'ScanSearch', popular: true, category: 'image' },
   { translationKey: 'qrCodeGenerator', path: '/qr-code-generator', icon: 'QrCode', popular: true, category: 'image' },
   { translationKey: 'chartGenerator', path: '/chart-generator', icon: 'BarChart3', popular: true, category: 'image' },
@@ -47,6 +49,7 @@ export const IMAGE_CONVERTERS: Tool[] = [
   { translationKey: 'heicToJpg', path: '/heic-to-jpg', icon: 'Camera', popular: true, category: 'image', from: 'HEIC', to: 'JPG' },
   { translationKey: 'heicToPng', path: '/heic-to-png', icon: 'ImageIcon', popular: false, category: 'image', from: 'HEIC', to: 'PNG' },
   { translationKey: 'heicToWebp', path: '/heic-to-webp', icon: 'Globe', popular: false, category: 'image', from: 'HEIC', to: 'WebP' },
+  { translationKey: 'svgToPng', path: '/svg-to-png', icon: 'FileImage', popular: false, category: 'image', from: 'SVG', to: 'PNG' },
 ];
 
 // PDF Tools
@@ -76,6 +79,7 @@ export const TEXT_TOOLS: Tool[] = [
   { translationKey: 'fontGenerator', path: '/font-generator', icon: 'Type', popular: true, category: 'text' },
   { translationKey: 'emojis', path: '/texts/emojis', icon: 'Smile', popular: true, category: 'text' },
   { translationKey: 'symbols', path: '/texts/symbols', icon: 'Hash', popular: true, category: 'text' },
+  { translationKey: 'wordCounter', path: '/texts/word-counter', icon: 'AlignLeft', popular: false, category: 'text' },
 ];
 
 // JSON Tools

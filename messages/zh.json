@@ -129,7 +129,11 @@
     "jsonParserGuide": "JSON 解析器指南",
     "chartGenerator": "图表生成器",
     "chartGeneratorGuide": "图表生成器指南",
-    "fontGenerator": "字体生成器"
+    "fontGenerator": "字体生成器",
+    "rotateImage": "旋转图片",
+    "flipImage": "翻转图片",
+    "svgToPng": "SVG转PNG",
+    "wordCounter": "字数统计"
   },
   "hero": {
     "title": "免费在线图像、字体和颜色",
@@ -360,7 +364,11 @@
     "copyright": "© 2025 图像转换器。",
     "madeWithLove": "使用 ❤️ 为网络制作",
     "clientSideProcessing": "100% 客户端处理",
-    "chartGenerator": "图表生成器"
+    "chartGenerator": "图表生成器",
+    "rotateImage": "旋转图片",
+    "flipImage": "翻转图片",
+    "svgToPng": "SVG转PNG",
+    "wordCounter": "字数统计"
   },
   "converter": {
     "backToHome": "返回首页",
@@ -1286,6 +1294,38 @@
       "ogTitle": "字体生成器 - 花式文本生成器（复制粘贴）",
       "ogDescription": "将普通文本转换为 60 多种花式字体样式 - 粗体、手写体、故障风、小型大写字母和 ASCII 艺术。免费、即时、复制粘贴。",
       "ogImageAlt": "FreeConvert 字体生成器预览"
+    },
+    "rotateImage": {
+      "title": "在线旋转图片 - 免费将照片旋转90度",
+      "description": "免费在线旋转图片。在浏览器中将照片旋转90、180或270度。无需上传服务器，无需注册，快速且私密。",
+      "keywords": "旋转图片, 在线旋转图片, 旋转照片, 图片旋转90度, 旋转png, 旋转jpg",
+      "ogTitle": "在线旋转图片 - 免费工具",
+      "ogDescription": "在浏览器中即时将照片旋转90、180或270度。免费且私密。",
+      "ogImageAlt": "免费图片旋转工具"
+    },
+    "flipImage": {
+      "title": "在线翻转图片 - 免费水平和垂直镜像",
+      "description": "免费在线翻转和镜像图片。在浏览器中水平或垂直镜像照片。无需上传服务器，无需注册。",
+      "keywords": "翻转图片, 镜像图片, 水平翻转, 垂直翻转, 图片镜像",
+      "ogTitle": "在线翻转图片 - 免费工具",
+      "ogDescription": "在浏览器中即时水平或垂直镜像照片。免费且私密。",
+      "ogImageAlt": "免费图片翻转工具"
+    },
+    "svgToPng": {
+      "title": "SVG转PNG转换器 - 免费在线高分辨率转换",
+      "description": "免费在线将SVG转换为PNG。以1x-4x比例将矢量文件导出为高分辨率PNG图像。在浏览器中运行，无需上传。",
+      "keywords": "svg转png, svg转换器, 矢量转png, svg导出png",
+      "ogTitle": "SVG转PNG转换器 - 免费在线工具",
+      "ogDescription": "在浏览器中即时将SVG矢量转换为高分辨率PNG图像。免费且私密。",
+      "ogImageAlt": "免费SVG转PNG转换器"
+    },
+    "wordCounter": {
+      "title": "字数统计 - 在线统计字数、字符和句子",
+      "description": "免费在线字数统计工具。即时统计字数、字符、句子和段落，并估算阅读时间。文本不会离开您的浏览器。",
+      "keywords": "字数统计, 字符统计, 数字数, 句子统计, 阅读时间",
+      "ogTitle": "字数统计 - 免费在线工具",
+      "ogDescription": "即时统计字数、字符、句子和段落。免费且私密。",
+      "ogImageAlt": "免费字数统计工具"
     }
   },
   "colorTools": {
@@ -1977,5 +2017,51 @@
       "q6": "什么是 ASCII 文本艺术？",
       "a6": "ASCII 艺术将您的文本呈现为由标准键盘字符构成的大字母。非常适合代码注释、终端和复古风格的横幅。"
     }
+  },
+  "rotator": {
+    "title": "在线旋转图片",
+    "description": "将照片旋转90、180或270度并立即下载。一切都在浏览器中完成 - 您的图片不会离开您的设备。",
+    "uploadImage": "上传要旋转的图片",
+    "rotateAndDownload": "旋转并下载",
+    "rotateLeft": "向左旋转",
+    "rotateRight": "向右旋转",
+    "preview": "预览",
+    "download": "下载旋转后的图片"
+  },
+  "flipper": {
+    "title": "在线翻转图片",
+    "description": "水平或垂直镜像图片并立即下载。一切都在浏览器中完成 - 您的图片不会离开您的设备。",
+    "uploadImage": "上传要翻转的图片",
+    "flipAndDownload": "翻转并下载",
+    "flipHorizontal": "水平翻转",
+    "flipVertical": "垂直翻转",
+    "preview": "预览",
+    "download": "下载翻转后的图片"
+  },
+  "svgToPng": {
+    "title": "SVG转PNG转换器",
+    "description": "直接在浏览器中将SVG矢量文件转换为高分辨率PNG图像。可选择输出比例 - 无需上传，无需注册。",
+    "uploadSvg": "上传SVG文件",
+    "dragDropSvg": "将SVG拖放到此处",
+    "convertAndDownload": "转换并下载",
+    "scale": "比例",
+    "outputSize": "输出尺寸",
+    "preview": "预览",
+    "download": "下载PNG",
+    "invalidSvg": "请选择有效的SVG文件"
+  },
+  "wordCounter": {
+    "title": "字数统计",
+    "description": "即时统计字数、字符、句子和段落，并估算阅读时间。免费且私密 - 您的文本不会离开浏览器。",
+    "yourText": "您的文本",
+    "placeholder": "在此输入或粘贴文本...",
+    "words": "字数",
+    "characters": "字符",
+    "charactersNoSpaces": "字符（不含空格）",
+    "sentences": "句子",
+    "paragraphs": "段落",
+    "readingTime": "阅读时间",
+    "minutes": "{count} 分钟",
+    "clear": "清空"
   }
 }

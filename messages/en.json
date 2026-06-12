@@ -129,7 +129,11 @@
     "jsonComparerGuide": "JSON Comparer Guide",
     "jsonParserGuide": "JSON Parser Guide",
     "chartGeneratorGuide": "Chart Generator Guide",
-    "fontGenerator": "Font Generator"
+    "fontGenerator": "Font Generator",
+    "rotateImage": "Rotate Image",
+    "flipImage": "Flip Image",
+    "svgToPng": "SVG to PNG",
+    "wordCounter": "Word Counter"
   },
   "hero": {
     "title": "Free Online Image, Font & Color",
@@ -360,7 +364,11 @@
     "cookiePolicy": "Cookie Policy",
     "copyright": "© 2025 ImageConverter. All rights reserved.",
     "madeWithLove": "Made with ❤️ for the web",
-    "clientSideProcessing": "100% Client-Side Processing"
+    "clientSideProcessing": "100% Client-Side Processing",
+    "rotateImage": "Rotate Image",
+    "flipImage": "Flip Image",
+    "svgToPng": "SVG to PNG",
+    "wordCounter": "Word Counter"
   },
   "converter": {
     "backToHome": "Back to Home",
@@ -1286,6 +1294,38 @@
       "ogTitle": "Font Generator - Fancy Text Generator (Copy & Paste)",
       "ogDescription": "Turn plain text into 60+ fancy font styles - bold, cursive, glitch, small caps and ASCII art. Free, instant, copy and paste.",
       "ogImageAlt": "FreeConvert Font Generator preview"
+    },
+    "rotateImage": {
+      "title": "Rotate Image Online Free - Rotate Photos 90 Degrees",
+      "description": "Rotate images online for free. Turn photos 90, 180, or 270 degrees right in your browser. No uploads, no signup - fast and private.",
+      "keywords": "rotate image, rotate image online, rotate photo, turn image, rotate picture 90 degrees, image rotator, rotate png, rotate jpg",
+      "ogTitle": "Rotate Image Online - Free Image Rotator",
+      "ogDescription": "Rotate photos 90, 180, or 270 degrees instantly in your browser. Free and private.",
+      "ogImageAlt": "Free Image Rotator Tool"
+    },
+    "flipImage": {
+      "title": "Flip Image Online Free - Mirror Photos Horizontally & Vertically",
+      "description": "Flip and mirror images online for free. Mirror photos horizontally or vertically in your browser. No uploads, no signup - fast and private.",
+      "keywords": "flip image, mirror image, flip image online, flip photo, mirror photo, flip image horizontally, flip image vertically, image flipper",
+      "ogTitle": "Flip Image Online - Free Image Mirror Tool",
+      "ogDescription": "Mirror photos horizontally or vertically instantly in your browser. Free and private.",
+      "ogImageAlt": "Free Image Flip Tool"
+    },
+    "svgToPng": {
+      "title": "SVG to PNG Converter Online Free - High Resolution",
+      "description": "Convert SVG to PNG online for free. Export vector files as high-resolution PNG images at 1x-4x scale. Runs in your browser - no uploads, no signup.",
+      "keywords": "svg to png, convert svg to png, svg to png converter, svg converter, vector to png, svg to image, export svg as png",
+      "ogTitle": "SVG to PNG Converter - Free Online Tool",
+      "ogDescription": "Convert SVG vectors to high-resolution PNG images instantly in your browser. Free and private.",
+      "ogImageAlt": "Free SVG to PNG Converter"
+    },
+    "wordCounter": {
+      "title": "Word Counter - Count Words, Characters & Sentences Online",
+      "description": "Free online word counter. Count words, characters, sentences, and paragraphs instantly with estimated reading time. Private - text never leaves your browser.",
+      "keywords": "word counter, character counter, count words, word count tool, sentence counter, paragraph counter, reading time calculator",
+      "ogTitle": "Word Counter - Free Online Text Counter",
+      "ogDescription": "Count words, characters, sentences, and paragraphs instantly. Free and private.",
+      "ogImageAlt": "Free Word Counter Tool"
     }
   },
   "colorTools": {
@@ -1977,5 +2017,51 @@
       "q6": "What is ASCII text art?",
       "a6": "ASCII art renders your text as large letters built from standard keyboard characters. It is great for code comments, terminals and retro-style banners."
     }
+  },
+  "rotator": {
+    "title": "Rotate Image Online",
+    "description": "Rotate photos 90, 180, or 270 degrees and download instantly. Everything happens in your browser - your images never leave your device.",
+    "uploadImage": "Upload Image to Rotate",
+    "rotateAndDownload": "Rotate & Download",
+    "rotateLeft": "Rotate Left",
+    "rotateRight": "Rotate Right",
+    "preview": "Preview",
+    "download": "Download Rotated Image"
+  },
+  "flipper": {
+    "title": "Flip Image Online",
+    "description": "Mirror images horizontally or vertically and download instantly. Everything happens in your browser - your images never leave your device.",
+    "uploadImage": "Upload Image to Flip",
+    "flipAndDownload": "Flip & Download",
+    "flipHorizontal": "Flip Horizontal",
+    "flipVertical": "Flip Vertical",
+    "preview": "Preview",
+    "download": "Download Flipped Image"
+  },
+  "svgToPng": {
+    "title": "SVG to PNG Converter",
+    "description": "Convert SVG vector files to high-resolution PNG images right in your browser. Choose the output scale - no uploads, no signup.",
+    "uploadSvg": "Upload SVG File",
+    "dragDropSvg": "Drag & drop your SVG here",
+    "convertAndDownload": "Convert & Download",
+    "scale": "Scale",
+    "outputSize": "Output size",
+    "preview": "Preview",
+    "download": "Download PNG",
+    "invalidSvg": "Please select a valid SVG file"
+  },
+  "wordCounter": {
+    "title": "Word Counter",
+    "description": "Count words, characters, sentences, and paragraphs instantly, with estimated reading time. Free and private - your text never leaves your browser.",
+    "yourText": "Your Text",
+    "placeholder": "Type or paste your text here...",
+    "words": "Words",
+    "characters": "Characters",
+    "charactersNoSpaces": "Characters (no spaces)",
+    "sentences": "Sentences",
+    "paragraphs": "Paragraphs",
+    "readingTime": "Reading time",
+    "minutes": "{count} min",
+    "clear": "Clear"
   }
 }

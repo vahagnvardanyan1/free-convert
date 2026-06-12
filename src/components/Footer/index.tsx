@@ -61,6 +61,21 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/rotate-image" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  {t('rotateImage')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/flip-image" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  {t('flipImage')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/svg-to-png" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  {t('svgToPng')}
+                </Link>
+              </li>
+              <li>
                 <Link href="/png-to-webp" className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t('pngToWebp')}
                 </Link>
@@ -253,6 +268,11 @@ export const Footer = () => {
               <li>
                 <Link href="/texts/symbols" className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t('symbolLibrary')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/texts/word-counter" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  {t('wordCounter')}
                 </Link>
               </li>
               <li>
