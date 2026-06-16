@@ -25,46 +25,61 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/Card';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Blog - Image Conversion, Color & Font Tools Guides | FreeConvert',
-  description: 'Learn everything about image conversion, color tools, typography, and best practices. Guides for PNG, JPG, WebP, HEIC, PDF conversions, Google Fonts, color pickers, and design tools.',
-  keywords: [
-    'image conversion guides',
-    'PNG to JPG guide',
-    'image optimization',
-    'web performance',
-    'image converter tutorials',
-    'file format guides',
-    'font pairing guide',
-    'typography scale',
-    'Google Fonts preview',
-    'color picker tool',
-  ],
-  alternates: {
-    canonical: '${SITE_URL}/blog',
-  },
-  openGraph: {
-    title: 'Blog - Image Conversion, Color & Font Tools Guides | FreeConvert',
-    description: 'Learn everything about image conversion, color tools, typography, and best practices. Comprehensive guides for designers and developers.',
-    url: '${SITE_URL}/blog',
-    siteName: 'FreeConvert',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.webp',
-        width: 1200,
-        height: 630,
-        alt: 'FreeConvert Blog',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Blog - Image Conversion Guides & Tips',
-    description: 'Learn everything about image conversion, optimization, and best practices.',
-    images: ['/og-image.webp'],
-  },
+import { locales, localeMap, type Locale } from '@/i18n/config';
+import { getAlternateLanguages, getLocalizedUrl } from '@/lib/metadata/localizedUrl';
+
+type Props = {
+  params: Promise<{ locale: Locale }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const canonicalUrl = getLocalizedUrl({ locale, path: '/blog' });
+
+  return {
+    title: 'Blog - Image Conversion, Color & Font Tools Guides | FreeConvert',
+    description:
+      'Learn everything about image conversion, color tools, typography, and best practices. Guides for PNG, JPG, WebP, HEIC, PDF conversions, Google Fonts, color pickers, and design tools.',
+    keywords: [
+      'image conversion guides',
+      'PNG to JPG guide',
+      'image optimization',
+      'web performance',
+      'image converter tutorials',
+      'file format guides',
+      'font pairing guide',
+      'typography scale',
+      'Google Fonts preview',
+      'color picker tool',
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: getAlternateLanguages({ locales, path: '/blog' }),
+    },
+    openGraph: {
+      title: 'Blog - Image Conversion, Color & Font Tools Guides | FreeConvert',
+      description: 'Learn everything about image conversion, color tools, typography, and best practices. Comprehensive guides for designers and developers.',
+      url: canonicalUrl,
+      siteName: 'FreeConvert',
+      type: 'website',
+      locale: localeMap[locale] || 'en_US',
+      images: [
+        {
+          url: '/og-image.webp',
+          width: 1200,
+          height: 630,
+          alt: 'FreeConvert Blog',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Blog - Image Conversion Guides & Tips',
+      description: 'Learn everything about image conversion, optimization, and best practices.',
+      images: ['/og-image.webp'],
+    },
+  };
+}
 
 interface BlogPost {
   title: string;

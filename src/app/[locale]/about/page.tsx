@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
-import { SITE_URL } from '@/config/constants';
 import { geoConfig } from '@/lib/geo.config';
 import { generateAIMeta, generateGeoTitle } from '@/lib/geoHelpers';
-import { localeMap, type Locale } from '@/i18n/config';
+import { locales, localeMap, type Locale } from '@/i18n/config';
+import { getAlternateLanguages, getLocalizedUrl } from '@/lib/metadata/localizedUrl';
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = 'About FreeConvert';
   const description = 'Learn about FreeConvert: a free, privacy-focused platform for image conversion, PDF manipulation, and design tools. All processing happens in your browser.';
-  const pathname = `/${locale}/about`;
+  const canonicalUrl = getLocalizedUrl({ locale, path: '/about' });
   const aiMeta = generateAIMeta('/about');
 
   return {
@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     creator: geoConfig.author.name,
     publisher: geoConfig.author.name,
     alternates: {
-      canonical: `${SITE_URL}${pathname}`,
-      languages: Object.fromEntries(geoConfig.languages.map(lang => [lang, `${SITE_URL}/${lang}/about`])),
+      canonical: canonicalUrl,
+      languages: getAlternateLanguages({ locales, path: '/about' }),
     },
     openGraph: {
       title: title,
       description: description,
-      url: `${SITE_URL}${pathname}`,
+      url: canonicalUrl,
       siteName: 'FreeConvert',
       type: 'website',
       locale: localeMap[locale] || 'en_US',

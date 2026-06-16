@@ -39,6 +39,7 @@ const routes = [
   '/svg-to-png',
   '/qr-code-generator',
   '/compress-image',
+  '/chart-generator',
 
   // HEIC converter tools
   '/heic-to-jpg',
@@ -116,6 +117,10 @@ const routes = [
   '/terms-of-service',
   '/terms-of-use',
   '/cookie-policy',
+
+  // Info pages
+  '/about',
+  '/faq',
 ];
 
 module.exports = {

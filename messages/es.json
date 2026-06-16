@@ -937,8 +937,8 @@
       "twitterDescription": "Convierta imágenes, edite PDFs, cree paletas de colores. Rápido, seguro, completamente gratis."
     },
     "aiImageGenerator": {
-      "title": "Generador de imágenes AI gratuito: cree imágenes a partir de texto | ",
-      "description": "Genere impresionantes imágenes de IA a partir de descripciones de texto. ",
+      "title": "Generador de imágenes AI gratis: texto a imagen",
+      "description": "Genera imágenes AI desde texto gratis. Crea arte, fotos y diseños al instante con modelos avanzados. Sin registro: escribe tu idea y descarga en segundos.",
       "keywords": "generador de imágenes ai, texto a imagen, generador de arte ai, imagen de ai gratis, generación de imágenes, obra de arte ai, crear imágenes a partir de texto, generador de fotos ai, flujo ai, difusión estable, arte ai gratis",
       "ogTitle": "Generador de imágenes AI gratuito: cree imágenes a partir de texto al instante",
       "ogDescription": "Genere impresionantes imágenes de IA a partir de descripciones de texto. ",
@@ -947,8 +947,8 @@
       "twitterDescription": "Genere impresionantes imágenes de IA a partir de descripciones de texto. "
     },
     "removeBackground": {
-      "title": "Eliminar el fondo de la imagen - Eliminador de fondo AI gratuito | ",
-      "description": "Elimina los fondos de las imágenes automáticamente con IA. ",
+      "title": "Quitar fondo de imagen gratis con AI | FreeConvert",
+      "description": "Quita el fondo de tus imágenes automáticamente con AI y gratis. Ideal para fotos de producto, retratos y e-commerce. Rápido, preciso y privado en segundos.",
       "keywords": "eliminador de fondo, eliminar fondo, eliminación de fondo AI, fondo transparente, fotografía de producto, imagen recortada",
       "ogTitle": "Eliminar el fondo de la imagen: eliminador de fondo AI gratuito",
       "ogDescription": "Elimina los fondos de las imágenes automáticamente con IA. ",
@@ -957,8 +957,8 @@
       "twitterDescription": "Elimina los fondos de las imágenes automáticamente con IA. "
     },
     "cropImage": {
-      "title": "Recortar imágenes en línea - Recortador y rotador de imágenes gratuitos | ",
-      "description": "Recorta, rota y cambia el tamaño de imágenes en línea de forma gratuita. ",
+      "title": "Recortar imágenes online gratis | FreeConvert",
+      "description": "Recorta, rota y redimensiona imágenes online y gratis. Usa proporciones predefinidas, voltea y haz zoom. Edita en tu navegador: sin subidas ni registro.",
       "keywords": "recortar imagen, recortar imagen, recortar foto en línea, rotar imagen, voltear imagen, cambiar el tamaño de la imagen, relación de aspecto, editor de imágenes, recortador de imágenes gratuito",
       "ogTitle": "Recortar imagen en línea - Herramienta gratuita de recorte de imágenes",
       "ogDescription": "Recorta, rota y cambia el tamaño de imágenes con controles de precisión. ",
@@ -983,24 +983,24 @@
       "ogImageAlt": "Herramienta gratuita para cambiar el tamaño de imágenes"
     },
     "analyze": {
-      "title": "Analizador de imágenes: análisis de propiedades y metadatos de imágenes | ",
-      "description": "Analiza tus imágenes al instante. ",
+      "title": "Analizador de imágenes: propiedades y metadatos",
+      "description": "Analiza tus imágenes al instante y gratis. Obtén formato, dimensiones, tamaño, profundidad de color y metadatos. Herramienta online sin registro ni subidas.",
       "keywords": "analizador de imágenes, análisis de imágenes, propiedades de imagen, metadatos de imagen, datos EXIF, dimensiones de imagen, analizador de tamaño de archivo",
       "ogTitle": "Analizador de imágenes: análisis de propiedades y metadatos de imágenes",
       "ogDescription": "Analiza tus imágenes al instante. ",
       "ogImageAlt": "Herramienta analizadora de imágenes"
     },
     "qrCodeGenerator": {
-      "title": "Generador de códigos QR: cree códigos QR personalizados gratis | ",
-      "description": "Cree códigos QR personalizados para URL, WiFi, contactos y más. ",
+      "title": "Generador de códigos QR gratis y personalizados",
+      "description": "Crea códigos QR personalizados para URL, WiFi, contactos y más, gratis. Generador con colores y tamaños a medida. Descarga en SVG o PNG al instante.",
       "keywords": "generador de código qr, crear código qr, código qr personalizado, creador de código qr, código qr gratis, código qr wifi, código qr vcard",
       "ogTitle": "Generador de códigos QR: cree códigos QR personalizados gratis",
       "ogDescription": "Cree códigos QR personalizados para URL, WiFi, contactos y más. ",
       "ogImageAlt": "Herramienta generadora de códigos QR"
     },
     "pngToWebp": {
-      "title": "Convertidor de PNG a WebP - Convierta PNG a WebP en línea gratis | ",
-      "description": "Convierta imágenes PNG a formato WebP en línea de forma gratuita. ",
+      "title": "Convertir PNG a WebP gratis online | FreeConvert",
+      "description": "Convierte PNG a WebP online y gratis. Reduce el tamaño hasta un 80% sin perder calidad. Rápido, privado y sin registro: convierte en tu navegador en segundos.",
       "keywords": "PNG a WebP, conversor PNG, conversor WebP, compresión de imágenes, optimizar imágenes, reducir el tamaño del archivo",
       "ogTitle": "Convertidor de PNG a WebP: herramienta gratuita en línea",
       "ogDescription": "Convierta PNG a WebP en línea. ",
@@ -1015,16 +1015,16 @@
       "ogImageAlt": "Convertidor de JPG a PNG"
     },
     "webpToPng": {
-      "title": "Convertidor de WebP a PNG - Convierta WebP a PNG en línea gratis | ",
-      "description": "Convierta imágenes WebP a formato PNG en línea de forma gratuita. ",
+      "title": "Convertir WebP a PNG gratis online | FreeConvert",
+      "description": "Convierte WebP a PNG online y gratis. Conserva la calidad total y la transparencia. Rápido, seguro y sin registro: convierte en tu navegador en segundos.",
       "keywords": "WebP a PNG, conversor WebP, conversor PNG, conversor de formato de imagen, convertir WebP",
       "ogTitle": "Convertidor de WebP a PNG: herramienta gratuita en línea",
       "ogDescription": "Convierta WebP a PNG en línea. ",
       "ogImageAlt": "Convertidor de WebP a PNG"
     },
     "jpgToWebp": {
-      "title": "Convertidor de JPG a WebP - Convierta JPEG a WebP en línea gratis | ",
-      "description": "Convierta imágenes JPG/JPEG a formato WebP en línea de forma gratuita. ",
+      "title": "Convertir JPG a WebP gratis online | FreeConvert",
+      "description": "Convierte JPG/JPEG a WebP online y gratis. Reduce el tamaño hasta un 35% sin pérdida visible de calidad. Rápido, privado y sin registro: listo en segundos.",
       "keywords": "JPG a WebP, JPEG a WebP, convertidor JPG, convertidor WebP, comprimir imágenes, optimizar imágenes",
       "ogTitle": "Convertidor de JPG a WebP: herramienta gratuita en línea",
       "ogDescription": "Convierta JPG a WebP en línea. ",
@@ -1055,32 +1055,32 @@
       "ogImageAlt": "Convertidor HEIC a JPG"
     },
     "heicToPng": {
-      "title": "Convertidor HEIC a PNG - Convierta HEIC a PNG en línea gratis | ",
-      "description": "Convierta imágenes HEIC a formato PNG en línea de forma gratuita. ",
+      "title": "Convertir HEIC a PNG gratis online | FreeConvert",
+      "description": "Convierte HEIC a PNG online y gratis. Pasa tus fotos de iPhone a PNG universal con transparencia. Rápido, seguro y sin registro: listo en segundos.",
       "keywords": "HEIC a PNG, convertidor HEIC, convertidor PNG, fotos de Apple, convertir HEIC, soporte de transparencia",
       "ogTitle": "Convertidor HEIC a PNG - Herramienta gratuita en línea",
       "ogDescription": "Convierta HEIC a PNG en línea. ",
       "ogImageAlt": "Convertidor HEIC a PNG"
     },
     "heicToWebp": {
-      "title": "Convertidor HEIC a WebP - Convierta HEIC a WebP en línea gratis | ",
-      "description": "Convierta imágenes HEIC al formato WebP moderno en línea de forma gratuita. ",
+      "title": "Convertir HEIC a WebP gratis online | FreeConvert",
+      "description": "Convierte HEIC a WebP online y gratis. Pasa tus fotos de iPhone a WebP compacto con excelente compresión. Rápido, seguro y sin registro en segundos.",
       "keywords": "HEIC a WebP, conversor HEIC, conversor WebP, fotos de Apple, convertir HEIC, optimizar imágenes",
       "ogTitle": "Convertidor HEIC a WebP: herramienta gratuita en línea",
       "ogDescription": "Convierta HEIC a WebP en línea. ",
       "ogImageAlt": "Convertidor HEIC a WebP"
     },
     "pdfToJpg": {
-      "title": "Convertidor de PDF a JPG - Convierta PDF a JPEG en línea gratis | ",
-      "description": "Convierta documentos PDF a imágenes JPG de alta calidad en línea. ",
+      "title": "Convertir PDF a JPG gratis online | FreeConvert",
+      "description": "Convierte PDF a JPG online y gratis. Extrae todas las páginas o elige algunas como imágenes JPEG de alta calidad. Rápido, seguro y sin registro en segundos.",
       "keywords": "PDF a JPG, PDF a JPEG, conversor de PDF, conversor de JPG, extraer páginas de PDF, PDF a imagen",
       "ogTitle": "Convertidor de PDF a JPG: herramienta gratuita en línea",
       "ogDescription": "Convierta PDF a JPG en línea. ",
       "ogImageAlt": "Convertidor de PDF a JPG"
     },
     "pdfToPng": {
-      "title": "Convertidor de PDF a PNG - Convierta PDF a PNG en línea gratis | ",
-      "description": "Convierta documentos PDF a imágenes PNG de alta calidad en línea. ",
+      "title": "Convertir PDF a PNG gratis online | FreeConvert",
+      "description": "Convierte PDF a PNG online y gratis. Exporta páginas como imágenes de alta calidad con transparencia. Rápido, seguro y sin registro: listo en segundos.",
       "keywords": "PDF a PNG, conversor de PDF, conversor de PNG, extraer páginas de PDF, PDF a imagen, compatibilidad con transparencias",
       "ogTitle": "Convertidor de PDF a PNG - Herramienta gratuita en línea",
       "ogDescription": "Convierta PDF a PNG en línea. ",
@@ -1111,16 +1111,16 @@
       "ogImageAlt": "Convertidor de JPG a PDF"
     },
     "webpToPdf": {
-      "title": "Convertidor de WebP a PDF - Convierta WebP a PDF en línea gratis | ",
-      "description": "Convierta imágenes WebP a documentos PDF en línea. ",
+      "title": "Convertir WebP a PDF gratis online | FreeConvert",
+      "description": "Convierte imágenes WebP a PDF online y gratis. Combina páginas y personaliza el diseño. Rápido, seguro y sin registro: convierte en tu navegador en segundos.",
       "keywords": "WebP a PDF, conversor WebP, conversor de PDF, crear PDF, WebP a PDF en línea, compresión de imágenes",
       "ogTitle": "Convertidor de WebP a PDF: herramienta gratuita en línea",
       "ogDescription": "Convierta WebP a PDF en línea. ",
       "ogImageAlt": "Convertidor de WebP a PDF"
     },
     "heicToPdf": {
-      "title": "Convertidor HEIC a PDF - Convierta HEIC a PDF en línea gratis | ",
-      "description": "Convierta fotos Apple HEIC a documentos PDF en línea. ",
+      "title": "Convertir HEIC a PDF gratis online | FreeConvert",
+      "description": "Convierte HEIC a PDF online y gratis. Pasa tus fotos de iPhone a documentos PDF para compartir con diseño personalizado. Rápido, seguro y sin registro.",
       "keywords": "HEIC a PDF, convertidor HEIC, convertidor de PDF, fotos de Apple a PDF, fotos de iPhone a PDF",
       "ogTitle": "Convertidor HEIC a PDF: herramienta gratuita en línea",
       "ogDescription": "Convierta fotos Apple HEIC a PDF en línea. ",
@@ -1143,8 +1143,8 @@
       "ogImageAlt": "Herramienta para dividir PDF"
     },
     "pdfInfo": {
-      "title": "Analizador de información de PDF: vea propiedades y metadatos de PDF | ",
-      "description": "Analice documentos PDF y vea metadatos detallados en línea. ",
+      "title": "Info de PDF: ver propiedades y metadatos | FreeConvert",
+      "description": "Analiza documentos PDF y consulta sus metadatos online. Ve tamaño, páginas, autor, fecha de creación y más. Herramienta de información de PDF gratis y rápida.",
       "keywords": "Información de PDF, metadatos de PDF, propiedades de PDF, analizar PDF, detalles de PDF, información de PDF",
       "ogTitle": "Analizador de información de PDF: vea las propiedades de PDF en línea",
       "ogDescription": "Analice documentos PDF y vea metadatos detallados al instante.",
@@ -1161,135 +1161,135 @@
       "twitterDescription": "Crea y explora combinaciones de colores en línea. "
     },
     "colorPicker": {
-      "title": "Selector de color: selector de color interactivo y conversor de formato",
-      "description": "Elija colores y obtenga conversiones de formato instantáneas. ",
+      "title": "Selector de color online: conversor de formatos",
+      "description": "Selecciona colores y obtén conversiones al instante en HEX, RGB, RGBA, HSL, HSLA y HSV. Selector interactivo para diseñadores y desarrolladores web. Gratis.",
       "keywords": "selector de color, selección de color, selector de color, selector de color HEX, selector de color RGB, formatos de color, colores web, colores de diseño, herramienta de color, selector de color HSL, selector de color RGBA, selector de color HSV, selector de color interactivo, selector de color en línea, selector de código de color, herramienta de cuentagotas"
     },
     "colorPalettes": {
-      "title": "Generador de paleta de colores: cree y guarde combinaciones de colores personalizadas",
-      "description": "Genere hermosas paletas de colores con esquemas complementarios, análogos y monocromáticos. ",
+      "title": "Generador de paletas de colores gratis | FreeConvert",
+      "description": "Genera paletas de colores con esquemas complementarios, análogos y monocromáticos. Guarda tus favoritas y explora colecciones. Herramienta de paletas gratis.",
       "keywords": "paleta de colores, generador de paleta, combinaciones de colores, colores complementarios, colores análogos, paleta monocromática, combinaciones de colores, paleta de diseño, armonía de colores, generador de combinaciones de colores, paleta personalizada, guardar paleta de colores, colores triádicos, dividir complementarios, rueda de colores, creador de paletas"
     },
     "colorConverter": {
-      "title": "Convertidor de color: convierta entre formatos HEX, RGB, HSL y color",
-      "description": "Convierta colores entre formatos HEX, RGB, RGBA, HSL, HSLA y HSV al instante. ",
+      "title": "Convertir colores: HEX, RGB, HSL y más | FreeConvert",
+      "description": "Convierte colores entre HEX, RGB, RGBA, HSL, HSLA y HSV al instante. Compatible con nombres y formatos CSS. Convertidor de color online y gratis.",
       "keywords": "conversor de color, HEX a RGB, RGB a HSL, HSL a HEX, conversor de formato de color, convertir colores, colores CSS, transformación de color, conversor de código de color, RGB a HEX, HEX a HSL, HSL a RGB, herramienta de formato de color, conversor RGBA, conversor HSLA, conversión de código de color"
     },
     "gradientGenerator": {
-      "title": "Generador de gradientes: cree CSS y gradientes de viento de cola en línea",
-      "description": "Genere impresionantes gradientes entre colores con CSS instantáneo y código Tailwind. ",
+      "title": "Generador de gradientes CSS y Tailwind online | FreeConvert",
+      "description": "Genera gradientes CSS y Tailwind entre colores con vista previa en vivo. Personaliza dirección, pasos y colores, y copia el código. Creador gratis.",
       "keywords": "generador de gradiente, gradiente CSS, gradiente Tailwind, gradiente lineal, gradiente de color, creador de gradiente, gradiente web, herramienta de gradiente, código CSS gradiente, creador de gradiente, gradiente de fondo, fondo degradado, generador de gradiente CSS, gradiente CSS Tailwind, código de gradiente, herramienta de gradiente en línea"
     },
     "texts": {
-      "title": "Centro de herramientas de texto: fuentes, emojis, símbolos y herramientas JSON | ",
-      "description": "Herramientas de texto integrales que incluyen vistas previas de fuentes, navegadores emoji compatibles con dispositivos, símbolos especiales, validador JSON, comparador JSON y analizador JSON. ",
+      "title": "Herramientas de texto: fuentes, emojis y JSON | FreeConvert",
+      "description": "Herramientas de texto todo en uno: vista previa de fuentes, emojis por dispositivo, símbolos Unicode, validador, comparador y analizador JSON. Gratis.",
       "keywords": "herramientas de texto, fuentes, emojis, símbolos, caracteres unicode, tipografía, vista previa de fuente, selector de emoji, caracteres especiales, generador de texto, validador json, comparador json, analizador json, formateador json, diferenciación json, explorador json",
       "ogTitle": "Centro de herramientas de texto: fuentes, emojis, símbolos y herramientas JSON | ",
       "ogDescription": "Herramientas de texto integrales que incluyen vistas previas de fuentes, navegadores emoji compatibles con dispositivos, símbolos especiales, validador JSON, comparador JSON y analizador JSON.",
       "ogImageAlt": "Centro de herramientas de texto: herramientas de datos y tipografía"
     },
     "emojis": {
-      "title": "Selector de emojis: busque y copie emojis con vista previa del dispositivo | ",
-      "description": "Explora miles de emojis con renderizado específico del dispositivo. ",
+      "title": "Selector de emojis: copiar con vista por dispositivo",
+      "description": "Explora miles de emojis con renderizado por dispositivo. Mira cómo se ven en Apple, Google, Microsoft y Samsung, y copia cualquier emoji al instante. Gratis.",
       "keywords": "selector de emoji, navegador de emoji, copiar emoji, emoji de dispositivo, emoji de Apple, emoji de Google, emoji de Microsoft, emoji de Samsung, categorías de emoji",
       "ogTitle": "Selector de emojis: buscar y copiar emojis",
       "ogDescription": "Explora miles de emojis con renderizado específico del dispositivo. "
     },
     "symbols": {
-      "title": "Biblioteca de símbolos: símbolos Unicode y caracteres especiales | ",
-      "description": "Explore y copie símbolos y caracteres especiales Unicode. ",
+      "title": "Símbolos Unicode y caracteres especiales | FreeConvert",
+      "description": "Explora y copia símbolos y caracteres especiales Unicode. Navega entre símbolos matemáticos, flechas, signos de moneda, formas y mucho más. Gratis y online.",
       "keywords": "símbolos Unicode, caracteres especiales, símbolos matemáticos, flechas, símbolos de moneda, formas, copiar símbolos",
       "ogTitle": "Biblioteca de símbolos: símbolos Unicode y caracteres especiales",
       "ogDescription": "Explora y copia símbolos y caracteres especiales Unicode al instante."
     },
     "fonts": {
-      "title": "Herramientas de fuentes - Zona de juegos tipográfica y utilidades de fuentes | ",
-      "description": "Herramientas de fuentes profesionales que incluyen vista previa, sugerencias de emparejamiento y generadores de escala tipográfica. ",
+      "title": "Herramientas de fuentes: vista previa y escalas",
+      "description": "Herramientas de fuentes profesionales: vista previa, sugerencias de combinaciones y generadores de escala tipográfica. Prueba Google Fonts en vivo y gratis.",
       "keywords": "herramientas de fuentes, tipografía, vista previa de fuentes, emparejamiento de fuentes, escala tipográfica, Google Fonts, fuentes web",
       "ogTitle": "Herramientas de fuentes: juegos de tipografía y utilidades",
       "ogDescription": "Herramientas de fuentes profesionales que incluyen vista previa, emparejamiento y generadores de escala."
     },
     "fontPreview": {
-      "title": "Vista previa de fuentes - Zona de juegos de tipografía interactiva | ",
-      "description": "Pruebe Google Fonts con vista previa en vivo. ",
+      "title": "Vista previa de fuentes: probador de tipografía",
+      "description": "Prueba Google Fonts con vista previa en vivo. Ajusta tamaño, grosor, espaciado y color, y genera el código CSS al instante. Herramienta de fuentes gratis.",
       "keywords": "vista previa de fuentes, Google Fonts, área de juegos de tipografía, probador de fuentes, fuentes CSS, fuentes web",
       "ogTitle": "Vista previa de fuentes: zona de juegos de tipografía interactiva",
       "ogDescription": "Pruebe Google Fonts con vista previa en vivo y opciones de personalización."
     },
     "fontPairings": {
-      "title": "Combinaciones de fuentes: descubra combinaciones de tipografías perfectas | ",
-      "description": "Explore combinaciones de fuentes seleccionadas para diseño web. ",
+      "title": "Combinaciones de fuentes de Google Fonts | FreeConvert",
+      "description": "Explora combinaciones de Google Fonts seleccionadas para diseño web. Encuentra parejas de títulos y texto con recomendaciones de uso. Herramienta gratis.",
       "keywords": "emparejamiento de fuentes, combinaciones de fuentes, emparejamiento de tipografía, pares de fuentes de Google, fuentes complementarias",
       "ogTitle": "Emparejamientos de fuentes: combinaciones perfectas de tipografía",
       "ogDescription": "Explore combinaciones de fuentes seleccionadas con recomendaciones de casos de uso."
     },
     "fontScales": {
-      "title": "Generador de escala tipográfica: cree sistemas de tamaño de fuente | ",
-      "description": "Generar escalas tipográficas utilizando proporciones musicales. ",
+      "title": "Generador de escala tipográfica CSS | FreeConvert",
+      "description": "Genera escalas tipográficas con proporciones musicales. Crea jerarquías de tamaños coherentes para tu sistema de diseño y copia el CSS. Herramienta gratis.",
       "keywords": "escala tipográfica, escala de fuente, escala de tipo, escala modular, sistema de tamaño de fuente, sistema de diseño",
       "ogTitle": "Generador de escala tipográfica: sistemas de tamaño de fuente",
       "ogDescription": "Generar escalas tipográficas utilizando proporciones musicales y principios de diseño."
     },
     "jsonValidator": {
-      "title": "Validador JSON: valide y formatee JSON en línea gratis | ",
-      "description": "Valide y formatee datos JSON con informes de errores detallados. ",
+      "title": "Validar JSON: validador y formateador online | FreeConvert",
+      "description": "Valida y formatea JSON con informes de error detallados. Ideal para depurar APIs y archivos de configuración. Validador de JSON online y gratis al instante.",
       "keywords": "validador json, validar json, formateador json, comprobador de sintaxis json, embellecedor json, formatear json",
       "ogTitle": "Validador JSON: valide y formatee JSON en línea",
       "ogDescription": "Valide y formatee datos JSON con informes de errores detallados."
     },
     "jsonComparer": {
-      "title": "Comparador JSON: compare dos objetos JSON en línea gratis | ",
-      "description": "Compare dos objetos JSON y visualice las diferencias. ",
+      "title": "Comparar JSON: compara dos objetos online | FreeConvert",
+      "description": "Compara dos objetos JSON y visualiza las diferencias. Detecta campos añadidos, eliminados y modificados con resaltado por colores. Comparador JSON gratis.",
       "keywords": "comparador json, comparar json, diferencia json, comparación json, diferencias json, rastreador de cambios json",
       "ogTitle": "Comparador JSON: compara objetos JSON en línea",
       "ogDescription": "Compare dos objetos JSON y visualice las diferencias al instante."
     },
     "jsonParser": {
-      "title": "Analizador JSON: explore JSON con vista de árbol interactiva | ",
-      "description": "Analice y explore datos JSON con una vista de árbol interactiva. ",
+      "title": "Analizador JSON: vista de árbol interactiva | FreeConvert",
+      "description": "Analiza y explora datos JSON con vista de árbol interactiva. Navega estructuras anidadas, consulta tipos de datos y copia valores al instante. Gratis.",
       "keywords": "analizador json, analizar json, explorador json, vista de árbol json, visor json, navegador json",
       "ogTitle": "Analizador JSON: explore JSON con vista de árbol",
       "ogDescription": "Analice y explore datos JSON con una vista de árbol interactiva."
     },
     "privacyPolicy": {
       "title": "Política de privacidad - FreeConvert",
-      "description": "Descubra cómo FreeConvert protege su privacidad y maneja sus datos. ",
+      "description": "Descubre cómo FreeConvert protege tu privacidad y trata tus datos. Todo el procesamiento ocurre en tu navegador: priorizamos tu seguridad y privacidad.",
       "keywords": "política de privacidad, protección de datos, privacidad del usuario, declaración de privacidad"
     },
     "termsOfService": {
       "title": "Términos de servicio - FreeConvert",
-      "description": "Lea los términos de servicio de FreeConvert. ",
+      "description": "Lee los términos de servicio de FreeConvert. Conoce tus derechos y responsabilidades al usar nuestras herramientas gratuitas de conversión y diseño online.",
       "keywords": "términos de servicio, términos y condiciones, acuerdo de servicio, términos de usuario"
     },
     "termsOfUse": {
       "title": "Términos de uso - FreeConvert",
-      "description": "Lea los términos de uso de FreeConvert. ",
+      "description": "Lee los términos de uso de FreeConvert. Conoce tus derechos y responsabilidades al usar nuestras herramientas gratuitas de imagen, PDF, color y texto online.",
       "keywords": "términos de uso, acuerdo de usuario, términos de uso, términos y condiciones"
     },
     "cookiePolicy": {
       "title": "Política de cookies - FreeConvert",
-      "description": "Obtenga más información sobre cómo FreeConvert utiliza cookies para mejorar su experiencia. ",
+      "description": "Descubre cómo FreeConvert usa cookies para mejorar tu experiencia. Conoce nuestro uso de cookies, tus opciones y nuestras prácticas de privacidad claras.",
       "keywords": "política de cookies, cookies, cookies del sitio web, privacidad, recogida de datos"
     },
     "chartGenerator": {
-      "title": "Generador de Gráficos - Crear Gráficos Hermosos en Línea Gratis | FreeConvert",
-      "description": "Crea gráficos impresionantes en línea gratis. Genera gráficos de barras, líneas, circulares, donas, áreas y radares con datos personalizados. Descarga como PNG o SVG.",
+      "title": "Generador de gráficos online gratis | FreeConvert",
+      "description": "Crea gráficos impresionantes online y gratis. Genera gráficos de barras, líneas, circulares, de anillos, de áreas y de radar con tus datos. Descarga en PNG.",
       "keywords": "generador de gráficos, creador de gráficos, crear gráficos, gráfico de barras, gráfico de líneas, gráfico circular, gráfico de dona, gráfico de área, gráfico de radar, visualización de datos",
       "ogTitle": "Generador de Gráficos - Crear Gráficos Hermosos Gratis",
       "ogDescription": "Crea gráficos impresionantes con datos personalizados. Genera gráficos de barras, líneas, circulares, donas, áreas y radares.",
       "ogImageAlt": "Herramienta Generador de Gráficos"
     },
     "chartGeneratorGuide": {
-      "title": "Guía del Generador de Gráficos - Cómo Crear Gráficos Hermosos en Línea | FreeConvert",
-      "description": "Aprenda a crear gráficos profesionales con nuestro generador de gráficos gratuito. Guía completa que cubre todos los tipos de gráficos, opciones de personalización y mejores prácticas.",
+      "title": "Guía del generador de gráficos online | FreeConvert",
+      "description": "Aprende a crear gráficos profesionales con nuestro generador gratuito. Guía completa de cada tipo de gráfico, opción de personalización y mejores prácticas.",
       "keywords": "guía generador de gráficos, cómo crear gráficos, visualización de datos, gráfico de barras, gráfico de líneas, gráfico circular, tutorial de gráficos",
       "ogTitle": "Guía Completa para Crear Gráficos con Generador de Gráficos",
       "ogDescription": "Aprenda a crear gráficos impresionantes para presentaciones, informes y redes sociales.",
       "ogImageAlt": "Guía del Generador de Gráficos"
     },
     "fontGenerator": {
-      "title": "Generador de fuentes - Texto elegante (copiar y pegar) | FreeConvert",
-      "description": "Generador de fuentes en línea gratuito con más de 60 estilos de texto elegantes. Convierte tu texto en negrita, cursiva, manuscrita, glitch, versalitas y arte ASCII. Copia y pega al instante en cualquier lugar.",
+      "title": "Generador de fuentes: texto elegante para copiar",
+      "description": "Generador de fuentes gratis con más de 60 estilos de texto elegante. Pasa tu texto a negrita, cursiva, manuscrita, glitch y versalitas. Copia y pega ya.",
       "keywords": "generador de fuentes, texto elegante, texto bonito, fuentes copiar pegar, fuentes unicode, texto cursiva, texto negrita, texto glitch, arte ascii, fuentes instagram, texto con estilo",
       "ogTitle": "Generador de fuentes - Texto elegante (copiar y pegar)",
       "ogDescription": "Convierte texto normal en más de 60 estilos de fuente elegantes: negrita, cursiva, glitch, versalitas y arte ASCII. Gratis, instantáneo, copiar y pegar.",
@@ -1304,8 +1304,8 @@
       "ogImageAlt": "Herramienta gratuita para rotar imágenes"
     },
     "flipImage": {
-      "title": "Voltear imagen online gratis - espejo horizontal y vertical",
-      "description": "Voltea y refleja imágenes online gratis. Crea el efecto espejo horizontal o vertical en tu navegador. Sin subir archivos ni registrarte.",
+      "title": "Voltear imagen online gratis: espejo de fotos | FreeConvert",
+      "description": "Voltea y refleja imágenes online y gratis. Crea el efecto espejo horizontal o vertical en tu navegador. Sin subir archivos ni registrarte: rápido y privado.",
       "keywords": "voltear imagen, espejo imagen, reflejar foto, voltear horizontal, voltear vertical, invertir imagen",
       "ogTitle": "Voltear imagen online - herramienta gratuita",
       "ogDescription": "Refleja fotos horizontal o verticalmente al instante en tu navegador. Gratis y privado.",
