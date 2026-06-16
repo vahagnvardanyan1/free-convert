@@ -7,7 +7,9 @@ description: >-
   translations, fix the sitemap, or fix canonical/hreflang. Detects every gap
   with scripts/seo-audit.mjs, applies a research-backed organic-traffic playbook,
   writes/optimizes localized metadata in all 6 languages, fixes the sitemap, and
-  wires canonical + hreflang — every finding evidence-backed and confidence-tagged.
+  wires canonical + hreflang. Pulls Google Search Console data (when connected) to
+  find low-CTR / striking-distance pages and confirm real ranking movement — every
+  finding evidence-backed and confidence-tagged.
 ---
 
 # /seo-fix — audit, fix & grow organic traffic
@@ -35,10 +37,45 @@ SEO rules and AI-search behavior change. Before applying any ranking-impacting c
 that depends on current behavior (title/meta limits, schema types, GEO/`llms.txt`,
 algorithm updates) or when the user asks to "research", use **`WebSearch`/`WebFetch`**
 to confirm 2026 best practice — don't rely on memory. Prefer primary sources (Google
-Search Central, web.dev, Schema.org). If Google Search Console / analytics data is
-available (via MCP or a pasted export), pull **impressions, CTR, position per page** —
-that data turns `Hypothesis` findings into `Confirmed` ones and reveals the biggest
-wins (high-impression/low-CTR pages, position 5–15 pages, missing-page queries).
+Search Central, web.dev, Schema.org).
+
+## Step 1.5 — Google Search Console (real ranking data)
+
+This is the **only** way to know whether a keyword actually works and whether a page
+moved up in Google — code audits prove a page is *eligible* to rank, GSC proves what it
+*does* rank for. Always try to load GSC data; degrade gracefully if it isn't available.
+
+**Get the data (in priority order):**
+1. **GSC MCP server**, if one is connected. Discover it with `ToolSearch` (query
+   `search console` / `google search console` / `gsc`). If found, query the
+   `searchanalytics` data for the property (default `https://<SITE_URL>`).
+2. **Pasted / exported data** — ask the user to export *Search results* from
+   [search.google.com/search-console](https://search.google.com/search-console)
+   (Performance → Export → CSV/Sheets) and share it, or paste the Queries + Pages tables.
+3. **None available** → say so explicitly, mark every traffic-performance finding as
+   `Hypothesis`, and still do all the on-page/technical work (Steps 2–5). Note that
+   ranking impact can only be confirmed once GSC is connected.
+
+**What to pull (last 28 days, then compare to the prior 28 for movement):**
+- Per **page**: clicks, impressions, CTR, average position.
+- Per **query**: same four metrics, plus the page that ranks for it.
+- Segment by **country** when judging the 6 locales (e.g. `de` performance in Germany).
+
+**Turn the data into prioritized action (highest ROI first):**
+| Signal in GSC | Meaning | Action |
+|---|---|---|
+| High impressions, **low CTR** | Ranks but title/meta don't earn the click | Rewrite title/description (playbook §2–§3) — fastest win, no new ranking needed |
+| **Position 5–15** ("striking distance") | One page-1 push away | Strengthen content depth, internal links, schema for that page (§5, §8, §11) |
+| Query with impressions but **no dedicated page** | Unmet demand | Propose a new tool/blog page for it |
+| Position **dropping** week-over-week | Decay / lost ranking | Investigate (content freshness, a regression, new competitor) |
+| Locale page ranks far below `en` | Weak localization | Improve that locale's copy/translation (§9) |
+
+**Close the loop:** after applying fixes, note the page's current avg position/CTR as a
+baseline and tell the user to **re-check GSC in 2–4 weeks** — that's how long Google
+takes to reflect changes. Report movement as `Confirmed` only once GSC shows it.
+
+**Privacy:** GSC data may include real query/traffic data — keep it in the working
+session; don't write exports into the repo or commit them.
 
 ## Step 2 — Collect evidence
 

@@ -847,7 +847,211 @@
     "outputFormat": "Output Format",
     "pageRange": "Page Range",
     "in": "in",
-    "out": "out"
+    "out": "out",
+    "guide": {
+      "pdfToImages": {
+        "howToTitle": "How to convert a PDF to images",
+        "steps": [
+          {
+            "title": "Upload your PDF",
+            "text": "Drag and drop your PDF file into the box above, or click to browse and select it from your device."
+          },
+          {
+            "title": "Choose format & quality",
+            "text": "Pick the output image format (JPG, PNG, or WebP), then adjust quality, scale, and an optional page range."
+          },
+          {
+            "title": "Convert the pages",
+            "text": "Click Process. Each page of your PDF is rendered to a separate image directly in your browser."
+          },
+          {
+            "title": "Download your images",
+            "text": "Preview the result and download your images. Nothing is uploaded to a server, so your file stays private."
+          }
+        ],
+        "faqTitle": "PDF to image — frequently asked questions",
+        "faqs": [
+          {
+            "question": "Is this PDF to image converter free?",
+            "answer": "Yes. Converting PDF pages to images is completely free, with no watermarks, no limits, and no account required."
+          },
+          {
+            "question": "Are my PDF files kept private?",
+            "answer": "Yes. All conversion happens locally in your browser — your PDF is never uploaded to our servers, so your files stay private."
+          },
+          {
+            "question": "Can I convert only specific pages?",
+            "answer": "Yes. Use the page range field (for example 1,3,5-10) to export just the pages you need instead of the whole document."
+          },
+          {
+            "question": "Which image format should I choose?",
+            "answer": "Choose JPG for the smallest files, PNG for lossless quality and transparency, or WebP for the best balance of quality and size."
+          }
+        ]
+      },
+      "imagesToPdf": {
+        "howToTitle": "How to convert images to a PDF",
+        "steps": [
+          {
+            "title": "Upload your images",
+            "text": "Drag and drop one or more images into the box above, or click to browse. You can add several files at once."
+          },
+          {
+            "title": "Set page options",
+            "text": "Choose page size (A4, A3, Letter, or Legal), orientation, and margins, and enable fit-to-page if needed."
+          },
+          {
+            "title": "Create the PDF",
+            "text": "Click Process to combine your images into a single PDF document, generated right in your browser."
+          },
+          {
+            "title": "Download your PDF",
+            "text": "Preview and download the finished PDF. Your images are never uploaded — everything runs on your device."
+          }
+        ],
+        "faqTitle": "Images to PDF — frequently asked questions",
+        "faqs": [
+          {
+            "question": "Is the image to PDF converter free?",
+            "answer": "Yes. Creating a PDF from your images is 100% free, with no watermarks, sign-up, or file limits."
+          },
+          {
+            "question": "Can I combine multiple images into one PDF?",
+            "answer": "Yes. Add as many images as you like and they are merged into a single multi-page PDF in the order you upload them."
+          },
+          {
+            "question": "Will my images stay private?",
+            "answer": "Yes. Conversion happens entirely in your browser, so your images are never sent to or stored on any server."
+          },
+          {
+            "question": "Can I choose the page size and orientation?",
+            "answer": "Yes. Pick A4, A3, Letter, or Legal, set portrait or landscape, and adjust the margins before creating the PDF."
+          }
+        ]
+      },
+      "mergePdf": {
+        "howToTitle": "How to merge PDF files",
+        "steps": [
+          {
+            "title": "Upload your PDFs",
+            "text": "Drag and drop two or more PDF files into the box above, or click to browse and select them."
+          },
+          {
+            "title": "Set the order",
+            "text": "Arrange the files in the order you want them combined, and remove any file you did not mean to add."
+          },
+          {
+            "title": "Merge the files",
+            "text": "Click Process to join all the PDFs into one document, assembled locally in your browser."
+          },
+          {
+            "title": "Download the merged PDF",
+            "text": "Preview and download your single combined PDF. Your files never leave your device."
+          }
+        ],
+        "faqTitle": "Merge PDF — frequently asked questions",
+        "faqs": [
+          {
+            "question": "Is the merge PDF tool free?",
+            "answer": "Yes. Merging PDF files is completely free, with no watermarks, page limits, or account required."
+          },
+          {
+            "question": "How many PDFs can I merge at once?",
+            "answer": "You can combine multiple PDF files in a single operation; just add them all and they merge in the order you choose."
+          },
+          {
+            "question": "Are my documents secure?",
+            "answer": "Yes. PDFs are merged directly in your browser and are never uploaded, so your documents remain completely private."
+          },
+          {
+            "question": "Will the original formatting be kept?",
+            "answer": "Yes. Merging preserves each page exactly as it was — text, images, and layout stay intact in the combined PDF."
+          }
+        ]
+      },
+      "splitPdf": {
+        "howToTitle": "How to split a PDF",
+        "steps": [
+          {
+            "title": "Upload your PDF",
+            "text": "Drag and drop your PDF into the box above, or click to browse and select the file you want to split."
+          },
+          {
+            "title": "Define page ranges",
+            "text": "Enter the start and end pages for each section you want to extract. Add as many ranges as you need."
+          },
+          {
+            "title": "Split the document",
+            "text": "Click Process to split the PDF into separate files according to your ranges, all in your browser."
+          },
+          {
+            "title": "Download the results",
+            "text": "Preview and download each split PDF. Your original file is never uploaded to a server."
+          }
+        ],
+        "faqTitle": "Split PDF — frequently asked questions",
+        "faqs": [
+          {
+            "question": "Is the split PDF tool free?",
+            "answer": "Yes. Splitting PDFs is free, with no watermarks, no limits, and no sign-up needed."
+          },
+          {
+            "question": "Can I extract several page ranges at once?",
+            "answer": "Yes. Add multiple ranges (for example 1-3 and 7-9) to create several separate PDF files in one go."
+          },
+          {
+            "question": "Are my files private?",
+            "answer": "Yes. The PDF is split locally in your browser, so your document is never uploaded or stored anywhere."
+          },
+          {
+            "question": "Will splitting reduce quality?",
+            "answer": "No. Splitting copies the original pages exactly, so text and image quality are preserved in every output file."
+          }
+        ]
+      },
+      "pdfInfo": {
+        "howToTitle": "How to view PDF information",
+        "steps": [
+          {
+            "title": "Upload your PDF",
+            "text": "Drag and drop your PDF into the box above, or click to browse and select it from your device."
+          },
+          {
+            "title": "Analyze the file",
+            "text": "Click Process and the tool reads the document’s metadata directly in your browser."
+          },
+          {
+            "title": "Review the details",
+            "text": "See the page count, file size, author, title, and creation and modification dates."
+          },
+          {
+            "title": "Use the information",
+            "text": "Copy the details you need. Your PDF is never uploaded, so the file stays private."
+          }
+        ],
+        "faqTitle": "PDF info — frequently asked questions",
+        "faqs": [
+          {
+            "question": "Is the PDF info tool free?",
+            "answer": "Yes. Inspecting PDF metadata is completely free, with no sign-up or limits of any kind."
+          },
+          {
+            "question": "What details can I see?",
+            "answer": "You can view the page count, file size, author, title, subject, and the creation and modification dates."
+          },
+          {
+            "question": "Are my files private?",
+            "answer": "Yes. The PDF is analyzed locally in your browser and is never uploaded to any server."
+          },
+          {
+            "question": "Do I need to install anything?",
+            "answer": "No. Everything runs in your web browser — no software, plugins, or account required."
+          }
+        ]
+      }
+    },
+    "relatedTools": "Related PDF Tools",
+    "relatedToolsDescription": "Work with PDFs and images using our other free tools:"
   },
   "pdfToolHeaders": {
     "pdfToJpg": {

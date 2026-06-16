@@ -1,13 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import { Upload, FileText, Zap, Settings, Image as ImageIcon, Plus, X } from 'lucide-react';
+import { Upload, FileText, Zap, Settings, Image as ImageIcon, Plus, X, HelpCircle, ArrowRight } from 'lucide-react';
 
 import { Button } from '../ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../Select';
 import { Card } from '../Card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../Accordion';
 import { PDFResultModal } from '../PDFResultModal';
 import { useToast } from '@/components/ui/toast';
 import { useUploadZone } from '@/hooks/useUploadZone';
@@ -15,6 +18,8 @@ import { usePDFProcessing } from '@/hooks/usePDFProcessing';
 import { usePDFToImagesOptions, useImagesToPDFOptions, useSplitPDFOptions } from '@/hooks/usePDFOptions';
 import { validateFilesForMode, getAcceptedFileTypes, getAllowsMultiple } from '@/utils/pdfValidation';
 import { formatFileSize } from '@/utils/imageProcessing';
+import { generateHowToSchema, generateFAQPageSchema, generateSoftwareApplicationSchema, generateBreadcrumbSchema } from '@/lib/geoHelpers';
+import { PDF_TOOLS } from '@/config/toolCatalog';
 
 import type { PDFToolMode } from '@/hooks/usePDFProcessing';
 
@@ -24,9 +29,24 @@ interface PDFToolProps {
   description: string;
 }
 
+const GUIDE_KEY: Record<PDFToolMode, string> = {
+  'pdf-to-images': 'pdfToImages',
+  'images-to-pdf': 'imagesToPdf',
+  'merge-pdf': 'mergePdf',
+  'split-pdf': 'splitPdf',
+  'pdf-info': 'pdfInfo',
+};
+
+type GuideStep = { title: string; text: string };
+type GuideFaq = { question: string; answer: string };
+type Guide = { howToTitle: string; steps: GuideStep[]; faqTitle: string; faqs: GuideFaq[] };
+
 export const PDFTool = ({ mode, title, description }: PDFToolProps) => {
   const t = useTranslations('pdfTool');
   const tErrors = useTranslations('errors');
+  const tHeader = useTranslations('header');
+  const pathname = usePathname();
+  const locale = useLocale();
   const toast = useToast();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -118,8 +138,36 @@ export const PDFTool = ({ mode, title, description }: PDFToolProps) => {
     return t('dragDropPdfFile');
   };
 
+  // ── Content depth (HowTo + FAQ) + server-rendered structured data ──
+  const guideMap = (t.raw as (key: string) => unknown)('guide') as Record<string, Guide> | undefined;
+  const guide = guideMap?.[GUIDE_KEY[mode]];
+  const schemaPath = pathname || '/';
+  const structuredData = [
+    generateSoftwareApplicationSchema(schemaPath, title, description),
+    generateBreadcrumbSchema(schemaPath, locale === 'en' ? undefined : locale),
+    ...(guide
+      ? [
+          generateHowToSchema(
+            guide.howToTitle,
+            description,
+            guide.steps.map(s => ({ name: s.title, text: s.text })),
+            schemaPath,
+          ),
+          generateFAQPageSchema(
+            guide.faqs.map(f => ({ question: f.question, answer: f.answer })),
+            schemaPath,
+          ),
+        ]
+      : []),
+  ];
+
+  // Related PDF tools (internal linking + topical cluster)
+  const relatedPdfTools = PDF_TOOLS.filter(tool => !pathname.endsWith(tool.path)).slice(0, 4);
+
   return (
     <section className="bg-gray-50 py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">{title}</h1>
@@ -349,6 +397,67 @@ export const PDFTool = ({ mode, title, description }: PDFToolProps) => {
             </div>
           )}
         </Card>
+
+        {/* How-To + FAQ — content depth & GEO/AEO citability */}
+        {guide && (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 items-start">
+            <Card className="p-6 bg-white">
+              <h2 className="font-bold text-gray-900 mb-4">{guide.howToTitle}</h2>
+              <ol className="space-y-4">
+                {guide.steps.map((step, index) => (
+                  <li key={index} className="flex items-start space-x-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-xs font-bold">{index + 1}</span>
+                    <div>
+                      <p className="font-medium text-gray-900 text-sm">{step.title}</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{step.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </Card>
+
+            <Card className="p-6 bg-white">
+              <h2 className="font-bold text-gray-900 mb-4">{guide.faqTitle}</h2>
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {guide.faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`faq-${index}`}
+                    className="bg-gray-50 border border-gray-200 rounded-lg px-4 py-1 data-[state=open]:bg-gradient-to-r data-[state=open]:from-blue-50 data-[state=open]:to-purple-50"
+                  >
+                    <AccordionTrigger className="text-left hover:no-underline py-3">
+                      <div className="flex items-center space-x-2">
+                        <HelpCircle className="flex-shrink-0 text-blue-600" size={16} />
+                        <span className="font-medium text-gray-900 text-sm">{faq.question}</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-3 ml-6 text-gray-600 text-sm leading-relaxed">{faq.answer}</AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </Card>
+          </div>
+        )}
+
+        {/* Related PDF tools — internal linking */}
+        {relatedPdfTools.length > 0 && (
+          <Card className="p-6 bg-white mt-6">
+            <h2 className="font-bold text-gray-900 mb-1">{t('relatedTools')}</h2>
+            <p className="text-sm text-gray-600 mb-4">{t('relatedToolsDescription')}</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {relatedPdfTools.map(tool => (
+                <Link
+                  key={tool.path}
+                  href={tool.path}
+                  className="group flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                >
+                  <span>{tHeader(tool.translationKey)}</span>
+                  <ArrowRight size={14} className="flex-shrink-0 text-gray-400 transition-transform group-hover:translate-x-0.5 group-hover:text-blue-600" />
+                </Link>
+              ))}
+            </div>
+          </Card>
+        )}
       </div>
 
       {/* Result Modal */}

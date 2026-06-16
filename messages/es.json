@@ -847,7 +847,211 @@
     "outputFormat": "Formato de salida",
     "pageRange": "Rango de páginas",
     "in": "en",
-    "out": "fuera"
+    "out": "fuera",
+    "guide": {
+      "pdfToImages": {
+        "howToTitle": "Cómo convertir un PDF en imágenes",
+        "steps": [
+          {
+            "title": "Sube tu PDF",
+            "text": "Arrastra y suelta tu archivo PDF en el recuadro de arriba, o haz clic para buscarlo y seleccionarlo desde tu dispositivo."
+          },
+          {
+            "title": "Elige formato y calidad",
+            "text": "Selecciona el formato de imagen de salida (JPG, PNG o WebP) y ajusta la calidad, la escala y, si quieres, un rango de páginas."
+          },
+          {
+            "title": "Convierte las páginas",
+            "text": "Haz clic en Procesar. Cada página de tu PDF se convierte en una imagen independiente directamente en tu navegador."
+          },
+          {
+            "title": "Descarga tus imágenes",
+            "text": "Previsualiza el resultado y descarga tus imágenes. No se sube nada a ningún servidor, así que tu archivo permanece privado."
+          }
+        ],
+        "faqTitle": "PDF a imagen — preguntas frecuentes",
+        "faqs": [
+          {
+            "question": "¿Este conversor de PDF a imagen es gratis?",
+            "answer": "Sí. Convertir las páginas de un PDF en imágenes es totalmente gratis, sin marcas de agua, sin límites y sin necesidad de registro."
+          },
+          {
+            "question": "¿Mis archivos PDF se mantienen privados?",
+            "answer": "Sí. Toda la conversión ocurre de forma local en tu navegador: tu PDF nunca se sube a nuestros servidores, así que tus archivos permanecen privados."
+          },
+          {
+            "question": "¿Puedo convertir solo páginas concretas?",
+            "answer": "Sí. Usa el campo de rango de páginas (por ejemplo 1,3,5-10) para exportar únicamente las páginas que necesitas en lugar de todo el documento."
+          },
+          {
+            "question": "¿Qué formato de imagen debo elegir?",
+            "answer": "Elige JPG para los archivos más ligeros, PNG para una calidad sin pérdidas y transparencia, o WebP para el mejor equilibrio entre calidad y tamaño."
+          }
+        ]
+      },
+      "imagesToPdf": {
+        "howToTitle": "Cómo convertir imágenes en un PDF",
+        "steps": [
+          {
+            "title": "Sube tus imágenes",
+            "text": "Arrastra y suelta una o varias imágenes en el recuadro de arriba, o haz clic para buscarlas. Puedes añadir varios archivos a la vez."
+          },
+          {
+            "title": "Configura las páginas",
+            "text": "Elige el tamaño de página (A4, A3, Letter o Legal), la orientación y los márgenes, y activa el ajuste a la página si lo necesitas."
+          },
+          {
+            "title": "Crea el PDF",
+            "text": "Haz clic en Procesar para combinar tus imágenes en un único documento PDF, generado directamente en tu navegador."
+          },
+          {
+            "title": "Descarga tu PDF",
+            "text": "Previsualiza y descarga el PDF terminado. Tus imágenes nunca se suben: todo se ejecuta en tu dispositivo."
+          }
+        ],
+        "faqTitle": "Imágenes a PDF — preguntas frecuentes",
+        "faqs": [
+          {
+            "question": "¿El conversor de imágenes a PDF es gratis?",
+            "answer": "Sí. Crear un PDF a partir de tus imágenes es 100 % gratis, sin marcas de agua, sin registro y sin límites de archivos."
+          },
+          {
+            "question": "¿Puedo combinar varias imágenes en un solo PDF?",
+            "answer": "Sí. Añade todas las imágenes que quieras y se unirán en un único PDF de varias páginas en el orden en que las subas."
+          },
+          {
+            "question": "¿Mis imágenes seguirán siendo privadas?",
+            "answer": "Sí. La conversión ocurre por completo en tu navegador, así que tus imágenes nunca se envían ni se almacenan en ningún servidor."
+          },
+          {
+            "question": "¿Puedo elegir el tamaño y la orientación de la página?",
+            "answer": "Sí. Elige A4, A3, Letter o Legal, configura orientación vertical u horizontal y ajusta los márgenes antes de crear el PDF."
+          }
+        ]
+      },
+      "mergePdf": {
+        "howToTitle": "Cómo combinar archivos PDF",
+        "steps": [
+          {
+            "title": "Sube tus PDF",
+            "text": "Arrastra y suelta dos o más archivos PDF en el recuadro de arriba, o haz clic para buscarlos y seleccionarlos."
+          },
+          {
+            "title": "Define el orden",
+            "text": "Organiza los archivos en el orden en que quieres combinarlos y elimina cualquier archivo que no querías añadir."
+          },
+          {
+            "title": "Combina los archivos",
+            "text": "Haz clic en Procesar para unir todos los PDF en un solo documento, ensamblado de forma local en tu navegador."
+          },
+          {
+            "title": "Descarga el PDF combinado",
+            "text": "Previsualiza y descarga tu único PDF combinado. Tus archivos nunca salen de tu dispositivo."
+          }
+        ],
+        "faqTitle": "Combinar PDF — preguntas frecuentes",
+        "faqs": [
+          {
+            "question": "¿La herramienta para combinar PDF es gratis?",
+            "answer": "Sí. Combinar archivos PDF es totalmente gratis, sin marcas de agua, sin límite de páginas y sin necesidad de registro."
+          },
+          {
+            "question": "¿Cuántos PDF puedo combinar a la vez?",
+            "answer": "Puedes combinar varios archivos PDF en una sola operación; solo tienes que añadirlos todos y se unirán en el orden que elijas."
+          },
+          {
+            "question": "¿Mis documentos están seguros?",
+            "answer": "Sí. Los PDF se combinan directamente en tu navegador y nunca se suben, así que tus documentos siguen siendo totalmente privados."
+          },
+          {
+            "question": "¿Se conservará el formato original?",
+            "answer": "Sí. La combinación conserva cada página tal cual estaba: el texto, las imágenes y el diseño permanecen intactos en el PDF combinado."
+          }
+        ]
+      },
+      "splitPdf": {
+        "howToTitle": "Cómo dividir un PDF",
+        "steps": [
+          {
+            "title": "Sube tu PDF",
+            "text": "Arrastra y suelta tu PDF en el recuadro de arriba, o haz clic para buscar y seleccionar el archivo que quieres dividir."
+          },
+          {
+            "title": "Define los rangos de páginas",
+            "text": "Indica la página inicial y final de cada sección que quieras extraer. Añade todos los rangos que necesites."
+          },
+          {
+            "title": "Divide el documento",
+            "text": "Haz clic en Procesar para dividir el PDF en archivos independientes según tus rangos, todo en tu navegador."
+          },
+          {
+            "title": "Descarga los resultados",
+            "text": "Previsualiza y descarga cada PDF dividido. Tu archivo original nunca se sube a ningún servidor."
+          }
+        ],
+        "faqTitle": "Dividir PDF — preguntas frecuentes",
+        "faqs": [
+          {
+            "question": "¿La herramienta para dividir PDF es gratis?",
+            "answer": "Sí. Dividir PDF es gratis, sin marcas de agua, sin límites y sin necesidad de registro."
+          },
+          {
+            "question": "¿Puedo extraer varios rangos de páginas a la vez?",
+            "answer": "Sí. Añade varios rangos (por ejemplo 1-3 y 7-9) para crear varios archivos PDF independientes de una sola vez."
+          },
+          {
+            "question": "¿Mis archivos son privados?",
+            "answer": "Sí. El PDF se divide de forma local en tu navegador, así que tu documento nunca se sube ni se almacena en ningún sitio."
+          },
+          {
+            "question": "¿Dividir el PDF reducirá la calidad?",
+            "answer": "No. La división copia las páginas originales de forma exacta, así que la calidad del texto y las imágenes se conserva en cada archivo de salida."
+          }
+        ]
+      },
+      "pdfInfo": {
+        "howToTitle": "Cómo ver la información de un PDF",
+        "steps": [
+          {
+            "title": "Sube tu PDF",
+            "text": "Arrastra y suelta tu PDF en el recuadro de arriba, o haz clic para buscarlo y seleccionarlo desde tu dispositivo."
+          },
+          {
+            "title": "Analiza el archivo",
+            "text": "Haz clic en Procesar y la herramienta leerá los metadatos del documento directamente en tu navegador."
+          },
+          {
+            "title": "Revisa los detalles",
+            "text": "Consulta el número de páginas, el tamaño del archivo, el autor, el título y las fechas de creación y modificación."
+          },
+          {
+            "title": "Usa la información",
+            "text": "Copia los detalles que necesites. Tu PDF nunca se sube, así que el archivo permanece privado."
+          }
+        ],
+        "faqTitle": "Información del PDF — preguntas frecuentes",
+        "faqs": [
+          {
+            "question": "¿La herramienta de información del PDF es gratis?",
+            "answer": "Sí. Consultar los metadatos de un PDF es totalmente gratis, sin registro ni límites de ningún tipo."
+          },
+          {
+            "question": "¿Qué detalles puedo ver?",
+            "answer": "Puedes ver el número de páginas, el tamaño del archivo, el autor, el título, el asunto y las fechas de creación y modificación."
+          },
+          {
+            "question": "¿Mis archivos son privados?",
+            "answer": "Sí. El PDF se analiza de forma local en tu navegador y nunca se sube a ningún servidor."
+          },
+          {
+            "question": "¿Necesito instalar algo?",
+            "answer": "No. Todo se ejecuta en tu navegador web: no se necesita ningún software, complemento ni cuenta."
+          }
+        ]
+      }
+    },
+    "relatedTools": "Herramientas de PDF relacionadas",
+    "relatedToolsDescription": "Trabaja con PDF e imágenes usando nuestras otras herramientas gratuitas:"
   },
   "pdfToolHeaders": {
     "pdfToJpg": {

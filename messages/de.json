@@ -847,7 +847,211 @@
     "outputFormat": "Ausgabeformat",
     "pageRange": "Seitenbereich",
     "in": "in",
-    "out": "aus"
+    "out": "aus",
+    "guide": {
+      "pdfToImages": {
+        "howToTitle": "So wandelst du eine PDF in Bilder um",
+        "steps": [
+          {
+            "title": "PDF hochladen",
+            "text": "Ziehe deine PDF-Datei per Drag-and-drop in das Feld oben oder klicke, um sie von deinem Gerät auszuwählen."
+          },
+          {
+            "title": "Format & Qualität wählen",
+            "text": "Wähle das gewünschte Bildformat (JPG, PNG oder WebP) und passe anschließend Qualität, Skalierung und optional einen Seitenbereich an."
+          },
+          {
+            "title": "Seiten umwandeln",
+            "text": "Klicke auf Verarbeiten. Jede Seite deiner PDF wird direkt im Browser als separates Bild gerendert."
+          },
+          {
+            "title": "Bilder herunterladen",
+            "text": "Sieh dir das Ergebnis in der Vorschau an und lade deine Bilder herunter. Nichts wird auf einen Server hochgeladen, deine Datei bleibt also privat."
+          }
+        ],
+        "faqTitle": "PDF in Bild umwandeln — häufig gestellte Fragen",
+        "faqs": [
+          {
+            "question": "Ist dieser PDF-zu-Bild-Konverter kostenlos?",
+            "answer": "Ja. Das Umwandeln von PDF-Seiten in Bilder ist völlig kostenlos – ohne Wasserzeichen, ohne Limits und ohne Anmeldung."
+          },
+          {
+            "question": "Bleiben meine PDF-Dateien privat?",
+            "answer": "Ja. Die gesamte Umwandlung findet lokal in deinem Browser statt – deine PDF wird nie auf unsere Server hochgeladen, sodass deine Dateien privat bleiben."
+          },
+          {
+            "question": "Kann ich nur bestimmte Seiten umwandeln?",
+            "answer": "Ja. Nutze das Feld für den Seitenbereich (zum Beispiel 1,3,5-10), um nur die benötigten Seiten zu exportieren statt des gesamten Dokuments."
+          },
+          {
+            "question": "Welches Bildformat sollte ich wählen?",
+            "answer": "Wähle JPG für die kleinsten Dateien, PNG für verlustfreie Qualität und Transparenz oder WebP für das beste Verhältnis von Qualität und Größe."
+          }
+        ]
+      },
+      "imagesToPdf": {
+        "howToTitle": "So wandelst du Bilder in eine PDF um",
+        "steps": [
+          {
+            "title": "Bilder hochladen",
+            "text": "Ziehe ein oder mehrere Bilder per Drag-and-drop in das Feld oben oder klicke, um sie auszuwählen. Du kannst mehrere Dateien auf einmal hinzufügen."
+          },
+          {
+            "title": "Seitenoptionen festlegen",
+            "text": "Wähle Seitengröße (A4, A3, Letter oder Legal), Ausrichtung und Ränder und aktiviere bei Bedarf die Anpassung an die Seite."
+          },
+          {
+            "title": "PDF erstellen",
+            "text": "Klicke auf Verarbeiten, um deine Bilder zu einem einzigen PDF-Dokument zusammenzufügen – direkt in deinem Browser erzeugt."
+          },
+          {
+            "title": "PDF herunterladen",
+            "text": "Sieh dir die fertige PDF in der Vorschau an und lade sie herunter. Deine Bilder werden nie hochgeladen – alles läuft auf deinem Gerät."
+          }
+        ],
+        "faqTitle": "Bilder in PDF umwandeln — häufig gestellte Fragen",
+        "faqs": [
+          {
+            "question": "Ist der Bild-zu-PDF-Konverter kostenlos?",
+            "answer": "Ja. Das Erstellen einer PDF aus deinen Bildern ist zu 100 % kostenlos – ohne Wasserzeichen, ohne Anmeldung und ohne Dateibegrenzung."
+          },
+          {
+            "question": "Kann ich mehrere Bilder zu einer PDF kombinieren?",
+            "answer": "Ja. Füge so viele Bilder hinzu, wie du möchtest, und sie werden in der Reihenfolge, in der du sie hochlädst, zu einer einzigen mehrseitigen PDF zusammengeführt."
+          },
+          {
+            "question": "Bleiben meine Bilder privat?",
+            "answer": "Ja. Die Umwandlung findet vollständig in deinem Browser statt, sodass deine Bilder nie an einen Server gesendet oder dort gespeichert werden."
+          },
+          {
+            "question": "Kann ich Seitengröße und Ausrichtung wählen?",
+            "answer": "Ja. Wähle A4, A3, Letter oder Legal, lege Hoch- oder Querformat fest und passe die Ränder an, bevor du die PDF erstellst."
+          }
+        ]
+      },
+      "mergePdf": {
+        "howToTitle": "So führst du PDF-Dateien zusammen",
+        "steps": [
+          {
+            "title": "PDFs hochladen",
+            "text": "Ziehe zwei oder mehr PDF-Dateien per Drag-and-drop in das Feld oben oder klicke, um sie auszuwählen."
+          },
+          {
+            "title": "Reihenfolge festlegen",
+            "text": "Ordne die Dateien in der gewünschten Reihenfolge an und entferne jede Datei, die du versehentlich hinzugefügt hast."
+          },
+          {
+            "title": "Dateien zusammenführen",
+            "text": "Klicke auf Verarbeiten, um alle PDFs zu einem Dokument zu verbinden – lokal in deinem Browser zusammengesetzt."
+          },
+          {
+            "title": "Zusammengeführte PDF herunterladen",
+            "text": "Sieh dir deine einzelne kombinierte PDF in der Vorschau an und lade sie herunter. Deine Dateien verlassen nie dein Gerät."
+          }
+        ],
+        "faqTitle": "PDF zusammenführen — häufig gestellte Fragen",
+        "faqs": [
+          {
+            "question": "Ist das Tool zum Zusammenführen von PDFs kostenlos?",
+            "answer": "Ja. Das Zusammenführen von PDF-Dateien ist völlig kostenlos – ohne Wasserzeichen, ohne Seitenlimit und ohne Anmeldung."
+          },
+          {
+            "question": "Wie viele PDFs kann ich auf einmal zusammenführen?",
+            "answer": "Du kannst mehrere PDF-Dateien in einem Vorgang kombinieren; füge sie einfach alle hinzu und sie werden in der von dir gewählten Reihenfolge zusammengeführt."
+          },
+          {
+            "question": "Sind meine Dokumente sicher?",
+            "answer": "Ja. PDFs werden direkt in deinem Browser zusammengeführt und nie hochgeladen, sodass deine Dokumente vollständig privat bleiben."
+          },
+          {
+            "question": "Bleibt die ursprüngliche Formatierung erhalten?",
+            "answer": "Ja. Beim Zusammenführen bleibt jede Seite genau so erhalten, wie sie war – Text, Bilder und Layout bleiben in der kombinierten PDF unverändert."
+          }
+        ]
+      },
+      "splitPdf": {
+        "howToTitle": "So teilst du eine PDF",
+        "steps": [
+          {
+            "title": "PDF hochladen",
+            "text": "Ziehe deine PDF per Drag-and-drop in das Feld oben oder klicke, um die Datei auszuwählen, die du teilen möchtest."
+          },
+          {
+            "title": "Seitenbereiche festlegen",
+            "text": "Gib für jeden Abschnitt, den du extrahieren möchtest, die Start- und Endseite ein. Füge so viele Bereiche hinzu, wie du brauchst."
+          },
+          {
+            "title": "Dokument teilen",
+            "text": "Klicke auf Verarbeiten, um die PDF entsprechend deinen Bereichen in separate Dateien zu teilen – alles in deinem Browser."
+          },
+          {
+            "title": "Ergebnisse herunterladen",
+            "text": "Sieh dir jede geteilte PDF in der Vorschau an und lade sie herunter. Deine Originaldatei wird nie auf einen Server hochgeladen."
+          }
+        ],
+        "faqTitle": "PDF teilen — häufig gestellte Fragen",
+        "faqs": [
+          {
+            "question": "Ist das Tool zum Teilen von PDFs kostenlos?",
+            "answer": "Ja. Das Teilen von PDFs ist kostenlos – ohne Wasserzeichen, ohne Limits und ohne Anmeldung."
+          },
+          {
+            "question": "Kann ich mehrere Seitenbereiche auf einmal extrahieren?",
+            "answer": "Ja. Füge mehrere Bereiche hinzu (zum Beispiel 1-3 und 7-9), um in einem Durchgang mehrere separate PDF-Dateien zu erstellen."
+          },
+          {
+            "question": "Sind meine Dateien privat?",
+            "answer": "Ja. Die PDF wird lokal in deinem Browser geteilt, sodass dein Dokument nirgendwo hochgeladen oder gespeichert wird."
+          },
+          {
+            "question": "Verringert das Teilen die Qualität?",
+            "answer": "Nein. Beim Teilen werden die Originalseiten exakt kopiert, sodass Text- und Bildqualität in jeder Ausgabedatei erhalten bleiben."
+          }
+        ]
+      },
+      "pdfInfo": {
+        "howToTitle": "So zeigst du PDF-Informationen an",
+        "steps": [
+          {
+            "title": "PDF hochladen",
+            "text": "Ziehe deine PDF per Drag-and-drop in das Feld oben oder klicke, um sie von deinem Gerät auszuwählen."
+          },
+          {
+            "title": "Datei analysieren",
+            "text": "Klicke auf Verarbeiten und das Tool liest die Metadaten des Dokuments direkt in deinem Browser aus."
+          },
+          {
+            "title": "Details ansehen",
+            "text": "Sieh dir Seitenanzahl, Dateigröße, Autor, Titel sowie Erstellungs- und Änderungsdatum an."
+          },
+          {
+            "title": "Informationen nutzen",
+            "text": "Kopiere die benötigten Details. Deine PDF wird nie hochgeladen, sodass die Datei privat bleibt."
+          }
+        ],
+        "faqTitle": "PDF-Infos — häufig gestellte Fragen",
+        "faqs": [
+          {
+            "question": "Ist das PDF-Info-Tool kostenlos?",
+            "answer": "Ja. Das Anzeigen von PDF-Metadaten ist völlig kostenlos – ohne Anmeldung und ohne jegliche Limits."
+          },
+          {
+            "question": "Welche Details kann ich sehen?",
+            "answer": "Du kannst Seitenanzahl, Dateigröße, Autor, Titel, Betreff sowie Erstellungs- und Änderungsdatum einsehen."
+          },
+          {
+            "question": "Sind meine Dateien privat?",
+            "answer": "Ja. Die PDF wird lokal in deinem Browser analysiert und nie auf einen Server hochgeladen."
+          },
+          {
+            "question": "Muss ich etwas installieren?",
+            "answer": "Nein. Alles läuft in deinem Webbrowser – keine Software, keine Plugins und kein Konto erforderlich."
+          }
+        ]
+      }
+    },
+    "relatedTools": "Verwandte PDF-Tools",
+    "relatedToolsDescription": "Arbeite mit PDFs und Bildern mithilfe unserer anderen kostenlosen Tools:"
   },
   "pdfToolHeaders": {
     "pdfToJpg": {
