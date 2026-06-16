@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import { ArrowLeft, FileImage, Settings, Zap, AlertCircle, Upload, X } from 'lucide-react';
+import { ArrowLeft, FileImage, Settings, Zap, AlertCircle, Upload, X, ArrowRight } from 'lucide-react';
 
 import { Button } from '../ui/button';
 import { Card } from '@/components/Card';
@@ -18,6 +19,8 @@ import { useImageConversion } from '@/hooks/useImageConversion';
 
 import { validateImageFile } from '@/utils/fileValidation';
 import { formatFileSize } from '@/utils/imageProcessing';
+import { generateHowToSchema, generateFAQPageSchema, generateSoftwareApplicationSchema, generateBreadcrumbSchema } from '@/lib/geoHelpers';
+import { IMAGE_CONVERTERS } from '@/config/toolCatalog';
 
 import type { SupportedFormat } from '@/lib/imageConverter';
 
@@ -31,6 +34,8 @@ interface ConverterPageProps {
 export const ConverterPage = ({ from, to, title, description }: ConverterPageProps) => {
   const t = useTranslations('converterPage');
   const tConverter = useTranslations('converter');
+  const pathname = usePathname();
+  const locale = useLocale();
   const [outputFormat, setOutputFormat] = useState(to.toLowerCase());
   const [quality, setQuality] = useState(0.9);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -159,8 +164,35 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
 
   const error = validationError || conversionError;
 
+  // ── Server-rendered structured data (HowTo + FAQ + WebApplication + Breadcrumb) ──
+  // pathname already carries the active locale prefix (e.g. /de/png-to-webp), so the
+  // schema URLs are self-referential per locale. Default locale (en) has no prefix.
+  const schemaPath = pathname || `/${from}-to-${to}`.toLowerCase();
+  const structuredData = [
+    generateHowToSchema(
+      `${t('howToConvert')} ${from} ${t('to')} ${to}`,
+      description,
+      formatSteps.map(step => ({ name: step.title, text: step.description })),
+      schemaPath,
+    ),
+    generateFAQPageSchema(
+      faqs.map(faq => ({ question: faq.question, answer: faq.answer })),
+      schemaPath,
+    ),
+    generateSoftwareApplicationSchema(schemaPath, title, description),
+    generateBreadcrumbSchema(schemaPath, locale === 'en' ? undefined : locale),
+  ];
+
+  // ── Related converters (internal linking + topical cluster) ──
+  const relatedConverters = IMAGE_CONVERTERS.filter(c => !(c.from === from && c.to === to))
+    .map(c => ({ ...c, score: (c.from === from ? 2 : 0) + (c.to === to ? 1 : 0) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
       {/* Header */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -366,6 +398,28 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
               </Accordion>
             </Card>
           </div>
+
+          {/* Related converters — internal linking + topical cluster */}
+          {relatedConverters.length > 0 && (
+            <Card className="p-4 sm:p-6">
+              <h2 className="font-bold text-gray-900 mb-1 text-sm sm:text-base">{t('relatedTools')}</h2>
+              <p className="text-xs sm:text-sm text-gray-600 mb-4">{t('relatedToolsDescription')}</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {relatedConverters.map(conv => (
+                  <Link
+                    key={conv.path}
+                    href={conv.path}
+                    className="group flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-xs sm:text-sm font-medium text-gray-700 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                  >
+                    <span>
+                      {conv.from} {t('to')} {conv.to}
+                    </span>
+                    <ArrowRight size={14} className="flex-shrink-0 text-gray-400 transition-transform group-hover:translate-x-0.5 group-hover:text-blue-600" />
+                  </Link>
+                ))}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
 

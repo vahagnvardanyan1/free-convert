@@ -463,7 +463,9 @@
     "qualityAnswerPNG": "Nuestro conversor de {de} a {a} mantiene la mayor calidad posible durante la conversión. ",
     "qualityAnswerJPG": "Nuestro conversor de {de} a {a} mantiene la mayor calidad posible durante la conversión. ",
     "fileSizeSupport": "¿Qué tamaños de archivos son compatibles?",
-    "fileSizeAnswer": "Puede convertir archivos {format} de hasta 50 MB de tamaño. "
+    "fileSizeAnswer": "Puede convertir archivos {format} de hasta 50 MB de tamaño. ",
+    "relatedTools": "Conversores relacionados",
+    "relatedToolsDescription": "Convierte entre otros formatos de imagen populares:"
   },
   "cropper": {
     "title": "Recorta tu imagen",

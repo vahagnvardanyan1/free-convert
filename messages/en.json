@@ -463,7 +463,9 @@
     "qualityAnswerPNG": "Our {from} to {to} converter maintains the highest possible quality during conversion. PNG is a lossless format, so there's no quality degradation.",
     "qualityAnswerJPG": "Our {from} to {to} converter maintains the highest possible quality during conversion. JPG conversion uses high-quality compression settings by default.",
     "fileSizeSupport": "What file sizes are supported?",
-    "fileSizeAnswer": "You can convert {format} files up to 50MB in size. For optimal performance and faster conversion, we recommend files under 25MB."
+    "fileSizeAnswer": "You can convert {format} files up to 50MB in size. For optimal performance and faster conversion, we recommend files under 25MB.",
+    "relatedTools": "Related Converters",
+    "relatedToolsDescription": "Convert between other popular image formats:"
   },
   "cropper": {
     "title": "Crop Your Image",

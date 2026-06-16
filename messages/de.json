@@ -463,7 +463,9 @@
     "qualityAnswerPNG": "Unser {from}-zu-{to}-Konverter sorgt bei der Konvertierung für die höchstmögliche Qualität. ",
     "qualityAnswerJPG": "Unser {from}-zu-{to}-Konverter sorgt bei der Konvertierung für die höchstmögliche Qualität. ",
     "fileSizeSupport": "Welche Dateigrößen werden unterstützt?",
-    "fileSizeAnswer": "Sie können {format}-Dateien mit einer Größe von bis zu 50 MB konvertieren. "
+    "fileSizeAnswer": "Sie können {format}-Dateien mit einer Größe von bis zu 50 MB konvertieren. ",
+    "relatedTools": "Verwandte Konverter",
+    "relatedToolsDescription": "Zwischen anderen beliebten Bildformaten umwandeln:"
   },
   "cropper": {
     "title": "Beschneiden Sie Ihr Bild",

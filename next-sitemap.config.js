@@ -92,11 +92,8 @@ const routes = [
   '/colors/gradients',
   '/colors/converter',
 
-  // Font tools
-  '/fonts',
-  '/fonts/preview',
-  '/fonts/pairings',
-  '/fonts/scales',
+  // Font tools live under /texts/fonts (the bare /fonts* routes 301-redirect there,
+  // so they are intentionally NOT listed — sitemaps should contain canonical URLs only).
 
   // Text tools
   '/font-generator',

@@ -95,14 +95,25 @@ if (routesMatch) {
 const localeDir = join(ROOT, 'src', 'app', '[locale]');
 const NON_INDEXED = new Set(['blog', 'colors', 'fonts', 'texts']); // section roots with nested children
 const appRoutes = [];
+const pageSrcByRoute = {};
 for (const d of readdirSync(localeDir, { withFileTypes: true })) {
   if (!d.isDirectory()) continue;
-  if (existsSync(join(localeDir, d.name, 'page.tsx'))) appRoutes.push(`/${d.name}`);
+  const pagePath = join(localeDir, d.name, 'page.tsx');
+  if (existsSync(pagePath)) {
+    appRoutes.push(`/${d.name}`);
+    pageSrcByRoute[`/${d.name}`] = readFileSync(pagePath, 'utf8');
+  }
 }
+
+// A redirect-only stub (e.g. `redirect('/texts/fonts')`) intentionally has no
+// metadata and should not be in the sitemap — the redirect target is the
+// indexable URL. Detect it so it isn't reported as missing-metadata / not-in-sitemap.
+const isRedirectStub = src => /\bredirect\s*\(/.test(src) && !/generateMetadata|export const metadata/.test(src);
 
 const missingFromSitemap = [];
 for (const r of appRoutes) {
   if (NON_INDEXED.has(r.slice(1))) continue;
+  if (isRedirectStub(pageSrcByRoute[r])) continue;
   if (!sitemapRoutes.has(r)) {
     missingFromSitemap.push(r);
     add('error', 'route-not-in-sitemap', `Route ${r} has a page.tsx but is NOT in sitemap routes[] (will not be indexed)`, { route: r });
@@ -110,13 +121,19 @@ for (const r of appRoutes) {
 }
 
 // ── 4. page-level metadata hygiene ────────────────────────────────────────────
+// Pages that delegate to a shared metadata helper (e.g. generateToolMetadata)
+// get canonical + getAlternateLanguages from inside the helper, so the per-file
+// regex below would otherwise raise false positives.
+const DELEGATING_HELPER = /generateToolMetadata\s*\(/;
 for (const r of appRoutes) {
-  const src = readFileSync(join(localeDir, r.slice(1), 'page.tsx'), 'utf8');
+  const src = pageSrcByRoute[r];
+  if (isRedirectStub(src)) continue; // redirect stub — no metadata expected
   const isStatic = /privacy|terms|cookie|about|faq/.test(r);
   if (!/generateMetadata/.test(src)) {
     add(isStatic ? 'warn' : 'error', 'page-no-metadata', `${r}/page.tsx has no generateMetadata export`, { route: r });
     continue;
   }
+  if (DELEGATING_HELPER.test(src)) continue; // canonical + hreflang set inside the helper
   if (!/getAlternateLanguages/.test(src)) add('warn', 'page-no-hreflang', `${r}/page.tsx defines metadata but does not use getAlternateLanguages (hreflang may be missing)`, { route: r });
   if (!/canonical/.test(src)) add('warn', 'page-no-canonical', `${r}/page.tsx defines metadata but sets no canonical`, { route: r });
 }

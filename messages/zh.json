@@ -463,7 +463,9 @@
     "qualityAnswerPNG": "我们的 {from} 到 {to} 转换器在转换过程中保持尽可能高的质量。 ",
     "qualityAnswerJPG": "我们的 {from} 到 {to} 转换器在转换过程中保持尽可能高的质量。 ",
     "fileSizeSupport": "支持哪些文件大小？",
-    "fileSizeAnswer": "您可以转换大小最大为 50MB 的 {format} 文件。"
+    "fileSizeAnswer": "您可以转换大小最大为 50MB 的 {format} 文件。",
+    "relatedTools": "相关转换器",
+    "relatedToolsDescription": "在其他常用图片格式之间转换："
   },
   "cropper": {
     "title": "裁剪你的图像",
