@@ -440,6 +440,8 @@
     }
   },
   "converterPage": {
+    "answerHeading": "How do I convert {from} to {to}?",
+    "answerLead": "To convert {from} to {to}, upload your {from} file above and click Convert — FreeConvert changes it to {to} instantly, right in your browser. No software, signup, or server upload is needed, so your files stay completely private. Your {to} download is ready in seconds and works on any device.",
     "howToConvert": "How to Convert",
     "to": "to",
     "faq": "FAQ",

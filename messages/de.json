@@ -440,6 +440,8 @@
     }
   },
   "converterPage": {
+    "answerHeading": "Wie konvertiere ich {from} in {to}?",
+    "answerLead": "Um {from} in {to} zu konvertieren, laden Sie Ihre {from}-Datei oben hoch und klicken Sie auf Konvertieren – FreeConvert wandelt sie sofort direkt im Browser in {to} um. Keine Software, keine Anmeldung und kein Server-Upload nötig, Ihre Dateien bleiben völlig privat. Der {to}-Download ist in Sekunden bereit und funktioniert auf jedem Gerät.",
     "howToConvert": "So konvertieren Sie",
     "to": "Zu",
     "faq": "FAQ",

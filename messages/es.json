@@ -440,6 +440,8 @@
     }
   },
   "converterPage": {
+    "answerHeading": "¿Cómo convierto {from} a {to}?",
+    "answerLead": "Para convertir {from} a {to}, sube tu archivo {from} arriba y haz clic en Convertir: FreeConvert lo transforma a {to} al instante, directamente en tu navegador. No necesitas software, registro ni subir nada a un servidor, así tus archivos siguen siendo totalmente privados. Tu descarga {to} está lista en segundos y funciona en cualquier dispositivo.",
     "howToConvert": "Cómo convertir",
     "to": "a",
     "faq": "Preguntas frecuentes",

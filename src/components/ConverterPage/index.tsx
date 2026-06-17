@@ -213,6 +213,12 @@ export const ConverterPage = ({ from, to, title, description }: ConverterPagePro
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="space-y-6">
+          {/* GEO/AEO citable answer — self-contained ~50-word passage with a question heading */}
+          <section className="rounded-xl border border-gray-200 bg-white p-4 sm:p-5">
+            <h2 className="font-semibold text-gray-900 text-base sm:text-lg mb-2">{t('answerHeading', { from, to })}</h2>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('answerLead', { from, to })}</p>
+          </section>
+
           {/* Conversion Tool - Compact Single Card */}
           <div>
             <Card className="p-4 sm:p-6">

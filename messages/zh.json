@@ -440,6 +440,8 @@
     }
   },
   "converterPage": {
+    "answerHeading": "如何将 {from} 转换为 {to}？",
+    "answerLead": "要将 {from} 转换为 {to}，请在上方上传您的 {from} 文件并点击转换 — FreeConvert 会直接在您的浏览器中即时将其转换为 {to}。无需软件、注册或上传到服务器，您的文件始终完全私密。{to} 文件可在几秒内下载，并可在任何设备上使用。",
     "howToConvert": "如何转换",
     "to": "到",
     "faq": "常问问题",
